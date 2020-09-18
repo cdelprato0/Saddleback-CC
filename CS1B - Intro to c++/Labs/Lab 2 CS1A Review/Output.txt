@@ -1,0 +1,113 @@
+*****************************************************
+* PROGRAMMED BY : BBC
+* CLASS         : CS1B
+* SECTION       : MW : 8:30 - 11:20
+* LAB #2        : CS1A Review
+*****************************************************
+
+Welcome to the Theme Park Planner! Please input each kid's information.
+
+Kid #1
+What is your kid's name?      Austin Vaday
+How old is your kid?          14
+Vegetarian (Y/N)?             Y
+Does he/she like cheese(Y/N)? Y
+
+Austin Vaday will be going on the Roller Coaster and the Zip Line.
+Pack a Cheese Pizza for Austin Vaday!
+
+
+Kid #2
+What is your kid's name?      Andrew Daniels
+How old is your kid?          5
+Vegetarian (Y/N)?             Y
+Does he/she like cheese(Y/N)? N
+
+Andrew Daniels will be going on the Tea Cups and will be playing Laser Tag.
+Pack a Happy Garden for Andrew Daniels!
+
+
+Kid #3
+What is your kid's name?      Anthony Ramirez
+How old is your kid?          16
+Vegetarian (Y/N)?             N
+Does he/she like cheese(Y/N)? N
+
+Anthony Ramirez will be going on the Roller Coaster and the Zip Line.
+Pack a Hamburger for Anthony Ramirez!
+
+
+Kid #4
+What is your kid's name?      Erik Karlsson
+How old is your kid?          4
+Vegetarian (Y/N)?             N
+Does he/she like cheese(Y/N)? Y
+
+Erik Karlsson will be going on the Ferris Wheel and will be visiting the Sheep Petting Zoo.
+Pack a Cheeseburger for Erik Karlsson!
+
+
+Kid #5
+What is your kid's name?      Daniel Bumblebee
+How old is your kid?          2
+Vegetarian (Y/N)?             Y
+Does he/she like cheese(Y/N)? Y
+
+Daniel Bumblebee will be going on the Ferris Wheel and will be visiting the Sheep Petting Zoo.
+Pack a Cheese Pizza for Daniel Bumblebee!
+
+
+Kid #6
+What is your kid's name?      Swaggy P
+How old is your kid?          16
+Vegetarian (Y/N)?             Y
+Does he/she like cheese(Y/N)? N
+
+Swaggy P will be going on the Roller Coaster and the Zip Line.
+Pack a Happy Garden for Swaggy P!
+
+
+Kid #7
+What is your kid's name?      Inigo Montoya
+How old is your kid?          3
+Vegetarian (Y/N)?             Y
+Does he/she like cheese(Y/N)? N
+
+Inigo Montoya will be going on the Ferris Wheel and will be visiting the Sheep Petting Zoo.
+Pack a Happy Garden for Inigo Montoya!
+
+
+Kid #8
+What is your kid's name?      Daniel Andrews
+How old is your kid?          13
+Vegetarian (Y/N)?             N
+Does he/she like cheese(Y/N)? Y
+
+Daniel Andrews will be going on the Roller Coaster and the Zip Line.
+Pack a Cheeseburger for Daniel Andrews!
+
+
+Kid #9
+What is your kid's name?      Amanda Kissenhugg
+How old is your kid?          7
+Vegetarian (Y/N)?             N
+Does he/she like cheese(Y/N)? N
+
+Amanda Kissenhugg will be going on the Tea Cups and will be playing Laser Tag.
+Pack a Hamburger for Amanda Kissenhugg!
+
+
+Kid #10
+What is your kid's name?      Dooby McFoosen
+How old is your kid?          6
+Vegetarian (Y/N)?             N
+Does he/she like cheese(Y/N)? Y
+
+Dooby McFoosen will be going on the Tea Cups and will be playing Laser Tag.
+Pack a Cheeseburger for Dooby McFoosen!
+
+
+
+...
+The total cost for the day is: $   152.25
+The average cost per kid is:   $    15.23

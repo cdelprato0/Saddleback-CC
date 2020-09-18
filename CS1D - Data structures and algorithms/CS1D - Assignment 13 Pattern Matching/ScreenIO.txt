@@ -1,0 +1,105 @@
+*************************************************************************
+* PROGRAMMED BY  : Chaz Del Prato                                       *
+* ASSIGNMENT #13 : Pattern Matching                                     *
+* CLASS          : CS1D                                                 *
+* SECTION        : MW 3:00p                                             *
+-------------------------------------------------------------------------
+* Description   :                                                       *
+*  This program will be able to take a given text and pattern and will  *
+*  use three different pattern matching algorithms to determine the     *
+*  number of comparisons needed to match the pattern. The first         *
+*  algorithm is the Brute Force (BF) algorithm that takes the most      *
+*  number of comparisons. The next is the Boyer-Moore(BM) algorithm that*
+*  appears to be the least amount of comparisons. It will also display  *
+*  last(c) function of BM. The last algorithm is the Knuth-Morris-Pratt *
+*  algorithm will display the failure function of KMP. In each test the *
+*  the program will output the text and pattern for each comparison. At *
+*  the end of each algorithm it will output the number of comparisons.  *
+*************************************************************************
+
+********************************
+* BRUTE FORCE PATTERN MATCHING *
+********************************
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+
+Pattern was found
+23 Comparisons
+
+********************************
+* BOYER-MOORE PATTERN MATCHING *
+********************************
+
+The last c of the Boyer-Moore pattern matching is: 
+------------------------------------------
+    c   |   a   |   b   |   c   |    d   |
+-----------------------------------------|
+ Last(c)|   5   |   2   |  -1   |   -1   |
+------------------------------------------
+
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+Comparing "aaabcaadaabaaa" with "aabaaa"
+
+9 Comparisons
+
+***************************************
+* KNUTH-MORRIS-PRATT PATTERN MATCHING *
+***************************************
+
+The failure function of the KMP pattern matching is: 
+	F(0) = 0 (a)
+	F(1) = 1 (aa)
+	F(2) = 0 (aab)
+	F(3) = 1 (aaba)
+	F(4) = 2 (aabaa)
+	F(5) = 2 (aabaaa)
+
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+Comparing "aabaaa" with "aaabcaadaabaaa"
+
+'aabaaa' found in string 'aaabcaadaabaaa'
+18 Comparisons

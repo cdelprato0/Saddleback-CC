@@ -1,0 +1,34 @@
+********************************************************
+* PROGRAMMED BY : BBC
+* Student ID    : 382108
+* Class         : CS1B --> Mon/Wed 8:30am
+* ASSIGNMENT #6 : Saddleback Bank
+******************************************************
+
+TRANSACTION        DATE         ACCT #  ACCT NAME                  AMOUNT         BALANCE     FROM ACCT#     FROM ACCT BAL
+------------       ----------   -----   --------------------   ----------   -------------     ----------     -------------     
+OPEN CHECKING      04/01/2012   2323     Jennifer Kim          $    50.00   $       50.00
+OPEN SAVINGS       04/01/2012   1212     Nery Chapeton Lamas   $   300.00   $      300.00
+OPEN Money Market  04/01/2012   3434     Shannon Alfaro        $   100.00   $      100.00
+
+ Deposit           05/01/2012   1212     Nery Chapeton Lamas   $   100.00   $      430.00
+ Deposit           05/01/2012   2323     Jennifer Kim          $   100.00   $      150.00
+ Deposit           05/01/2012   3434     Shannon Alfaro        $   100.00   $      220.00
+ Withdrawal        06/01/2012   1212     Nery Chapeton Lamas   $   200.00   $      273.00
+ Withdrawal        06/01/2012   2323     Jennifer Kim          $   200.00   $      -70.00
+ Withdrawal        06/01/2012   3434     Shannon Alfaro        $    50.00   $      212.50
+
+*** TRANSFER FROM 2323 TO 1212 NOT ALLOWED! ***
+***        DUE TO INSUFFICIENT FUNDS        ***
+
+ Transfer          07/01/2012   2323     Jennifer Kim          $    80.00   $       10.00           3434     $     173.50
+
+*** TRANSFER FROM 1212 TO 3434 NOT ALLOWED! ***
+***        DUE TO INSUFFICIENT FUNDS        ***
+
+ Deposit           09/01/2012   1212     Nery Chapeton Lamas   $   100.00   $      400.30
+ Deposit           09/01/2012   2323     Jennifer Kim          $   100.00   $      110.00
+ Deposit           09/01/2012   3434     Shannon Alfaro        $   100.00   $      308.20
+
+*** ERROR - CAN'T TRANSFER INTO THE SAME ACCOUNT ***
+

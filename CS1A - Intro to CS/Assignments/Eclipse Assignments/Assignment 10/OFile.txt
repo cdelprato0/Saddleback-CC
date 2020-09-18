@@ -1,0 +1,15 @@
+********************************************************
+* PROGRAMMED BY : BBC
+* Student ID    : 382108
+* Class         : CS1A --> Mon/Wed 9:30am
+* ASSIGNMENT #10: Parallel Arrays
+******************************************************
+
+ID #	NAME                	BALANCE DUE
+----	--------------------	-----------
+1002	Steve Woolston          $   1423.20
+1008	Chris Carroll           $     32.36
+1007	Pete McBride            $    500.32
+1001	Jean Rousseau           $     15.50
+
+           Average Balance Due: $    492.84

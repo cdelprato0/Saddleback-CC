@@ -1,0 +1,70 @@
+// This file is for use with www.nand2tetris.org
+
+// and the book "The Elements of Computing Systems"
+
+// by Nisan and Schocken, MIT Press.
+
+// Create this file in your nand2tetris projects/02 folder with
+// the name Nor16Way.hdl
+
+// e.g. File name: projects/02/Nor16Way.hdl
+
+
+/**
+* 
+	16-way Nor:
+* 
+	out = not (in[0] or in[1] or ... or in[15])
+
+*/
+
+
+CHIP Nor16Way 
+{
+    
+	IN in[16];
+    
+	OUT out;
+    
+    
+  PARTS:
+        
+	Or( a=in[0], b=in[1], out=ox0 );
+        
+	Or( a=ox0, b=in[2], out=ox1 );
+        
+	Or( a=ox1, b=in[3], out=ox2 );
+        
+	Or( a=ox2, b=in[4], out=ox3 );
+        
+	Or( a=ox3, b=in[5], out=ox4 );
+        
+	Or( a=ox4, b=in[6], out=ox5 );
+        
+	Or( a=ox5, b=in[7], out=oxa );
+
+
+        
+	Or( a=in[8], b=in[9], out=y0 );
+        
+	Or( a=y0, b=in[10], out=y1 );
+        
+	Or( a=y1, b=in[11], out=y2 );
+        
+	Or( a=y2, b=in[12], out=y3 );
+        
+	Or( a=y3, b=in[13], out=y4 );
+       
+	Or( a=y4, b=in[14], out=y5 );
+        
+	Or( a=y5, b=in[15], out=oyb );
+
+
+        
+	Or( a = oxa, b = oyb, out = foutput );
+
+        
+	Not( in = foutput, out = out );
+
+
+}

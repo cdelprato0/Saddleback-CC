@@ -1,0 +1,12 @@
+*****************************************************
+* PROGRAMMED BY : BBC
+* CLASS         : CS1B
+* SECTION       : MW : 8:30 - 11:20
+* LAB #1        : Eclipse
+*****************************************************
+
+Enter your gender: M
+
+Enter your name:   Bill Ding
+
+Enter your age:    32

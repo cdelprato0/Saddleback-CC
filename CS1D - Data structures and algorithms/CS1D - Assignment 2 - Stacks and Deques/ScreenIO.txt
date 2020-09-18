@@ -1,0 +1,345 @@
+**************************************************************************
+* PROGRAMMED BY : Chaz Del Prato                                         *
+* ASSIGNMENT #2 : Stacks & Queues & Deques                               *
+* CLASS         : CS1D                                                   *
+* SECTION       : MW 3:00p                                               *
+--------------------------------------------------------------------------
+* Description   :                                                        *
+*  The Output of this program will start off with the first part of the  *
+*  assignment requirements. Each of the functions will add all the items *
+*  string and double items from arrays and will remove all the way up to *
+*  'Cathy' for the strings, and '1.2' for the doubles. It will provide   *
+*  the STL stack adding each member of the stack, and then it will remove*
+*  items off the stack. The next process will use a singly linked list   *
+*  to add and remove items from the stack. After that, there will be a   *
+*  Singly linked list that adds and removes from a queue. The last       *
+*  function for the string and double information, will use a doubly     *
+*  linked list to add and remove from the Deque. The final operation     *
+*  of the program will read in users input and determine if an           *
+*  expression is true or not, regarding the parenthesis around it.       *
+**************************************************************************
+
+****************
+*    Part A    *
+*   STL Stack  *
+****************
+
+Adding: Tasha to the STL Stack!
+Adding: JoAnn to the STL Stack!
+Adding: Lucy to the STL Stack!
+Adding: Mark to the STL Stack!
+Adding: Cathy to the STL Stack!
+Adding: Jane to the STL Stack!
+
+The items on the stack are: (From top to bottom)
+Jane
+Cathy
+Mark
+Lucy
+JoAnn
+Tasha
+
+Adding: 48.4 to the STL Stack!
+Adding: 887.55 to the STL Stack!
+Adding: 88.88 to the STL Stack!
+Adding: 123.123 to the STL Stack!
+Adding: 8.455 to the STL Stack!
+Adding: 983.3 to the STL Stack!
+Adding: 1.2 to the STL Stack!
+Adding: 354.8 to the STL Stack!
+
+The items on the stack are: (From top to bottom)
+354.8
+1.2
+983.3
+8.455
+123.123
+88.88
+887.55
+48.4
+
+
+***************************
+*          Part B         *
+* Removing from STL Stack *
+***************************
+
+Removing from the STRING STL Stack: 
+----------------------------------
+The top of the Stack: Jane, has been popped of the Stack!
+The top of the Stack: Cathy, has been popped of the Stack!
+
+The remaining items on the Stack are: 
+Mark
+Lucy
+JoAnn
+Tasha
+
+
+Removing from the DOUBLE STL Stack: 
+----------------------------------
+The top of the Stack: 354.8, has been popped of the Stack!
+The top of the Stack: 1.2, has been popped of the Stack!
+
+The remaining items on the Stack are: 
+983.3
+8.455
+123.123
+88.88
+887.55
+48.4
+
+
+*****************************
+*           Part C          *
+*  Singly Linked List Stack *
+*****************************
+
+Adding: Tasha to the stack
+Adding: JoAnn to the stack
+Adding: Lucy to the stack
+Adding: Mark to the stack
+Adding: Cathy to the stack
+Adding: Jane to the stack
+
+The items on the stack are: (From top to bottom)
+Jane
+Cathy
+Mark
+Lucy
+JoAnn
+Tasha
+
+Adding: 48.4 to the stack
+Adding: 887.55 to the stack
+Adding: 88.88 to the stack
+Adding: 123.123 to the stack
+Adding: 8.455 to the stack
+Adding: 983.3 to the stack
+Adding: 1.2 to the stack
+Adding: 354.8 to the stack
+
+The items on the stack are: (From top to bottom)
+354.8
+1.2
+983.3
+8.455
+123.123
+88.88
+887.55
+48.4
+
+
+*************************************
+*             Part D                *
+* Removing Singly Linked List Stack *
+*************************************
+
+Removing from the STRING Stack: 
+----------------------------------
+
+Removing: 
+Jane
+Cathy
+
+The rest of the stack is: 
+Mark
+Lucy
+JoAnn
+Tasha
+
+Removing from the DOUBLE Stack: 
+----------------------------------
+
+Removing: 
+354.8
+1.2
+
+The rest of the stack is: 
+983.3
+8.455
+123.123
+88.88
+887.55
+48.4
+
+
+**********************
+*        Part E      *
+*  Queue Linked List *
+**********************
+
+Adding: Tasha to the Queue
+Adding: JoAnn to the Queue
+Adding: Lucy to the Queue
+Adding: Mark to the Queue
+Adding: Cathy to the Queue
+Adding: Jane to the Queue
+
+The items on the Queue are: (From front to back)
+Tasha
+JoAnn
+Lucy
+Mark
+Cathy
+Jane
+
+Adding: 48.4 to the Queue
+Adding: 887.55 to the Queue
+Adding: 88.88 to the Queue
+Adding: 123.123 to the Queue
+Adding: 8.455 to the Queue
+Adding: 983.3 to the Queue
+Adding: 1.2 to the Queue
+Adding: 354.8 to the Queue
+
+The items on the Queue are: (From front to back)
+48.4
+887.55
+88.88
+123.123
+8.455
+983.3
+1.2
+354.8
+
+
+*******************************
+*            Part F           *
+*  Removing Queue Linked List *
+*******************************
+
+Removing from the STRING Queue: 
+----------------------------------
+
+Removing: 
+Tasha
+JoAnn
+Lucy
+Mark
+Cathy
+
+The rest of the Queue is: 
+Jane
+
+Removing from the DOUBLE Queue: 
+----------------------------------
+
+Removing: 
+48.4
+887.55
+88.88
+123.123
+8.455
+983.3
+1.2
+
+The rest of the Queue is: 
+354.8
+
+
+***********************
+*        Part G       *
+*  Deque Linked Lists *
+***********************
+
+Adding: Tasha to the Deque!
+Adding: JoAnn to the Deque!
+Adding: Lucy to the Deque!
+Adding: Mark to the Deque!
+Adding: Cathy to the Deque!
+Adding: Jane to the Deque!
+
+The items on the Deque are: (From front to back)
+Tasha
+JoAnn
+Lucy
+Mark
+Cathy
+Jane
+
+Adding: 48.4 to the Deque!
+Adding: 887.55 to the Deque!
+Adding: 88.88 to the Deque!
+Adding: 123.123 to the Deque!
+Adding: 8.455 to the Deque!
+Adding: 983.3 to the Deque!
+Adding: 1.2 to the Deque!
+Adding: 354.8 to the Deque!
+
+The items on the Deque are: (From front to back)
+48.4
+887.55
+88.88
+123.123
+8.455
+983.3
+1.2
+354.8
+
+
+******************************
+*           Part H            *
+* Removing Deque Linked Lists *
+*******************************
+
+Removing from the STRING Deque: 
+----------------------------------
+
+Removing: 
+JoAnn
+Tasha
+Lucy
+Mark
+Cathy
+
+The rest of the Deque is: 
+Jane
+
+Removing from the DOUBLE Deque: 
+----------------------------------
+
+Removing: 
+887.55
+48.4
+88.88
+123.123
+8.455
+983.3
+1.2
+
+The rest of the Deque is: 
+354.8
+
+***********************
+*       Part I        *
+*Parenthesis Algorithm*
+***********************
+
+Enter the expression: 
+(2x - 4) (12x + 6)
+The expression (2x - 4) (12x + 6) is: True!
+
+Enter the expression: 
+{2x + 5} (6x+4)}
+The expression {2x + 5} (6x+4)} is: False!
+
+Enter the expression: 
+[(5x - 5) - 4x[6x + 2]]
+The expression [(5x - 5) - 4x[6x + 2]] is: True!
+
+Enter the expression: 
+{{8x+5) - 5x[9x+3]})
+The expression {{8x+5) - 5x[9x+3]}) is: False!
+
+Enter the expression: 
+{(8x+5) - 6x[9x+3]]
+The expression {(8x+5) - 6x[9x+3]] is: False!
+
+Enter the expression: 
+(2x - 4) (12x + 6}
+The expression (2x - 4) (12x + 6} is: False!
+
+Enter the expression: 
+(((6x+6) - x[9x+3])))
+The expression (((6x+6) - x[9x+3]))) is: False!

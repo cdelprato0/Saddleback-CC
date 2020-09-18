@@ -1,0 +1,6 @@
+Please enter number larger than 50 
+555
+Number of memory locations allocated was 555
+TESTING
+Number of memory location allocated was 15863976
+À

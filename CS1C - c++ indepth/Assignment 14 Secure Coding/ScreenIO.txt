@@ -1,0 +1,50 @@
+**********************
+STATIC BUFFER OVERRUNS
+**********************
+-----------
+Bad Example
+-----------
+Enter name: 
+JasonFrancisco
+JasonFrancisco
+
+------------
+Good Example
+------------
+Enter name: 
+JasonFrancisco
+JasonFranc
+
+*************
+HEAP OVERRUNS
+*************
+Enter number larger than 50 
+99
+Number of memory locations allocated was 99
+TESTING
+Number of memory location allocated was 99
+TESTING
+
+************************
+BOUNDARY CHECKING ERRORS
+************************
+
+-----------
+Bad Example
+-----------
+Enter integer: 9
+Inputted integer is 9
+
+Enter integer: 8
+Inputted integer is 8
+
+Enter integer: 7
+Inputted integer is 7
+
+Enter integer: 6
+Inputted integer is 6
+
+------------
+Good Example
+------------
+s

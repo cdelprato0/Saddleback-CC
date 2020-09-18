@@ -1,0 +1,104 @@
+*************************************************************************
+* PROGRAMMED BY  : Chaz Del Prato                                       *
+* ASSIGNMENT #11 : BFS and DFS Graphs                                   *
+* CLASS          : CS1D                                                 *
+* SECTION        : MW 3:00p                                             *
+-------------------------------------------------------------------------
+* Description   :                                                       *
+*  This program demonstrates the implementation of a Depth-First        *
+*  Traversal and Breadth-First Traversal.  The program will traverse a  *
+*  map that goes across the United States.  The starting point will be  *
+*  Atlanta. The program will out put the current city and then will say *
+*  if the next city to visit is going to be a discovery edge or a back  *
+*  edge. After that DFS traversal is done, then it will out put the     *
+*  levels of the BFS traversal with the cities that are stored there.   *
+*  At the end of the program, it will display that the graph and strong *
+*  Connectivity and will give a brief description.                      *
+*************************************************************************
+
+**********************
+* Depth-First Search *
+**********************
+Start at Atlanta
+Discovery Edge from Atlanta to Miami  Miles: [661]
+--------------------------------------------------------------------
+Next visit: Miami
+Discovery Edge from Miami to Houston  Miles: [1187]
+--------------------------------------------------------------------
+Next visit: Houston
+Discovery Edge from Houston to Dallas  Miles: [239]
+--------------------------------------------------------------------
+Next visit: Dallas
+Discovery Edge from Dallas to Kansas City  Miles: [496]
+--------------------------------------------------------------------
+Next visit: Kansas City
+Discovery Edge from Kansas City to Chicago  Miles: [533]
+--------------------------------------------------------------------
+Next visit: Chicago
+Discovery Edge from Chicago to Boston  Miles: [983]
+--------------------------------------------------------------------
+Next visit: Boston
+Discovery Edge from Boston to New York  Miles: [214]
+--------------------------------------------------------------------
+Backtracking from New York to Chicago
+--------------------------------------------------------------------
+Next visit: Chicago
+Discovery Edge from Chicago to Seattle  Miles: [2097]
+--------------------------------------------------------------------
+Next visit: Seattle
+Discovery Edge from Seattle to San Francisco  Miles: [807]
+--------------------------------------------------------------------
+Next visit: San Francisco
+Discovery Edge from San Francisco to Los Angeles  Miles: [381]
+--------------------------------------------------------------------
+Next visit: Los Angeles
+Discovery Edge from Los Angeles to Denver  Miles: [1015]
+--------------------------------------------------------------------
+Trip ends at Denver
+Total Distance Travelled: 8613
+--------------------------------------------------------------------
+
+Back Edges: 
+------------
+Houston to Atlanta
+Dallas to Atlanta
+Kansas City to Atlanta
+New York to Atlanta
+New York to Chicago
+Denver to San Francisco
+Denver to Chicago
+
+************************
+* Breadth-First Search *
+************************
+Root: Atlanta
+
+First Level: 
+Miami[661]
+
+Second Level: 
+Houston[1187]
+
+Third Level: 
+Dallas[239]
+
+Fourth Level: 
+Kansas City[496]
+Los Angeles[1435]
+
+Fifth Level: 
+Chicago[533]
+Denver[599]
+New York[1260]
+
+Sixth Level: 
+Boston[983]
+San Francisco[1267]
+Seattle[2097]
+
+Total Miles: 10757
+***********************
+* Strong Connectivity *
+***********************
+The graph is strongly connected because you are able to visit
+each city starting at any vertex.

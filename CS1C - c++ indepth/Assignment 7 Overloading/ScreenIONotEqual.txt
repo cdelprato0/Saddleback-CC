@@ -1,0 +1,54 @@
+**************************************************
+* PROGRAMMED BY : Chaz Del Prato
+* CLASS         : CS1C
+* SECTION       : MW 2:00p-4:50p
+* ASSIGNMENT #7 : CS1C Overloading
+**************************************************
+
+*TEST 1*
+Checking to see if phone numbers are equal...
+---------------------------------------------
+Checking: Jimmy Fallon's phone number: 9495551234
+Checking: Sam Software's phone number: 8191234567
+
+The phone numbers are NOT the same!
+
+
+**TEST 2**
+Checking to see if phone numbers are equal...
+---------------------------------------------
+Checking: Stephan Colbert's phone number: 3105555555
+Checking: James Corden's phone number: 7037031234
+
+The phone numbers are NOT the same!
+
+
+***TEST 3***
+Adding years to an Employee's Age...
+-------------------------------------
+This is Jimmy Fallon's age before adding the years: 40
+The number of years you are adding to Jimmy Fallon's is: 12
+
+Jimmy Fallon's Age after adding years: 52
+
+
+****TEST 4****
+Adding years to an Employee's Age using Overloaded + operator...
+-----------------------------------------------------------------
+This is Stephan Colbert's age before adding the years: 51
+13 years are being added to Stephan Colbert's age.
+
+Their Age after adding years: 64
+
+
+*****TEST 5*****
+Outputting information with OVERLOADED << operator...
+-----------------------------------------------------
+Name:         James Corden
+Id Number:    87654
+Phone Number: 7037031234
+Age:          37
+Job Title:    Talk Show Host
+Salary:       900000
+Gender:       M
+Hired:        12/25/2014

@@ -1,0 +1,246 @@
+What input file would you like to use(type d for default file)?  d
+What output file would you like to use(type d for default file)? d
+
+
+**************************************************
+* PROGRAMMED BY : BBC
+* CLASS         : CS1B
+* SECTION       : MW 8:30a-12:20p
+* ASSIGNMENT #5 : Movie List
+**************************************************
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 1
+
+Listing all movies!
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 2
+
+Which title are you looking for? Men in Black
+
+Searching for the title Men in Black
+Found the movie Men in Black
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 2
+
+Which title are you looking for? Shawshank Redemption
+
+Searching for the title Shawshank Redemption
+Sorry, the movie "Shawshank Redemption" was not found.
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 3
+
+Which genre are you looking for? Romantic Comedy
+
+Searching for the genre Romantic Comedy
+Found 45 movies for the genre Romantic Comedy!
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 3
+
+Which genre are you looking for? Horror
+
+Searching for the genre Horror
+Sorry, no movies for the genre, Horror were found.
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 4
+
+Which actor are you looking for? Anthony Hopkins
+
+Searching for the actor Anthony Hopkins
+Found 6 movies for the actor Anthony Hopkins!
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 4
+
+Which actor are you looking for? Don Johnson
+
+Searching for the actor Don Johnson
+Sorry, no movies for the actor, Don Johnson were found.
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 5
+
+Which year are you looking for? 2007
+
+Searching for the year 2007
+Found 53 movies for the year 2007!
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 5
+
+Which year are you looking for? 1800
+
+**** The number 1800 is an invalid entry     ****
+**** Please input a number between 1878 and 3000 ****
+
+
+Which year are you looking for? 5
+
+**** The number 5 is an invalid entry     ****
+**** Please input a number between 1878 and 3000 ****
+
+
+Which year are you looking for? 3001
+
+**** The number 3001 is an invalid entry     ****
+**** Please input a number between 1878 and 3000 ****
+
+
+Which year are you looking for? a
+
+**** Please input a NUMBER between 1878 and 3000 ****
+
+
+Which year are you looking for? 1900
+
+Searching for the year 1900
+Sorry, no movies for the year, 1900 were found.
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): 6
+
+Which rating are you looking for? -1
+
+**** The number -1 is an invalid entry     ****
+**** Please input a number between 0 and 9 ****
+
+
+Which rating are you looking for? 10
+
+**** The number 10 is an invalid entry     ****
+**** Please input a number between 0 and 9 ****
+
+
+Which rating are you looking for? z
+
+**** Please input a NUMBER between 0 and 9 ****
+
+
+Which rating are you looking for? 8
+
+Searching for the rating 8
+Found 137 movies for the rating 8!
+
+
+DVD MENU OPTIONS
+
+1 - Output Entire List
+2 - Title Search
+3 - Genre Search
+4 - Actor Search
+5 - Year Search
+6 - Rating Search (0-9)
+0 - EXIT
+Enter an option (0 to exit): -1
+
+**** The number -1 is an invalid entry     ****
+**** Please input a number between 0 and 6 ****
+
+
+Enter an option (0 to exit): 7
+
+**** The number 7 is an invalid entry     ****
+**** Please input a number between 0 and 6 ****
+
+
+Enter an option (0 to exit): a
+
+**** Please input a NUMBER between 0 and 6 ****
+
+
+Enter an option (0 to exit): 0
+

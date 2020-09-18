@@ -1,0 +1,1589 @@
+Microsoft (R) Macro Assembler Version 6.14.8444		    05/10/18 14:51:39
+masm3.asm						     Page 1 - 1
+
+
+				;**********************************************************************************************************
+				; Program Name: MASM 3
+				; Programmer:   Chaz Del Prato
+				; Class:        CS3B T/Th 3:30pm
+				; Date:         April 17, 2018
+				; Purpose:
+				;   The purpose of this program is to be able to connect a driver with different external files and run
+				;   methods across muitple files. The driver will consist of mutiple string options that will modify
+				;   two user enters strings. All methos are hand written and does not use any predefined string methods.
+				;**********************************************************************************************************    
+
+				    INCLUDE ..\..\Irvine\Irvine32.inc   
+			      C ; Include file for Irvine32.lib             (Irvine32.inc)
+			      C 
+			      C ;OPTION CASEMAP:NONE		; optional: make identifiers case-sensitive
+			      C 
+			      C INCLUDE SmallWin.inc		; MS-Windows prototypes, structures, and constants
+			      C .NOLIST
+			      C .LIST
+			      C 
+			      C INCLUDE VirtualKeys.inc
+			      C ; VirtualKeys.inc
+			      C .NOLIST
+			      C .LIST
+			      C 
+			      C 
+			      C .NOLIST
+			      C .LIST
+			      C 
+
+				;Bailey Macros
+				    ascint32         PROTO Near32 stdcall, lpStringToConvert:dword
+				    ExitProcess      PROTO,dwExitCode:dword
+				    getstring        PROTO Near32 stdcall, lpStringToGet:dword, dlength:dword
+				    hexToChar        PROTO Near32 stdcall, lpDestStr:dword, lpSourceStr:dword, dLen:dword
+				    intasc32         PROTO Near32 stdcall, lpStringToHold:dword, dval:dword
+				    putstring        PROTO Near32 stdcall, lpStringToPrint:dword
+				    putch            PROTO Near32 stdcall, bVal:byte
+
+				;External file methods
+				    EXTERN String_Length@0:Near32
+				    EXTERN String_Equals@0:Near32
+				    EXTERN String_EqualsIgnoreCase@0:Near32
+				    EXTERN String_Copy@0:Near32
+				    EXTERN String_CharAt@0:Near32
+				    EXTERN String_Substring1@0:Near32
+				    EXTERN String_Substring2@0:Near32
+				    EXTERN String_StartsWith1@0:Near32
+				    EXTERN String_StartsWith2@0:Near32
+				    EXTERN String_EndsWith@0:Near32
+
+				;Sets the external file name to the first given name
+ = String_Length@0		    String_Length      EQU String_Length@0
+ = String_Equals@0		    String_Equals      EQU String_Equals@0
+ = String_EqualsIgnoreCase@	    String_EqualsIC    EQU String_EqualsIgnoreCase@0
+   0
+ = String_Copy@0		    String_Copy        EQU String_Copy@0
+ = String_CharAt@0		    String_CharAt      EQU String_CharAt@0
+ = String_Substring1@0		    String_Substring1  EQU String_Substring1@0
+ = String_SubString2@0		    String_Substring2  EQU String_SubString2@0
+ = String_StartsWith1@0		    String_StartsWith1 EQU String_StartsWith1@0
+ = String_StartsWith2@0		    String_StartsWith2 EQU String_StartsWith2@0
+ = String_EndsWith@0		    String_EndsWith    EQU String_EndsWith@0
+				    
+ 00000000			    .data
+
+ 00000000 2A 2A 2A 2A 2A	strDriverHeader       BYTE "***************************************************",10,
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 0A 2A 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 4D
+	   41 53 4D 20 33
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 2A 0A
+	   2A 20 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   2D 2D 2D 2D 2D
+	   20 2A 0A 00
+				                           "*                     MASM 3                       *",10,
+				                           "* ------------------------------------------------ *",10,0
+
+ 0000009F 2A 20 3C 31 3E	strSetString1         BYTE "* <1> Set string1                         ",0
+	   20 53 65 74 20
+	   73 74 72 69 6E
+	   67 31 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000000CA 2A 20 3C 32 3E	strSetString2         BYTE "* <2> Set string2                         ",0
+	   20 53 65 74 20
+	   73 74 72 69 6E
+	   67 32 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000000F5 2A 20 3C 33 3E	strString_length      BYTE "* <3> String_length                       ",0
+	   20 53 74 72 69
+	   6E 67 5F 6C 65
+	   6E 67 74 68 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 00000120 2A 20 3C 34 3E	strString_equals      BYTE "* <4> String_equals                       ",0
+	   20 53 74 72 69
+	   6E 67 5F 65 71
+	   75 61 6C 73 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 0000014B 2A 20 3C 35 3E	strString_equalsIgn   BYTE "* <5> String_equalsIgnoreCase             ",0
+	   20 53 74 72 69
+	   6E 67 5F 65 71
+	   75 61 6C 73 49
+	   67 6E 6F 72 65
+	   43 61 73 65 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 00000176 2A 20 3C 36 3E	strString_copy        BYTE "* <6> String_copy                         ",0
+	   20 53 74 72 69
+	   6E 67 5F 63 6F
+	   70 79 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000001A1 2A 20 3C 37 3E	strString_substring1  BYTE "* <7> String_substring_1                  ",0
+	   20 53 74 72 69
+	   6E 67 5F 73 75
+	   62 73 74 72 69
+	   6E 67 5F 31 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000001CC 2A 20 3C 38 3E	strString_substring2  BYTE "* <8> String_substring_2                  ",0
+	   20 53 74 72 69
+	   6E 67 5F 73 75
+	   62 73 74 72 69
+	   6E 67 5F 32 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000001F7 2A 20 3C 39 3E	strString_charAt      BYTE "* <9> String_charAt                       ",0
+	   20 53 74 72 69
+	   6E 67 5F 63 68
+	   61 72 41 74 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 00000222 2A 20 3C 31 30	strString_startsWith1 BYTE "* <10> String_startsWith_1                ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 73
+	   74 61 72 74 73
+	   57 69 74 68 5F
+	   31 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 0000024D 2A 20 3C 31 31	strString_startsWith2 BYTE "* <11> String_startsWith_2                ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 73
+	   74 61 72 74 73
+	   57 69 74 68 5F
+	   32 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 00000278 2A 20 3C 31 32	strString_endsWith    BYTE "* <12> String_endsWith                    ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 65
+	   6E 64 73 57 69
+	   74 68 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000002A3 2A 20 3C 31 33	strString_indexOf1    BYTE "* <13> String_indexOf_1                   ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 69
+	   6E 64 65 78 4F
+	   66 5F 31 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000002CE 2A 20 3C 31 34	strString_indexOf2    BYTE "* <14> String_indexOf_2                   ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 69
+	   6E 64 65 78 4F
+	   66 5F 32 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000002F9 2A 20 3C 31 35	strString_indexOf3    BYTE "* <15> String_indexOf_3                   ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 69
+	   6E 64 65 78 4F
+	   66 5F 33 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 00000324 2A 20 3C 31 36	strString_lastIndex1  BYTE "* <16> String_lastIndexOf_1               ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 6C
+	   61 73 74 49 6E
+	   64 65 78 4F 66
+	   5F 31 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 0000034F 2A 20 3C 31 37	strString_lastIndex2  BYTE "* <17> String_lastIndexOf_2               ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 6C
+	   61 73 74 49 6E
+	   64 65 78 4F 66
+	   5F 32 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 0000037A 2A 20 3C 31 38	strString_lastIndex3  BYTE "* <18> String_lastIndexOf_3               ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 6C
+	   61 73 74 49 6E
+	   64 65 78 4F 66
+	   5F 33 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000003A5 2A 20 3C 31 39	strString_concate     BYTE "* <19> String_concate                     ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 63
+	   6F 6E 63 61 74
+	   65 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000003D0 2A 20 3C 32 30	strString_replace     BYTE "* <20> String_replace                     ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 72
+	   65 70 6C 61 63
+	   65 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 000003FB 2A 20 3C 32 31	strString_toLower     BYTE "* <21> String_toLowerCase                 ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 74
+	   6F 4C 6F 77 65
+	   72 43 61 73 65
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 00000426 2A 20 3C 32 32	strString_toUpper     BYTE "* <22> String_toUpperCase                 ",0
+	   3E 20 53 74 72
+	   69 6E 67 5F 74
+	   6F 55 70 70 65
+	   72 43 61 73 65
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 00
+ 00000451 2A 20 3C 32 33	strQuit               BYTE "* <23> Quit                                       *",10,
+	   3E 20 51 75 69
+	   74 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   20 20 20 20 20
+	   2A 0A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 2A 2A
+	   2A 2A 2A 00
+				                           "***************************************************",0
+
+ 000004B9 43 68 6F 69 63	strUserPrompt         BYTE "Choice (1-23): ",0
+	   65 20 28 31 2D
+	   32 33 29 3A 20
+	   00
+ 000004C9  00000002 [		bUserChoice           BYTE 2 DUP(?)
+	    00
+	   ]
+
+ 000004CB 45 6E 74 65 72	strString1Prompt      BYTE "Enter String 1: ",0
+	   20 53 74 72 69
+	   6E 67 20 31 3A
+	   20 00
+ 000004DC 45 6E 74 65 72	strString2Prompt      BYTE "Enter String 2: ",0
+	   20 53 74 72 69
+	   6E 67 20 32 3A
+	   20 00
+ 000004ED 43 68 6F 6F 73	strStringLengthPrompt BYTE "Choose a string to get the length of ( 1 or 2 ): ",0
+	   65 20 61 20 73
+	   74 72 69 6E 67
+	   20 74 6F 20 67
+	   65 74 20 74 68
+	   65 20 6C 65 6E
+	   67 74 68 20 6F
+	   66 20 28 20 31
+	   20 6F 72 20 32
+	   20 29 3A 20 00
+ 0000051F 45 6E 74 65 72	strSubstringFirst     BYTE "Enter the beggining index: ",0
+	   20 74 68 65 20
+	   62 65 67 67 69
+	   6E 69 6E 67 20
+	   69 6E 64 65 78
+	   3A 20 00
+ 0000053B 45 6E 74 65 72	strSubstringLast      BYte "Enter the last index: ",0
+	   20 74 68 65 20
+	   6C 61 73 74 20
+	   69 6E 64 65 78
+	   3A 20 00
+ 00000552 45 6E 74 65 72	strIndexPrompt        BYTE "Enter an index within string 1: ",0
+	   20 61 6E 20 69
+	   6E 64 65 78 20
+	   77 69 74 68 69
+	   6E 20 73 74 72
+	   69 6E 67 20 31
+	   3A 20 00
+ 00000573 45 6E 74 65 72	strOffsetPrompt       BYTE "Enter the offset: ",0
+	   20 74 68 65 20
+	   6F 66 66 73 65
+	   74 3A 20 00
+
+ 00000586 63 75 72 72 65	strCurrently BYTE "currently:",0
+	   6E 74 6C 79 3A
+	   00
+
+ 00000591 4E 55 4C 4C		strUserString1 BYTE "NULL", 21 DUP(?)
+	   00000015 [
+	    00
+	   ]
+ 000005AA 4E 55 4C 4C		strUserString2 BYTE "NULL", 21 DUP(?)
+	   00000015 [
+	    00
+	   ]
+ 000005C3 4E 55 4C 4C		strCopyString  BYTE "NULL", 21 DUP(?)
+	   00000015 [
+	    00
+	   ]
+ 000005DC 4E 55 4C 4C		strSubstring1  BYTE "NULL", 21 DUP(?)
+	   00000015 [
+	    00
+	   ]
+ 000005F5 4E 55 4C 4C 00	strSubstring2  BYTE "NULL",0
+ 000005FA 00			strCharAt      BYTE ?
+ 000005FB 4E 55 4C 4C 00	strNull        BYTE "NULL",0
+
+ 00000600 30 00			strStringLength BYTE "0",0
+ 00000602 00			bOffset         BYTE ?
+
+ 00000603 00			bEqualsTF       BYTE 0
+ 00000604 00			bEqualsIgnoreTF BYTE 0
+ 00000605 00			bStartsWith1TF  BYTE 0
+ 00000606 00			bStartsWith2TF  BYTE 0
+ 00000607 00			bEndsWithTF     BYTE 0
+ 00000608 54 52 55 45 00	strTrue         BYTE "TRUE",0
+ 0000060D 46 41 4C 53 45	strFalse        BYTE "FALSE",0
+	   00
+
+ 00000613 00000000		dCopyHex       DWORD 00000000h
+ 00000617 00000000		dSubStringHex1 DWORD 00000000h
+ 0000061B 00000000		dSubStringHex2 DWORD 00000000h
+
+ 0000061F 0A 00			strReturn BYTE 10,0     ;Used for cleaning up the output into the console
+				    
+ 00000000			    .code
+
+				;***********************************************************************************************
+				; Name: main
+				;
+				; Purpose:
+				;   The purpose of the main is to execute a continuous menu that can take in mutiple inputs 
+				;   until the user descided to quit. The main will change the color of the console text.
+				;   It will then take in user input and determine the selection and call the appropriate string
+				;   modifier. 
+				;***********************************************************************************************
+ 00000000			main PROC   
+				    ;Sets the color of the console to green
+ 00000000  B8 00000002		    MOV EAX, green
+ 00000005  E8 00000000 E	    call SetTextColor
+
+ 0000000A			driver: 
+ 0000000A  E8 00000000 E	    call Clrscr                     ;Clears the console screen
+ 0000000F  E8 00000286		    call DisplayDriver              ;Display the driver menu
+
+ 00000014			promptSelection:
+
+				    ;Will Prompt the user to chose a number 1-23 and will jump the requested string function
+ 00000014  83 F8 01		    cmp EAX, 1
+ 00000017  74 6C		    je setString1
+
+ 00000019  83 F8 02		    cmp EAX, 2
+ 0000001C  0F 84 00000083	    je setString2
+
+ 00000022  83 F8 03		    cmp EAX, 3
+ 00000025  0F 84 0000009A	    je stringLength
+
+ 0000002B  83 F8 04		    cmp EAX, 4
+ 0000002E  0F 84 000000E1	    je stringEquals
+
+ 00000034  83 F8 05		    cmp EAX, 5
+ 00000037  0F 84 000000F1	    je stringEqualsIgnore
+
+ 0000003D  83 F8 06		    cmp EAX, 6
+ 00000040  0F 84 00000101	    je stringCopy
+
+ 00000046  83 F8 07		    cmp EAX, 7
+ 00000049  0F 84 0000010C	    je substring1
+
+ 0000004F  83 F8 08		    cmp EAX, 8
+ 00000052  0F 84 00000165	    je substring2
+
+ 00000058  83 F8 09		    cmp EAX, 9
+ 0000005B  0F 84 00000191	    je stringCharAt
+
+ 00000061  83 F8 0A		    cmp EAX, 10
+ 00000064  0F 84 000001BD	    je stringStartsWith1
+
+ 0000006A  83 F8 0B		    cmp EAX, 11
+ 0000006D  0F 84 000001EE	    je stringStartsWith2
+
+ 00000073  83 F8 0C		    cmp EAX, 12
+ 00000076  0F 84 000001FE	    je stringEndsWith
+
+ 0000007C  83 F8 17		    cmp EAX, 23
+ 0000007F  0F 84 0000020E	    je quit
+
+				;-/-/
+ 00000085			setString1:
+ 00000085  E8 00000000 E	    call Clrscr                                 ;Clears the console screen
+				    INVOKE putstring, ADDR strString1Prompt     ;Prompt the user for the first string
+				    INVOKE getstring, ADDR strUserString1, 25   ;Reads in the users input
+				    
+ 000000A0  E9 FFFFFF65		    jmp driver                                  ;Redisplays the driver menu
+
+				;-/-/
+ 000000A5			setString2:
+ 000000A5  E8 00000000 E	    call Clrscr                                 ;Clears the console screen
+				    INVOKE putstring, ADDR strString2Prompt     ;Prompt the user for the second string
+				    INVOKE getstring, ADDR strUserString2, 25   ;Reads in the users input
+				    
+ 000000C0  E9 FFFFFF45		    jmp driver                                  ;Redisplays the driver menu
+
+				;-/-/
+ 000000C5			stringLength:
+ 000000C5  E8 00000000 E	    call Clrscr                                 ;Clears the console screen
+				    INVOKE putstring, ADDR strStringLengthPrompt;Prompts the user the select a string for the length
+				    INVOKE getstring, ADDR bUserChoice, 1       ;Reads in the users input
+				    INVOKE ascint32, ADDR bUserChoice           ;Converts the users input to an integer
+
+				    ;Checks to see what string the user wants to look at
+ 000000EA  83 F8 01		    cmp EAX, 1
+ 000000ED  74 05		    je length1
+ 000000EF  83 F8 02		    cmp EAX, 2
+ 000000F2  74 07		    je length2
+
+ 000000F4			length1:
+ 000000F4  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string1 onto the stack
+ 000000F9  EB 05		    jmp getLength                               
+				    
+ 000000FB			length2:
+ 000000FB  68 000005AA R	    push OFFSET strUserString2                  ;Pushes the contents of string2 onto the stack
+
+ 00000100			getLength:
+ 00000100  E8 00000000 E	    call String_Length                          ;Calls the string length function in the external file
+				    INVOKE intasc32, ADDR strStringLength, EAX  ;Converts the integer to an ascii character
+				    
+ 00000110  E9 FFFFFEF5		    jmp driver
+
+				;-/-/
+ 00000115			stringEquals:
+ 00000115  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string1 onto the stack
+ 0000011A  68 000005AA R	    push OFFSET strUserString2                  ;Pushes the contents of string2 onto the stack
+ 0000011F  E8 00000000 E	    call String_Equals                          ;Calls the string equals function in the external file
+ 00000124  A2 00000603 R	    MOV bEqualsTF, AL                           ;Saves the result of string equals into a variable
+				    
+ 00000129  E9 FFFFFEDC		    jmp driver
+
+				;-/-/
+ 0000012E			stringEqualsIgnore:
+ 0000012E  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string1 onto the stack
+ 00000133  68 000005AA R	    push OFFSET strUserString2                  ;Pushes the contents of string2 onto the stack
+ 00000138  E8 00000000 E	    call String_EqualsIC                        ;Calls the string equals ignore case function in the external file
+ 0000013D  A2 00000604 R	    MOV bEqualsIgnoreTF, AL                     ;Saves the result of string equals ignore case into a variable
+				    
+ 00000142  E9 FFFFFEC3		    jmp driver
+
+				;-/-/ 
+ 00000147			stringCopy:
+ 00000147  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string2 onto the stack
+ 0000014C  E8 00000000 E	    call String_Copy                            ;Calls the string copy function in the external file
+ 00000151  A3 00000613 R	    MOV dCopyHex, EAX                           ;Saves the result of string copy hex address into a variable
+				    
+ 00000156  E9 FFFFFEAF		    jmp driver
+				    
+				;-/-/
+ 0000015B			substring1: 
+ 0000015B  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string1 onto the stack
+
+				    INVOKE putstring, ADDR strSubstringFirst    ;Prompts the user the select a the first index of the string
+				    INVOKE getstring, ADDR bUserChoice, 2       ;Reads in the users input
+				    INVOKE ascint32, ADDR bUserChoice           ;Converts the users input to an integer
+ 00000180  8B D8		    MOV EBX, EAX                                ;Saves EAX into EBX so that EAX will not be lost
+
+				    INVOKE putstring, ADDR strReturn            ;Prompts the user the select the last index of the string
+				    INVOKE putstring, ADDR strSubstringLast     ;Reads in the users input
+				    INVOKE getstring, ADDR bUserChoice, 2       ;Converts the users input to an integer
+				    INVOKE ascint32, ADDR bUserChoice
+				    
+ 000001AC  53			    push EBX                                    ;Pushes EBX onto the stack
+ 000001AD  50			    push EAX                                    ;Pushes EAX onto the stack
+ 000001AE  E8 00000000 E	    call String_Substring1                      ;Calls the substring function in the external file
+ 000001B3  A3 00000617 R	    MOV dSubStringHex1, EAX                     ;Saves the result of substring hex address into a variable
+
+ 000001B8  E9 FFFFFE4D		    jmp driver
+				    
+				;-/-/
+ 000001BD			substring2:
+ 000001BD  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string1 onto the stack
+
+				    INVOKE putstring, ADDR strSubstringFirst    ;Prompts the user the select a the first index of the string
+				    INVOKE getstring, ADDR bUserChoice, 2       ;Reads in the users input
+				    INVOKE ascint32, ADDR bUserChoice           ;Converts the users input to an integer                          
+				        
+ 000001E2  50			    push EAX                                    ;Pushes EAX onto the stack
+ 000001E3  E8 00000000 E	    call String_Substring2                      ;Calls the substring function in the external file
+ 000001E8  A3 0000061B R	    MOV dSubStringHex2, EAX                     ;Saves the result of substring hex address into a variable
+
+ 000001ED  E9 FFFFFE18		    jmp driver
+				    
+				;-/-/
+ 000001F2			stringCharAt:
+				    INVOKE putstring, ADDR strIndexPrompt       ;Prompts the user to choose an index to start at
+				    INVOKE getstring, ADDR bUserChoice, 2       ;Reads in the users input
+				    INVOKE ascint32,  ADDR bUserChoice          ;Converts the users input to an integer 
+
+ 00000212  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string 1 to the stack
+ 00000217  50			    push EAX                                    ;Puhses eax to the stack
+ 00000218  E8 00000000 E	    call String_CharAt                          ;Calls the char at function in the external file
+ 0000021D  A2 000005FA R	    MOV strCharAt, AL                           ;Saves the result of char at into a variable
+				    
+ 00000222  E9 FFFFFDE3		    jmp driver
+				    
+				;-/-/
+ 00000227			stringStartsWith1:
+				    INVOKE putstring, ADDR strOffsetPrompt      ;Prompts the user to set an offset 
+				    INVOKE getstring, ADDR bOffset, 2           ;Reads in the users input
+				    INVOKE ascint32, ADDR bOffset               ;Converts the users input to an integer 
+
+ 00000247  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string 1 to the stack
+ 0000024C  68 000005AA R	    push OFFSET strUserString2                  ;Pushes the contents of string 2 to the stack
+ 00000251  50			    push EAX                                    ;Pushes eax to the stack
+ 00000252  E8 00000000 E	    call String_StartsWith1                     ;Calls the starts with function in the external file
+ 00000257  A2 00000605 R	    MOV bStartsWith1TF, AL                      ;Saves the result of starts with into a variable
+				    
+ 0000025C  E9 FFFFFDA9		    jmp driver
+				    
+				;-/-/
+ 00000261			stringStartsWith2:
+ 00000261  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string 1 to the stack
+ 00000266  68 000005AA R	    push OFFSET strUserString2                  ;Pushes the contents of string 2 to the stack                  
+ 0000026B  E8 00000000 E	    call String_StartsWith2                     ;Calls the starts with function in the external file      
+ 00000270  A2 00000606 R	    MOV bStartsWith2TF, AL                      ;Saves the result of starts with into a variable
+				    
+ 00000275  E9 FFFFFD90		    jmp driver
+				    
+				;-/-/
+ 0000027A			stringEndsWith:
+ 0000027A  68 00000591 R	    push OFFSET strUserString1                  ;Pushes the contents of string 1 to the stack
+ 0000027F  68 000005AA R	    push OFFSET strUserString2                  ;Pushes the contents of string 2 to the stack 
+ 00000284  E8 00000000 E	    call String_EndsWith                        ;Calls the starts with function in the external file 
+ 00000289  A2 00000607 R	    MOV bEndsWithTF, AL                         ;;Saves the result of ends with into a variable
+
+ 0000028E  E9 FFFFFD77		    jmp driver
+				    
+				;-/-/
+ 00000293			quit:
+				      INVOKE ExitProcess, 0   ;Exit command
+
+ 0000029A			main ENDP
+
+				;***********************************************************************************************
+				; Name: DisplayDriver
+				;
+				; Purpose:
+				;   The display driver will display the driver menu to the console window. It will be able
+				;   to update itself so that the most accurate info in provied on the console screen.
+				;***********************************************************************************************
+ 0000029A			DisplayDriver PROC
+
+				    INVOKE putstring, ADDR strDriverHeader      ;Prints the top of the driver
+
+				;--Set String 1 - 1
+				    INVOKE putstring, ADDR strSetString1
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strUserString1
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--Set String 2 - 2
+				    INVOKE putstring, ADDR strSetString2
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strUserString2
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String Length - 3
+				    INVOKE putstring, ADDR strString_length
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strStringLength
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String equals
+				    INVOKE putstring, ADDR strString_equals
+				    INVOKE putstring, ADDR strCurrently
+ 00000330  E8 00000265		    call EqualsTF
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String equals ignoring the case
+				    INVOKE putstring, ADDR strString_equalsIgn
+				    INVOKE putstring, ADDR strCurrently
+ 00000353  E8 00000268		    call EqualsIgnoringTF
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String copy
+				    INVOKE putstring, ADDR strString_copy
+ 0000036C  E8 00000275		    call CopyHex
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String substring 1
+				    INVOKE putstring, ADDR strString_substring1
+ 00000385  E8 0000029C		    call SubStringHex1
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String substring 2
+				    INVOKE putstring, ADDR strString_substring2
+ 0000039E  E8 000002C3		    call SubStringHex2
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String char at
+				    INVOKE putstring, ADDR strString_charAt
+ 000003B7  E8 000002EA		    call CharAt
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String starts with 1
+				    INVOKE putstring, ADDR strString_startsWith1
+				    INVOKE putstring, ADDR strCurrently
+ 000003DA  E8 000002F1		    call StartsWith1TF
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String starts with 2
+				    INVOKE putstring, ADDR strString_startsWith2
+				    INVOKE putstring, ADDR strCurrently
+ 000003FD  E8 000002F4		    call StartsWith2TF
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;--String ends with
+				    INVOKE putstring, ADDR strString_endsWith
+				    INVOKE putstring, ADDR strCurrently
+ 00000420  E8 000002F7		    call EndsWithTF
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String index of 1
+				    INVOKE putstring, ADDR strString_indexOf1
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String index of 2
+				    INVOKE putstring, ADDR strString_indexOf2
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String index of 3
+				    INVOKE putstring, ADDR strString_indexOf3
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String last index of 1
+				    INVOKE putstring, ADDR strString_lastIndex1
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String last index of 2
+				    INVOKE putstring, ADDR strString_lastIndex2
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String last index of 3
+				    INVOKE putstring, ADDR strString_lastIndex3
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String concate
+				    INVOKE putstring, ADDR strString_concate
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String replace
+				    INVOKE putstring, ADDR strString_replace
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String to lower case
+				    INVOKE putstring, ADDR strString_toLower
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;String to upper case - 22
+				    INVOKE putstring, ADDR strString_toUpper
+				    INVOKE putstring, ADDR strCurrently
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+
+				;Quits program - 23
+				    INVOKE putstring, ADDR strQuit
+				    INVOKE putstring, ADDR strReturn            ;Prints a newline
+				    
+ 0000056F			DisplayDriver ENDP
+
+
+				;***********************************************************************************************
+				; Name: UserChoicePrompt
+				;
+				; Purpose:
+				;   Will prompt the user to select their choice and will save the variable for main to use
+				;***********************************************************************************************
+ 0000056F			UserChoicePrompt PROC
+				    INVOKE putstring, ADDR strUserPrompt
+				    INVOKE getstring, ADDR bUserChoice, 2
+				    INVOKE putstring, ADDR strReturn
+				    
+				    INVOKE ascint32, ADDR bUserChoice
+ 00000599  C3			    ret
+ 0000059A			UserChoicePrompt ENDP
+
+
+				;***********************************************************************************************
+				; Name: EqualsTF
+				;
+				; Purpose:
+				;   Will take in the current value in equals and will determine if it means true or false and
+				;   will output the correct statement on the driver.
+				;***********************************************************************************************
+ 0000059A			EqualsTF PROC
+				    
+ 0000059A  8A 15 00000603 R	    MOV DL, bEqualsTF
+ 000005A0  80 FA 00		    cmp DL, 0
+ 000005A3  74 05		    je false1
+ 000005A5  80 FA 01		    cmp DL, 1
+ 000005A8  74 0B		    je true1
+				    
+ 000005AA			false1:
+				    INVOKE putstring, ADDR strFalse
+ 000005B4  C3			    ret
+
+ 000005B5			true1:
+				    INVOKE putstring, ADDR strTrue
+ 000005BF  C3			    ret
+
+ 000005C0			EqualsTF ENDP
+
+
+				;***********************************************************************************************
+				; Name: EqualsIgnoringTF
+				;
+				; Purpose:
+				;   Will take in the current value in equals and will determine if it means true or false and
+				;   will output the correct statement on the driver.
+				;***********************************************************************************************
+ 000005C0			EqualsIgnoringTF PROC
+				    
+ 000005C0  8A 15 00000604 R	    MOV DL, bEqualsIgnoreTF
+ 000005C6  80 FA 00		    cmp DL, 0
+ 000005C9  74 05		    je false2
+ 000005CB  80 FA 01		    cmp DL, 1
+ 000005CE  74 0B		    je true2
+				    
+ 000005D0			false2:
+				    INVOKE putstring, ADDR strFalse
+ 000005DA  C3			    ret
+
+ 000005DB			true2:
+				    INVOKE putstring, ADDR strTrue
+ 000005E5  C3			    ret
+
+ 000005E6			EqualsIgnoringTF ENDP
+
+
+				;***********************************************************************************************
+				; Name: CopyHex
+				;
+				; Purpose:
+				;   Will determine the hex value for the copy and will output that to the driver. Also will
+				;   output the current string that is copied.
+				;***********************************************************************************************
+ 000005E6			CopyHex PROC
+				    INVOKE putch, '&'
+ 000005ED  A1 00000613 R	    MOV EAX, dCopyHex
+ 000005F2  E8 00000000 E	    call WriteHex
+				    INVOKE putch, ' '
+				    INVOKE putch, ' '
+				    INVOKE putstring, ADDR strCurrently
+				    
+ 0000060F  83 F8 00		    cmp EAX,0
+ 00000612  75 0B		    JNE print
+				    
+				    INVOKE putstring, ADDR strCopyString
+ 0000061E  C3			    ret
+
+ 0000061F			print:
+				    INVOKE putstring, EAX
+				    
+ 00000625  C3			    ret
+
+ 00000626			CopyHex ENDP
+
+
+				;***********************************************************************************************
+				; Name: SubstringHex1
+				;
+				; Purpose:
+				;   Will determine the hex value for the substring and will output that to the driver. Also will
+				;   output the result of the substring
+				;***********************************************************************************************
+ 00000626			SubstringHex1 PROC
+				    INVOKE putch, '&'
+ 0000062D  A1 00000617 R	    MOV EAX, dSubStringHex1
+ 00000632  E8 00000000 E	    call WriteHex
+				    INVOKE putch, ' '
+				    INVOKE putch, ' '
+				    INVOKE putstring, ADDR strCurrently
+
+ 0000064F  83 F8 00		    cmp EAX, 0
+ 00000652  75 0B		    jne output
+				    
+				    INVOKE putstring, ADDR strSubstring1
+ 0000065E  C3			    ret
+
+ 0000065F			output:
+				    INVOKE putstring, EAX
+
+ 00000665  C3			    ret
+
+ 00000666			SubstringHex1 ENDP
+
+
+				;***********************************************************************************************
+				; Name: SubstringHex2
+				;
+				; Purpose:
+				;   Will determine the hex value for the substring and will output that to the driver. Also will
+				;   output the result of the substring
+				;***********************************************************************************************
+ 00000666			SubstringHex2 PROC
+				    INVOKE putch, '&'
+ 0000066D  A1 0000061B R	    MOV EAX, dSubStringHex2
+ 00000672  E8 00000000 E	    call WriteHex
+				    INVOKE putch, ' '
+				    INVOKE putch, ' '
+				    INVOKE putstring, ADDR strCurrently
+
+ 0000068F  83 F8 00		    cmp EAX, 0
+ 00000692  75 0B		    jne output2
+				    
+				    INVOKE putstring, ADDR strSubstring2
+
+ 0000069E  C3			    ret
+
+ 0000069F			output2:
+				    INVOKE putstring, EAX
+ 000006A5  C3			    ret
+				    
+ 000006A6			SubstringHex2 ENDP
+
+
+				;***********************************************************************************************
+				; Name: CharAt
+				;
+				; Purpose:
+				;   Will determine the char at the specfic location in the string and output the character unless
+				;   it is null, then it will output null
+				;***********************************************************************************************
+ 000006A6			CharAt PROC
+				    INVOKE putstring, ADDR strCurrently
+ 000006B0  A0 000005FA R	    MOV AL, strCharAt
+ 000006B5  3C 00		    cmp AL, 0
+ 000006B7  74 0C		    je setNull
+
+				    INVOKE putch, strCharAt
+ 000006C4  C3			    ret
+
+ 000006C5			setNull: 
+				    INVOKE putstring, ADDR strNull
+ 000006CF  C3			    ret
+
+ 000006D0			CharAt ENDP
+
+
+				;***********************************************************************************************
+				; Name: StartsWith1TF
+				;
+				; Purpose:
+				;   Will take in the current value in startsWith and will determine if it means true or false and
+				;   will output the correct statement on the driver.
+				;***********************************************************************************************
+ 000006D0			StartsWith1TF PROC
+				    
+ 000006D0  8A 15 00000605 R	    MOV DL, bStartsWith1TF
+ 000006D6  80 FA 00		    cmp DL, 0
+ 000006D9  74 05		    je false3
+ 000006DB  80 FA 01		    cmp DL, 1
+ 000006DE  74 0B		    je true3
+				    
+ 000006E0			false3:
+				    INVOKE putstring, ADDR strFalse
+ 000006EA  C3			    ret
+
+ 000006EB			true3:
+				    INVOKE putstring, ADDR strTrue
+ 000006F5  C3			    ret
+
+ 000006F6			StartsWith1TF ENDP
+
+
+				;***********************************************************************************************
+				; Name: StartsWith2TF
+				;
+				; Purpose:
+				;   Will take in the current value in startsWith and will determine if it means true or false and
+				;   will output the correct statement on the driver.
+				;***********************************************************************************************
+ 000006F6			StartsWith2TF PROC
+				    
+ 000006F6  8A 15 00000606 R	    MOV DL, bStartsWith2TF
+ 000006FC  80 FA 00		    cmp DL, 0
+ 000006FF  74 05		    je false4
+ 00000701  80 FA 01		    cmp DL, 1
+ 00000704  74 0B		    je true4
+				    
+ 00000706			false4:
+				    INVOKE putstring, ADDR strFalse
+ 00000710  C3			    ret
+
+ 00000711			true4:
+				    INVOKE putstring, ADDR strTrue
+ 0000071B  C3			    ret
+
+ 0000071C			StartsWith2TF ENDP
+
+
+				;***********************************************************************************************
+				; Name: EndsWithTF
+				;
+				; Purpose:
+				;   Will determine if the ends with is a true or false that will be displayed in the driver menu
+				;***********************************************************************************************
+ 0000071C			EndsWithTF PROC
+				    
+ 0000071C  8A 15 00000607 R	    MOV DL, bEndsWithTF
+ 00000722  80 FA 00		    cmp DL, 0
+ 00000725  74 05		    je false5
+ 00000727  80 FA 01		    cmp DL, 1
+ 0000072A  74 0B		    je true5
+				    
+ 0000072C			false5:
+				    INVOKE putstring, ADDR strFalse
+ 00000736  C3			    ret
+
+ 00000737			true5:
+				    INVOKE putstring, ADDR strTrue
+ 00000741  C3			    ret
+
+ 00000742			EndsWithTF ENDP
+
+				END main
+Microsoft (R) Macro Assembler Version 6.14.8444		    05/10/18 14:51:39
+masm3.asm						     Symbols 2 - 1
+
+
+
+
+Structures and Unions:
+
+                N a m e                  Size
+                                         Offset      Type
+
+CONSOLE_CURSOR_INFO  . . . . . .	 00000008
+  dwSize . . . . . . . . . . . .	 00000000	 DWord
+  bVisible . . . . . . . . . . .	 00000004	 DWord
+CONSOLE_SCREEN_BUFFER_INFO . . .	 00000016
+  dwSize . . . . . . . . . . . .	 00000000	 DWord
+  dwCursorPosition . . . . . . .	 00000004	 DWord
+  wAttributes  . . . . . . . . .	 00000008	 Word
+  srWindow . . . . . . . . . . .	 0000000A	 QWord
+  dwMaximumWindowSize  . . . . .	 00000012	 DWord
+COORD  . . . . . . . . . . . . .	 00000004
+  X  . . . . . . . . . . . . . .	 00000000	 Word
+  Y  . . . . . . . . . . . . . .	 00000002	 Word
+FILETIME . . . . . . . . . . . .	 00000008
+  loDateTime . . . . . . . . . .	 00000000	 DWord
+  hiDateTime . . . . . . . . . .	 00000004	 DWord
+FOCUS_EVENT_RECORD . . . . . . .	 00000004
+  bSetFocus  . . . . . . . . . .	 00000000	 DWord
+FPU_ENVIRON  . . . . . . . . . .	 0000001C
+  controlWord  . . . . . . . . .	 00000000	 Word
+  statusWord . . . . . . . . . .	 00000004	 Word
+  tagWord  . . . . . . . . . . .	 00000008	 Word
+  instrPointerOffset . . . . . .	 0000000C	 DWord
+  instrPointerSelector . . . . .	 00000010	 DWord
+  operandPointerOffset . . . . .	 00000014	 DWord
+  operandPointerSelector . . . .	 00000018	 Word
+INPUT_RECORD . . . . . . . . . .	 00000014
+  EventType  . . . . . . . . . .	 00000000	 Word
+  Event  . . . . . . . . . . . .	 00000004	  00000010
+  bKeyDown . . . . . . . . . . .	 00000000	 DWord
+  wRepeatCount . . . . . . . . .	 00000004	 Word
+  wVirtualKeyCode  . . . . . . .	 00000006	 Word
+  wVirtualScanCode . . . . . . .	 00000008	 Word
+  uChar  . . . . . . . . . . . .	 0000000A	 Word
+  UnicodeChar  . . . . . . . . .	 00000000	 Word
+  AsciiChar  . . . . . . . . . .	 00000000	 Byte
+  dwControlKeyState  . . . . . .	 0000000C	 DWord
+  dwMousePosition  . . . . . . .	 00000000	 DWord
+  dwButtonState  . . . . . . . .	 00000004	 DWord
+  dwMouseControlKeyState . . . .	 00000008	 DWord
+  dwEventFlags . . . . . . . . .	 0000000C	 DWord
+  dwSize . . . . . . . . . . . .	 00000000	 DWord
+  dwCommandId  . . . . . . . . .	 00000000	 DWord
+  bSetFocus  . . . . . . . . . .	 00000000	 DWord
+KEY_EVENT_RECORD . . . . . . . .	 00000010
+  bKeyDown . . . . . . . . . . .	 00000000	 DWord
+  wRepeatCount . . . . . . . . .	 00000004	 Word
+  wVirtualKeyCode  . . . . . . .	 00000006	 Word
+  wVirtualScanCode . . . . . . .	 00000008	 Word
+  uChar  . . . . . . . . . . . .	 0000000A	 Word
+  UnicodeChar  . . . . . . . . .	 00000000	 Word
+  AsciiChar  . . . . . . . . . .	 00000000	 Byte
+  dwControlKeyState  . . . . . .	 0000000C	 DWord
+MENU_EVENT_RECORD  . . . . . . .	 00000004
+  dwCommandId  . . . . . . . . .	 00000000	 DWord
+MOUSE_EVENT_RECORD . . . . . . .	 00000010
+  dwMousePosition  . . . . . . .	 00000000	 DWord
+  dwButtonState  . . . . . . . .	 00000004	 DWord
+  dwMouseControlKeyState . . . .	 00000008	 DWord
+  dwEventFlags . . . . . . . . .	 0000000C	 DWord
+SMALL_RECT . . . . . . . . . . .	 00000008
+  Left . . . . . . . . . . . . .	 00000000	 Word
+  Top  . . . . . . . . . . . . .	 00000002	 Word
+  Right  . . . . . . . . . . . .	 00000004	 Word
+  Bottom . . . . . . . . . . . .	 00000006	 Word
+SYSTEMTIME . . . . . . . . . . .	 00000010
+  wYear  . . . . . . . . . . . .	 00000000	 Word
+  wMonth . . . . . . . . . . . .	 00000002	 Word
+  wDayOfWeek . . . . . . . . . .	 00000004	 Word
+  wDay . . . . . . . . . . . . .	 00000006	 Word
+  wHour  . . . . . . . . . . . .	 00000008	 Word
+  wMinute  . . . . . . . . . . .	 0000000A	 Word
+  wSecond  . . . . . . . . . . .	 0000000C	 Word
+  wMilliseconds  . . . . . . . .	 0000000E	 Word
+WINDOW_BUFFER_SIZE_RECORD  . . .	 00000004
+  dwSize . . . . . . . . . . . .	 00000000	 DWord
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 Para	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000621 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000742 Para	  Public  'CODE'	
+
+
+Procedures,  parameters and locals:
+
+                N a m e                 Type     Value    Attr
+
+CharAt . . . . . . . . . . . . .	P Near	 000006A6 _TEXT	Length= 0000002A Public STDCALL
+  setNull  . . . . . . . . . . .	L Near	 000006C5 _TEXT	
+CloseFile  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+CloseHandle  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Clrscr . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+CopyHex  . . . . . . . . . . . .	P Near	 000005E6 _TEXT	Length= 00000040 Public STDCALL
+  print  . . . . . . . . . . . .	L Near	 0000061F _TEXT	
+CreateFileA  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+CreateOutputFile . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Crlf . . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Delay  . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+DisplayDriver  . . . . . . . . .	P Near	 0000029A _TEXT	Length= 000002D5 Public STDCALL
+DumpMem  . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+DumpRegs . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+EndsWithTF . . . . . . . . . . .	P Near	 0000071C _TEXT	Length= 00000026 Public STDCALL
+  false5 . . . . . . . . . . . .	L Near	 0000072C _TEXT	
+  true5  . . . . . . . . . . . .	L Near	 00000737 _TEXT	
+EqualsIgnoringTF . . . . . . . .	P Near	 000005C0 _TEXT	Length= 00000026 Public STDCALL
+  false2 . . . . . . . . . . . .	L Near	 000005D0 _TEXT	
+  true2  . . . . . . . . . . . .	L Near	 000005DB _TEXT	
+EqualsTF . . . . . . . . . . . .	P Near	 0000059A _TEXT	Length= 00000026 Public STDCALL
+  false1 . . . . . . . . . . . .	L Near	 000005AA _TEXT	
+  true1  . . . . . . . . . . . .	L Near	 000005B5 _TEXT	
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+FileTimeToDosDateTime  . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+FileTimeToSystemTime . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+FlushConsoleInputBuffer  . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+FormatMessageA . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetCommandLineA  . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetCommandTail . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetConsoleCP . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetConsoleCursorInfo . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetConsoleMode . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetConsoleScreenBufferInfo . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetDateTime  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetFileTime  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetKeyState  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetLastError . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetLocalTime . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetMaxXY . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetMseconds  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetNumberOfConsoleInputEvents  .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetProcessHeap . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetStdHandle . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetSystemTime  . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetTextColor . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetTickCount . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Gotoxy . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+HeapAlloc  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+HeapCreate . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+HeapDestroy  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+HeapFree . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+HeapSize . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+IsDigit  . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+LocalFree  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+MessageBoxA  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+MsgBoxAsk  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+MsgBox . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+OpenInputFile  . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ParseDecimal32 . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ParseInteger32 . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+PeekConsoleInputA  . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Random32 . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+RandomRange  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Randomize  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadChar . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadConsoleA . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadConsoleInputA  . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadDec  . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadFile . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadFloat  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadFromFile . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadHex  . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadInt  . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadKeyFlush . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadKey  . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ReadString . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetConsoleCursorInfo . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetConsoleCursorPosition . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetConsoleMode . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetConsoleScreenBufferSize . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetConsoleTextAttribute  . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetConsoleTitleA . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetConsoleWindowInfo . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetFilePointer . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetLocalTime . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SetTextColor . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ShowFPUStack . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Sleep  . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+StartsWith1TF  . . . . . . . . .	P Near	 000006D0 _TEXT	Length= 00000026 Public STDCALL
+  false3 . . . . . . . . . . . .	L Near	 000006E0 _TEXT	
+  true3  . . . . . . . . . . . .	L Near	 000006EB _TEXT	
+StartsWith2TF  . . . . . . . . .	P Near	 000006F6 _TEXT	Length= 00000026 Public STDCALL
+  false4 . . . . . . . . . . . .	L Near	 00000706 _TEXT	
+  true4  . . . . . . . . . . . .	L Near	 00000711 _TEXT	
+StrLength  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Str_compare  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Str_copy . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Str_length . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Str_trim . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+Str_ucase  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+SubstringHex1  . . . . . . . . .	P Near	 00000626 _TEXT	Length= 00000040 Public STDCALL
+  output . . . . . . . . . . . .	L Near	 0000065F _TEXT	
+SubstringHex2  . . . . . . . . .	P Near	 00000666 _TEXT	Length= 00000040 Public STDCALL
+  output2  . . . . . . . . . . .	L Near	 0000069F _TEXT	
+SystemTimeToFileTime . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+UserChoicePrompt . . . . . . . .	P Near	 0000056F _TEXT	Length= 0000002B Public STDCALL
+WaitMsg  . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteBinB  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteBin . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteChar  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteConsoleA  . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteConsoleOutputAttribute  . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteConsoleOutputCharacterA . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteDec . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteFile  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteFloat . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteHexB  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteHex . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteInt . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteStackFrameName  . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteStackFrame  . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteString  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteToFile  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteWindowsMsg  . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+ascint32 . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+getstring  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+hexToChar  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+intasc32 . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+main . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000029A Public STDCALL
+  driver . . . . . . . . . . . .	L Near	 0000000A _TEXT	
+  promptSelection  . . . . . . .	L Near	 00000014 _TEXT	
+  setString1 . . . . . . . . . .	L Near	 00000085 _TEXT	
+  setString2 . . . . . . . . . .	L Near	 000000A5 _TEXT	
+  stringLength . . . . . . . . .	L Near	 000000C5 _TEXT	
+  length1  . . . . . . . . . . .	L Near	 000000F4 _TEXT	
+  length2  . . . . . . . . . . .	L Near	 000000FB _TEXT	
+  getLength  . . . . . . . . . .	L Near	 00000100 _TEXT	
+  stringEquals . . . . . . . . .	L Near	 00000115 _TEXT	
+  stringEqualsIgnore . . . . . .	L Near	 0000012E _TEXT	
+  stringCopy . . . . . . . . . .	L Near	 00000147 _TEXT	
+  substring1 . . . . . . . . . .	L Near	 0000015B _TEXT	
+  substring2 . . . . . . . . . .	L Near	 000001BD _TEXT	
+  stringCharAt . . . . . . . . .	L Near	 000001F2 _TEXT	
+  stringStartsWith1  . . . . . .	L Near	 00000227 _TEXT	
+  stringStartsWith2  . . . . . .	L Near	 00000261 _TEXT	
+  stringEndsWith . . . . . . . .	L Near	 0000027A _TEXT	
+  quit . . . . . . . . . . . . .	L Near	 00000293 _TEXT	
+printf . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
+putch  . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+putstring  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+scanf  . . . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
+wsprintfA  . . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External C
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+ALT_MASK . . . . . . . . . . . .	Number	 00000003h   
+CAPSLOCK_ON  . . . . . . . . . .	Number	 00000080h   
+CREATE_ALWAYS  . . . . . . . . .	Number	 00000002h   
+CREATE_NEW . . . . . . . . . . .	Number	 00000001h   
+CTRL_MASK  . . . . . . . . . . .	Number	 0000000Ch   
+CreateFile . . . . . . . . . . .	Text   	 CreateFileA
+DO_NOT_SHARE . . . . . . . . . .	Number	 00000000h   
+ENABLE_ECHO_INPUT  . . . . . . .	Number	 00000004h   
+ENABLE_LINE_INPUT  . . . . . . .	Number	 00000002h   
+ENABLE_MOUSE_INPUT . . . . . . .	Number	 00000010h   
+ENABLE_PROCESSED_INPUT . . . . .	Number	 00000001h   
+ENABLE_PROCESSED_OUTPUT  . . . .	Number	 00000001h   
+ENABLE_WINDOW_INPUT  . . . . . .	Number	 00000008h   
+ENABLE_WRAP_AT_EOL_OUTPUT  . . .	Number	 00000002h   
+ENHANCED_KEY . . . . . . . . . .	Number	 00000100h   
+FALSE  . . . . . . . . . . . . .	Number	 00000000h   
+FILE_APPEND_DATA . . . . . . . .	Number	 00000004h   
+FILE_ATTRIBUTE_ARCHIVE . . . . .	Number	 00000020h   
+FILE_ATTRIBUTE_COMPRESSED  . . .	Number	 00000800h   
+FILE_ATTRIBUTE_DEVICE  . . . . .	Number	 00000040h   
+FILE_ATTRIBUTE_DIRECTORY . . . .	Number	 00000010h   
+FILE_ATTRIBUTE_ENCRYPTED . . . .	Number	 00004000h   
+FILE_ATTRIBUTE_HIDDEN  . . . . .	Number	 00000002h   
+FILE_ATTRIBUTE_NORMAL  . . . . .	Number	 00000080h   
+FILE_ATTRIBUTE_NOT_CONTENT_INDEXED .	Number	 00002000h   
+FILE_ATTRIBUTE_OFFLINE . . . . .	Number	 00001000h   
+FILE_ATTRIBUTE_READONLY  . . . .	Number	 00000001h   
+FILE_ATTRIBUTE_REPARSE_POINT . .	Number	 00000400h   
+FILE_ATTRIBUTE_SPARSE_FILE . . .	Number	 00000200h   
+FILE_ATTRIBUTE_SYSTEM  . . . . .	Number	 00000004h   
+FILE_ATTRIBUTE_TEMPORARY . . . .	Number	 00000100h   
+FILE_BEGIN . . . . . . . . . . .	Number	 00000000h   
+FILE_CURRENT . . . . . . . . . .	Number	 00000001h   
+FILE_DELETE_CHILD  . . . . . . .	Number	 00000040h   
+FILE_END . . . . . . . . . . . .	Number	 00000002h   
+FILE_READ_DATA . . . . . . . . .	Number	 00000001h   
+FILE_SHARE_DELETE  . . . . . . .	Number	 00000004h   
+FILE_SHARE_READ  . . . . . . . .	Number	 00000001h   
+FILE_SHARE_WRITE . . . . . . . .	Number	 00000002h   
+FILE_WRITE_DATA  . . . . . . . .	Number	 00000002h   
+FOCUS_EVENT  . . . . . . . . . .	Number	 00000010h   
+FORMAT_MESSAGE_ALLOCATE_BUFFER .	Number	 00000100h   
+FORMAT_MESSAGE_FROM_SYSTEM . . .	Number	 00001000h   
+FormatMessage  . . . . . . . . .	Text   	 FormatMessageA
+GENERIC_ALL  . . . . . . . . . .	Number	 10000000h   
+GENERIC_EXECUTE  . . . . . . . .	Number	 20000000h   
+GENERIC_READ . . . . . . . . . .	Number	 -80000000h   
+GENERIC_WRITE  . . . . . . . . .	Number	 40000000h   
+GetCommandLine . . . . . . . . .	Text   	 GetCommandLineA
+HANDLE . . . . . . . . . . . . .	Text   	 DWORD
+HEAP_GENERATE_EXCEPTIONS . . . .	Number	 00000004h   
+HEAP_GROWABLE  . . . . . . . . .	Number	 00000002h   
+HEAP_NO_SERIALIZE  . . . . . . .	Number	 00000001h   
+HEAP_REALLOC_IN_PLACE_ONLY . . .	Number	 00000010h   
+HEAP_ZERO_MEMORY . . . . . . . .	Number	 00000008h   
+IDABORT  . . . . . . . . . . . .	Number	 00000003h   
+IDCANCEL . . . . . . . . . . . .	Number	 00000002h   
+IDCLOSE  . . . . . . . . . . . .	Number	 00000008h   
+IDCONTINUE . . . . . . . . . . .	Number	 0000000Bh   
+IDHELP . . . . . . . . . . . . .	Number	 00000009h   
+IDIGNORE . . . . . . . . . . . .	Number	 00000005h   
+IDNO . . . . . . . . . . . . . .	Number	 00000007h   
+IDOK . . . . . . . . . . . . . .	Number	 00000001h   
+IDRETRY  . . . . . . . . . . . .	Number	 00000004h   
+IDTIMEOUT  . . . . . . . . . . .	Number	 00007D00h   
+IDTRYAGAIN . . . . . . . . . . .	Number	 0000000Ah   
+IDYES  . . . . . . . . . . . . .	Number	 00000006h   
+INVALID_HANDLE_VALUE . . . . . .	Number	 -00000001h   
+KBDOWN_FLAG  . . . . . . . . . .	Number	 00000001h   
+KEY_EVENT  . . . . . . . . . . .	Number	 00000001h   
+KEY_MASKS  . . . . . . . . . . .	Number	 0000001Fh   
+LEFT_ALT_PRESSED . . . . . . . .	Number	 00000002h   
+LEFT_CTRL_PRESSED  . . . . . . .	Number	 00000008h   
+MB_ABORTRETRYIGNORE  . . . . . .	Number	 00000002h   
+MB_APPLMODAL . . . . . . . . . .	Number	 00000000h   
+MB_CANCELTRYCONTINUE . . . . . .	Number	 00000006h   
+MB_DEFBUTTON1  . . . . . . . . .	Number	 00000000h   
+MB_DEFBUTTON2  . . . . . . . . .	Number	 00000100h   
+MB_DEFBUTTON3  . . . . . . . . .	Number	 00000200h   
+MB_DEFBUTTON4  . . . . . . . . .	Number	 00000300h   
+MB_HELP  . . . . . . . . . . . .	Number	 00004000h   
+MB_ICONASTERISK  . . . . . . . .	Number	 00000040h   
+MB_ICONERROR . . . . . . . . . .	Number	 00000010h   
+MB_ICONEXCLAMATION . . . . . . .	Number	 00000030h   
+MB_ICONHAND  . . . . . . . . . .	Number	 00000010h   
+MB_ICONINFORMATION . . . . . . .	Number	 00000040h   
+MB_ICONQUESTION  . . . . . . . .	Number	 00000020h   
+MB_ICONSTOP  . . . . . . . . . .	Number	 00000010h   
+MB_ICONWARNING . . . . . . . . .	Number	 00000030h   
+MB_OKCANCEL  . . . . . . . . . .	Number	 00000001h   
+MB_OK  . . . . . . . . . . . . .	Number	 00000000h   
+MB_RETRYCANCEL . . . . . . . . .	Number	 00000005h   
+MB_SYSTEMMODAL . . . . . . . . .	Number	 00001000h   
+MB_TASKMODAL . . . . . . . . . .	Number	 00002000h   
+MB_USERICON  . . . . . . . . . .	Number	 00000080h   
+MB_YESNOCANCEL . . . . . . . . .	Number	 00000003h   
+MB_YESNO . . . . . . . . . . . .	Number	 00000004h   
+MENU_EVENT . . . . . . . . . . .	Number	 00000008h   
+MOUSE_EVENT  . . . . . . . . . .	Number	 00000002h   
+MessageBox . . . . . . . . . . .	Text   	 MessageBoxA
+NULL . . . . . . . . . . . . . .	Number	 00000000h   
+NUMLOCK_ON . . . . . . . . . . .	Number	 00000020h   
+OPEN_ALWAYS  . . . . . . . . . .	Number	 00000004h   
+OPEN_EXISTING  . . . . . . . . .	Number	 00000003h   
+PeekConsoleInput . . . . . . . .	Text   	 PeekConsoleInputA
+RIGHT_ALT_PRESSED  . . . . . . .	Number	 00000001h   
+RIGHT_CTRL_PRESSED . . . . . . .	Number	 00000004h   
+ReadConsoleInput . . . . . . . .	Text   	 ReadConsoleInputA
+ReadConsole  . . . . . . . . . .	Text   	 ReadConsoleA
+SCROLLLOCK_ON  . . . . . . . . .	Number	 00000040h   
+SHIFT_MASK . . . . . . . . . . .	Number	 00000010h   
+SHIFT_PRESSED  . . . . . . . . .	Number	 00000010h   
+STD_ERROR_HANDLE . . . . . . . .	Number	 -0000000Ch   
+STD_INPUT_HANDLE . . . . . . . .	Number	 -0000000Ah   
+STD_OUTPUT_HANDLE  . . . . . . .	Number	 -0000000Bh   
+SetConsoleTitle  . . . . . . . .	Text   	 SetConsoleTitleA
+String_CharAt@0  . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_CharAt  . . . . . . . . .	Text   	 String_CharAt@0
+String_Copy@0  . . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_Copy  . . . . . . . . . .	Text   	 String_Copy@0
+String_EndsWith@0  . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_EndsWith  . . . . . . . .	Text   	 String_EndsWith@0
+String_Equals@0  . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_EqualsIC  . . . . . . . .	Text   	 String_EqualsIgnoreCase@0
+String_EqualsIgnoreCase@0  . . .	L Near	 00000000 FLAT	External STDCALL
+String_Equals  . . . . . . . . .	Text   	 String_Equals@0
+String_Length@0  . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_Length  . . . . . . . . .	Text   	 String_Length@0
+String_StartsWith1@0 . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_StartsWith1 . . . . . . .	Text   	 String_StartsWith1@0
+String_StartsWith2@0 . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_StartsWith2 . . . . . . .	Text   	 String_StartsWith2@0
+String_Substring1@0  . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_Substring1  . . . . . . .	Text   	 String_Substring1@0
+String_Substring2@0  . . . . . .	L Near	 00000000 FLAT	External STDCALL
+String_Substring2  . . . . . . .	Text   	 String_SubString2@0
+TAB  . . . . . . . . . . . . . .	Number	 00000009h   
+TRUE . . . . . . . . . . . . . .	Number	 00000001h   
+TRUNCATE_EXISTING  . . . . . . .	Number	 00000005h   
+VK_11  . . . . . . . . . . . . .	Number	 000000BDh   
+VK_12  . . . . . . . . . . . . .	Number	 000000BBh   
+VK_ADD . . . . . . . . . . . . .	Number	 0000006Bh   
+VK_BACK  . . . . . . . . . . . .	Number	 00000008h   
+VK_CANCEL  . . . . . . . . . . .	Number	 00000003h   
+VK_CAPITAL . . . . . . . . . . .	Number	 00000014h   
+VK_CLEAR . . . . . . . . . . . .	Number	 0000000Ch   
+VK_CONTROL . . . . . . . . . . .	Number	 00000011h   
+VK_DECIMAL . . . . . . . . . . .	Number	 0000006Eh   
+VK_DELETE  . . . . . . . . . . .	Number	 0000002Eh   
+VK_DIVIDE  . . . . . . . . . . .	Number	 0000006Fh   
+VK_DOWN  . . . . . . . . . . . .	Number	 00000028h   
+VK_END . . . . . . . . . . . . .	Number	 00000023h   
+VK_ESCAPE  . . . . . . . . . . .	Number	 0000001Bh   
+VK_EXECUTE . . . . . . . . . . .	Number	 0000002Bh   
+VK_F10 . . . . . . . . . . . . .	Number	 00000079h   
+VK_F11 . . . . . . . . . . . . .	Number	 0000007Ah   
+VK_F12 . . . . . . . . . . . . .	Number	 0000007Bh   
+VK_F13 . . . . . . . . . . . . .	Number	 0000007Ch   
+VK_F14 . . . . . . . . . . . . .	Number	 0000007Dh   
+VK_F15 . . . . . . . . . . . . .	Number	 0000007Eh   
+VK_F16 . . . . . . . . . . . . .	Number	 0000007Fh   
+VK_F17 . . . . . . . . . . . . .	Number	 00000080h   
+VK_F18 . . . . . . . . . . . . .	Number	 00000081h   
+VK_F19 . . . . . . . . . . . . .	Number	 00000082h   
+VK_F1  . . . . . . . . . . . . .	Number	 00000070h   
+VK_F20 . . . . . . . . . . . . .	Number	 00000083h   
+VK_F21 . . . . . . . . . . . . .	Number	 00000084h   
+VK_F22 . . . . . . . . . . . . .	Number	 00000085h   
+VK_F23 . . . . . . . . . . . . .	Number	 00000086h   
+VK_F24 . . . . . . . . . . . . .	Number	 00000087h   
+VK_F2  . . . . . . . . . . . . .	Number	 00000071h   
+VK_F3  . . . . . . . . . . . . .	Number	 00000072h   
+VK_F4  . . . . . . . . . . . . .	Number	 00000073h   
+VK_F5  . . . . . . . . . . . . .	Number	 00000074h   
+VK_F6  . . . . . . . . . . . . .	Number	 00000075h   
+VK_F7  . . . . . . . . . . . . .	Number	 00000076h   
+VK_F8  . . . . . . . . . . . . .	Number	 00000077h   
+VK_F9  . . . . . . . . . . . . .	Number	 00000078h   
+VK_HELP  . . . . . . . . . . . .	Number	 0000002Fh   
+VK_HOME  . . . . . . . . . . . .	Number	 00000024h   
+VK_INSERT  . . . . . . . . . . .	Number	 0000002Dh   
+VK_LBUTTON . . . . . . . . . . .	Number	 00000001h   
+VK_LCONTROL  . . . . . . . . . .	Number	 000000A2h   
+VK_LEFT  . . . . . . . . . . . .	Number	 00000025h   
+VK_LMENU . . . . . . . . . . . .	Number	 000000A4h   
+VK_LSHIFT  . . . . . . . . . . .	Number	 000000A0h   
+VK_MENU  . . . . . . . . . . . .	Number	 00000012h   
+VK_MULTIPLY  . . . . . . . . . .	Number	 0000006Ah   
+VK_NEXT  . . . . . . . . . . . .	Number	 00000022h   
+VK_NUMLOCK . . . . . . . . . . .	Number	 00000090h   
+VK_NUMPAD0 . . . . . . . . . . .	Number	 00000060h   
+VK_NUMPAD1 . . . . . . . . . . .	Number	 00000061h   
+VK_NUMPAD2 . . . . . . . . . . .	Number	 00000062h   
+VK_NUMPAD3 . . . . . . . . . . .	Number	 00000063h   
+VK_NUMPAD4 . . . . . . . . . . .	Number	 00000064h   
+VK_NUMPAD5 . . . . . . . . . . .	Number	 00000065h   
+VK_NUMPAD6 . . . . . . . . . . .	Number	 00000066h   
+VK_NUMPAD7 . . . . . . . . . . .	Number	 00000067h   
+VK_NUMPAD8 . . . . . . . . . . .	Number	 00000068h   
+VK_NUMPAD9 . . . . . . . . . . .	Number	 00000069h   
+VK_PAUSE . . . . . . . . . . . .	Number	 00000013h   
+VK_PRINT . . . . . . . . . . . .	Number	 0000002Ah   
+VK_PRIOR . . . . . . . . . . . .	Number	 00000021h   
+VK_RBUTTON . . . . . . . . . . .	Number	 00000002h   
+VK_RCONTROL  . . . . . . . . . .	Number	 000000A3h   
+VK_RETURN  . . . . . . . . . . .	Number	 0000000Dh   
+VK_RIGHT . . . . . . . . . . . .	Number	 00000027h   
+VK_RMENU . . . . . . . . . . . .	Number	 000000A5h   
+VK_RSHIFT  . . . . . . . . . . .	Number	 000000A1h   
+VK_SCROLL  . . . . . . . . . . .	Number	 00000091h   
+VK_SEPARATER . . . . . . . . . .	Number	 0000006Ch   
+VK_SHIFT . . . . . . . . . . . .	Number	 00000010h   
+VK_SNAPSHOT  . . . . . . . . . .	Number	 0000002Ch   
+VK_SPACE . . . . . . . . . . . .	Number	 00000020h   
+VK_SUBTRACT  . . . . . . . . . .	Number	 0000006Dh   
+VK_TAB . . . . . . . . . . . . .	Number	 00000009h   
+VK_UP  . . . . . . . . . . . . .	Number	 00000026h   
+WINDOW_BUFFER_SIZE_EVENT . . . .	Number	 00000004h   
+WriteConsoleOutputCharacter  . .	Text   	 WriteConsoleOutputCharacterA
+WriteConsole . . . . . . . . . .	Text   	 WriteConsoleA
+bEndsWithTF  . . . . . . . . . .	Byte	 00000607 _DATA	
+bEqualsIgnoreTF  . . . . . . . .	Byte	 00000604 _DATA	
+bEqualsTF  . . . . . . . . . . .	Byte	 00000603 _DATA	
+bOffset  . . . . . . . . . . . .	Byte	 00000602 _DATA	
+bStartsWith1TF . . . . . . . . .	Byte	 00000605 _DATA	
+bStartsWith2TF . . . . . . . . .	Byte	 00000606 _DATA	
+bUserChoice  . . . . . . . . . .	Byte	 000004C9 _DATA	
+black  . . . . . . . . . . . . .	Number	 00000000h   
+blue . . . . . . . . . . . . . .	Number	 00000001h   
+brown  . . . . . . . . . . . . .	Number	 00000006h   
+cyan . . . . . . . . . . . . . .	Number	 00000003h   
+dCopyHex . . . . . . . . . . . .	DWord	 00000613 _DATA	
+dSubStringHex1 . . . . . . . . .	DWord	 00000617 _DATA	
+dSubStringHex2 . . . . . . . . .	DWord	 0000061B _DATA	
+exit . . . . . . . . . . . . . .	Text   	 INVOKE ExitProcess,0
+gray . . . . . . . . . . . . . .	Number	 00000008h   
+green  . . . . . . . . . . . . .	Number	 00000002h   
+lightBlue  . . . . . . . . . . .	Number	 00000009h   
+lightCyan  . . . . . . . . . . .	Number	 0000000Bh   
+lightGray  . . . . . . . . . . .	Number	 00000007h   
+lightGreen . . . . . . . . . . .	Number	 0000000Ah   
+lightMagenta . . . . . . . . . .	Number	 0000000Dh   
+lightRed . . . . . . . . . . . .	Number	 0000000Ch   
+magenta  . . . . . . . . . . . .	Number	 00000005h   
+red  . . . . . . . . . . . . . .	Number	 00000004h   
+strCharAt  . . . . . . . . . . .	Byte	 000005FA _DATA	
+strCopyString  . . . . . . . . .	Byte	 000005C3 _DATA	
+strCurrently . . . . . . . . . .	Byte	 00000586 _DATA	
+strDriverHeader  . . . . . . . .	Byte	 00000000 _DATA	
+strFalse . . . . . . . . . . . .	Byte	 0000060D _DATA	
+strIndexPrompt . . . . . . . . .	Byte	 00000552 _DATA	
+strNull  . . . . . . . . . . . .	Byte	 000005FB _DATA	
+strOffsetPrompt  . . . . . . . .	Byte	 00000573 _DATA	
+strQuit  . . . . . . . . . . . .	Byte	 00000451 _DATA	
+strReturn  . . . . . . . . . . .	Byte	 0000061F _DATA	
+strSetString1  . . . . . . . . .	Byte	 0000009F _DATA	
+strSetString2  . . . . . . . . .	Byte	 000000CA _DATA	
+strString1Prompt . . . . . . . .	Byte	 000004CB _DATA	
+strString2Prompt . . . . . . . .	Byte	 000004DC _DATA	
+strStringLengthPrompt  . . . . .	Byte	 000004ED _DATA	
+strStringLength  . . . . . . . .	Byte	 00000600 _DATA	
+strString_charAt . . . . . . . .	Byte	 000001F7 _DATA	
+strString_concate  . . . . . . .	Byte	 000003A5 _DATA	
+strString_copy . . . . . . . . .	Byte	 00000176 _DATA	
+strString_endsWith . . . . . . .	Byte	 00000278 _DATA	
+strString_equalsIgn  . . . . . .	Byte	 0000014B _DATA	
+strString_equals . . . . . . . .	Byte	 00000120 _DATA	
+strString_indexOf1 . . . . . . .	Byte	 000002A3 _DATA	
+strString_indexOf2 . . . . . . .	Byte	 000002CE _DATA	
+strString_indexOf3 . . . . . . .	Byte	 000002F9 _DATA	
+strString_lastIndex1 . . . . . .	Byte	 00000324 _DATA	
+strString_lastIndex2 . . . . . .	Byte	 0000034F _DATA	
+strString_lastIndex3 . . . . . .	Byte	 0000037A _DATA	
+strString_length . . . . . . . .	Byte	 000000F5 _DATA	
+strString_replace  . . . . . . .	Byte	 000003D0 _DATA	
+strString_startsWith1  . . . . .	Byte	 00000222 _DATA	
+strString_startsWith2  . . . . .	Byte	 0000024D _DATA	
+strString_substring1 . . . . . .	Byte	 000001A1 _DATA	
+strString_substring2 . . . . . .	Byte	 000001CC _DATA	
+strString_toLower  . . . . . . .	Byte	 000003FB _DATA	
+strString_toUpper  . . . . . . .	Byte	 00000426 _DATA	
+strSubstring1  . . . . . . . . .	Byte	 000005DC _DATA	
+strSubstring2  . . . . . . . . .	Byte	 000005F5 _DATA	
+strSubstringFirst  . . . . . . .	Byte	 0000051F _DATA	
+strSubstringLast . . . . . . . .	Byte	 0000053B _DATA	
+strTrue  . . . . . . . . . . . .	Byte	 00000608 _DATA	
+strUserPrompt  . . . . . . . . .	Byte	 000004B9 _DATA	
+strUserString1 . . . . . . . . .	Byte	 00000591 _DATA	
+strUserString2 . . . . . . . . .	Byte	 000005AA _DATA	
+white  . . . . . . . . . . . . .	Number	 0000000Fh   
+wsprintf . . . . . . . . . . . .	Text   	 wsprintfA
+yellow . . . . . . . . . . . . .	Number	 0000000Eh   
+
+	   0 Warnings
+	   0 Errors

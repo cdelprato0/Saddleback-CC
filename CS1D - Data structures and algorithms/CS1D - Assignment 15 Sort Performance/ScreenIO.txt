@@ -1,0 +1,225 @@
+**************************************************************************
+* PROGRAMMED BY  : Chaz Del Prato                                        *
+* ASSIGNMENT #15 : Sort Performance                                      *
+* CLASS          : CS1D                                                  *
+* SECTION        : MW 3:00p                                              *
+--------------------------------------------------------------------------
+* Description   :                                                        *
+*   This program has three parts to the output. In the first output, it  *
+* will be outputting the use of a quick sort. The arrays sizes used are  *
+* 5,000  10,000 and 50,000. Starting with the first pivot It will use the*
+* Random, Ordered, and Reversed arrays to display                        *
+* the size, the first 5 numbers of each array and the count of executions*
+* Then it will got to the Random pivot and output the same, and then to  *
+* the Middle pivot and output the same. In part TWO, It will be comparing*
+* Merge Sort and Heap Sort. The arrays sizes used is 50,000 and 75,000.  *
+* It will output the same information as it did for part one. The Third  *
+* part of the program will be using the RADIX sort. The radix sort will  *
+* be taking a list of strings and sorting them. It will output the       *
+* current list after each pass of the radix sort until it is sorted.     *
+**************************************************************************
+
+**********************
+* PART 1 - QUICKSORT *
+**********************
+***RANDOM ORDER ARRAY (First Pivot)***
+Size: 5000
+Sorted Array: 1 1 3 3 4 
+Counter: 110031
+
+Size: 10000
+Array: 1 1 1 1 2 
+Counter: 221947
+
+Size: 50000
+Array: 1 2 4 5 7 
+Counter: 1393825
+
+***ORDERED ARRAY (First Pivot)***
+Size: 5000
+Array: 1 1 3 3 4 
+Counter: 7679020
+
+Size: 10000
+Array: 1 1 1 1 2 
+Counter: 30455724
+
+Size: 50000
+Array: 1 2 4 5 7 
+Counter: 641727496
+
+***REVERSE ORDERED ARRAY (First Pivot)***
+Size: 5000
+Array: 1 1 3 3 4 
+Counter: 8226389
+
+Size: 10000
+Array: 1 1 1 1 2 
+Counter: 31740412
+
+Size: 50000
+Array: 1 2 4 5 7 
+Counter: 641727496
+
+***RANDOM ORDER ARRAY (Random Pivot)***
+Size: 5000
+Sorted Array: 1 2 2 3 4 
+Counter: 104734
+
+Size: 10000
+Array: 1 1 2 3 3 
+Counter: 239672
+
+Size: 50000
+Array: 1 1 2 2 3 
+Counter: 1521377
+
+***ORDERED ARRAY (Random Pivot)***
+Size: 5000
+Array: 1 2 2 3 4 
+Counter: 116911
+
+Size: 10000
+Array: 1 1 2 3 3 
+Counter: 245257
+
+Size: 50000
+Array: 1 1 2 2 3 
+Counter: 1709136
+
+***REVERSE ORDERED ARRAY (Random Pivot)***
+Size: 5000
+Array: 1 2 2 3 4 
+Counter: 118020
+
+Size: 10000
+Array: 1 1 2 3 3 
+Counter: 235839
+
+Size: 50000
+Array: 1 1 2 2 3 
+Counter: 1641676
+
+***RANDOM ORDER ARRAY (Middle Pivot)***
+Size: 5000
+Sorted Array: 1 1 1 2 3 
+Counter: 72074
+
+Size: 10000
+Array: 2 3 3 4 4 
+Counter: 156384
+
+Size: 50000
+Array: 1 1 3 4 4 
+Counter: 957023
+
+***ORDERED ARRAY (Middle Pivot)***
+Size: 5000
+Array: 1 1 1 2 3 
+Counter: 37010
+
+Size: 10000
+Array: 2 3 3 4 4 
+Counter: 79319
+
+Size: 50000
+Array: 1 1 3 4 4 
+Counter: 464451
+
+***REVERSE ORDERED ARRAY (Middle Pivot)***
+Size: 5000
+Array: 1 1 1 2 3 
+Counter: 41976
+
+Size: 10000
+Array: 2 3 3 4 4 
+Counter: 89319
+
+Size: 50000
+Array: 1 1 3 4 4 
+Counter: 514449
+
+***********************************
+* PART 2 - HEAP SORT / MERGE SORT *
+***********************************
+***RANDOM ORDER ARRAY (Merge Sort)***
+Size: 50000
+Sorted Array: 1 2 2 2 3 
+Counter: 2337184
+
+Size: 75000
+Array: 1 7 32 38 40 
+Counter: 183912
+
+***ORDERED ARRAY (Merge Sort)***
+Size: 50000
+Array: 1 2 2 2 3 
+Counter: 2020879
+
+Size: 75000
+Array: 1 7 32 38 40 
+Counter: 160619
+
+***REVERSE ORDERED ARRAY (Merge Sort)***
+Size: 50000
+Array: 1 2 2 2 3 
+Counter: 2021049
+
+Size: 75000
+Array: 1 17 25 27 32 
+Counter: 183806
+
+***RANDOM ORDER ARRAY (Heap Sort)***
+Size: 50000
+Sorted Array: 1 2 3 3 5 
+Counter: 1744376
+
+Size: 75000
+Array: 1 1 1 1 1 
+Counter: 2723453
+
+***ORDERED ARRAY (Heap Sort)***
+Size: 50000
+Array: 1 2 3 3 5 
+Counter: 1843049
+
+Size: 75000
+Array: 1 1 1 1 1 
+Counter: 2867257
+
+***REVERSE ORDERED ARRAY (Heap Sort)***
+Size: 50000
+Array: 1 2 3 3 5 
+Counter: 1638696
+
+Size: 75000
+Array: 1 1 1 1 1 
+Counter: 2569403
+
+**************************
+* PART 3 - RADIX SORTING *
+**************************
+
+Printing String: 
+------------------
+    acdes    asdsd    ksjtr    kerpt    absqa    zabaa    rkdsb    qqqqq    kdfaa    zedsd 
+
+Printing String: 
+------------------
+    absqa    zabaa    kdfaa    rkdsb    asdsd    zedsd     qqqqq    ksjtr    acdes    kerpt
+
+Printing String: 
+------------------
+    zabaa    kdfaa    acdes    kerpt    absqa    qqqqq    rkdsb    asdsd    zedsd     ksjtr
+
+Printing String: 
+------------------
+    zabaa    acdes    rkdsb    asdsd    zedsd     kdfaa    ksjtr    qqqqq    kerpt    absqa
+
+Printing String: 
+------------------
+    zabaa    absqa    acdes    kdfaa    zedsd     kerpt    rkdsb    qqqqq    asdsd    ksjtr
+
+Printing String: 
+------------------
+    absqa    acdes    asdsd    kdfaa    kerpt    ksjtr    qqqqq    rkdsb    zabaa    zedsd 

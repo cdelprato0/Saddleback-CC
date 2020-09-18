@@ -1,0 +1,36 @@
+********************************************
+* PROGRAMMED BY : Mark Robison & Chaz Delprato
+* DUE DATE      : 11/24/2014
+* CLASS         : CS1A --> Mon/Wed 9:30am
+* LAB #22       :Functions - ARRAYS
+********************************************
+
+Enter name #1: Joe
+Enter name #2: Sally
+Enter name #3: Joe
+Enter name #4: Sue
+Enter name #5: Sally
+Enter name #6: Adam
+Enter name #7: Joe
+Enter name #8: Adam
+Enter name #9: Adam
+Enter name #10: Joe
+
+Who do you want to search for (enter done to exit)? Joe
+There are 4 instances of the name Joe.
+
+Who do you want to search for (enter done to exit)? Sally
+There are 2 instances of the name Sally.
+
+Who do you want to search for (enter done to exit)? Adam
+There are 3 instances of the name Adam.
+
+Who do you want to search for (enter done to exit)? Sue
+There are 1 instances of the name Sue.
+
+Who do you want to search for (enter done to exit)? John
+John's name does not exist in this list.
+
+Who do you want to search for (enter done to exit)? done
+
+Thank you for using my program.

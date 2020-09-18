@@ -1,0 +1,312 @@
+**************************************************
+* PROGRAMMED BY : BBC & Zeta
+* CLASS         : CS1B
+* SECTION       : MW 8:30a-12:20p
+* LAB #11       : Creating an Ordered List
+**************************************************
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 1
+
+Adding : Payne, Royal
+Adding : Ding, Bill
+Adding : Post, Mark
+Adding : Sassin, Anna
+Adding : Lear, Shanda
+Adding : Longbottom, Iva
+Adding : Dwyer, Barb
+Adding : Hogg, Ima
+Adding : Belcher, Ura
+Adding : Age, Sue
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 2
+
+   #    NAME                        GENDER   AGE
+------- -------------------------  -------- ----- 
+   1    Age, Sue                      F      32
+   2    Belcher, Ura                  F      46
+   3    Ding, Bill                    M      21
+   4    Dwyer, Barb                   F      24
+   5    Hogg, Ima                     F      43
+   6    Lear, Shanda                  F      18
+   7    Longbottom, Iva               F      45
+   8    Payne, Royal                  M      73
+   9    Post, Mark                    M      20
+  10    Sassin, Anna                  F      62
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 3
+
+No, The list is NOT empty.
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 4
+
+Who would you like to search for? Age, Sue
+
+Searching for Age, Sue...
+
+Name:     Age, Sue
+Gender:   F
+Age:      32
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 4
+
+Who would you like to search for? Sassin, Anna
+
+Searching for Sassin, Anna...
+
+Name:     Sassin, Anna
+Gender:   F
+Age:      62
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 4
+
+Who would you like to search for? Ding, Bill
+
+Searching for Ding, Bill...
+
+Name:     Ding, Bill
+Gender:   M
+Age:      21
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 4
+
+Who would you like to search for? Smith, Will
+
+Searching for Smith, Will...
+I'm sorry, "Smith, Will" was NOT found!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 5
+
+Who would you like to remove? Age, Sue
+
+Searching for Age, Sue...
+Removing Age, Sue!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 5
+
+Who would you like to remove? Post, Mark
+
+Searching for Post, Mark...
+Removing Post, Mark!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 5
+
+Who would you like to remove? Sassin, Anna
+
+Searching for Sassin, Anna...
+Removing Sassin, Anna!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 5
+
+Who would you like to remove? Smith, Will
+
+Searching for Smith, Will...
+I'm sorry, "Smith, Will" was NOT found!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 6
+
+CLEARING LIST:
+Removing Belcher, Ura
+Removing Ding, Bill
+Removing Dwyer, Barb
+Removing Hogg, Ima
+Removing Lear, Shanda
+Removing Longbottom, Iva
+Removing Payne, Royal
+
+The list has been cleared!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 2
+
+Can't display an empty list.
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 3
+
+Yes, the list is empty.
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 4
+
+Can't search from an empty list!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 5
+
+Can't remove from an empty list!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: 6
+
+The list has been cleared!
+
+
+LIST MENU:
+1 - Create List
+2 - Display List
+3 - Is the stack empty?
+4 - Search by Name
+5 - Remove Node
+6 - Clear List
+0 - to Exit
+Enter a command: x
+
+**** Please input a number between 0 and 6 ****
+
+Enter a command: 7
+
+**** The number 7 is an invalid entry     ****
+**** Please input a number between 0 and 6 ****
+
+Enter a command: -1
+
+**** The number -1 is an invalid entry     ****
+**** Please input a number between 0 and 6 ****
+
+Enter a command: 0
+

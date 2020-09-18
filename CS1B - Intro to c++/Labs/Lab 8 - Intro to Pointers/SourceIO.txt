@@ -1,0 +1,23 @@
+**************************************************
+* Programmed by : Heretic Furby & BBC
+* Student ID    : 323630, 382108
+* Class         : CS1B --> MW - 8:30AM
+* LAB #8        : Intro to Pointers
+**************************************************
+
+Input the first value (enter -999 to exit): 5
+Input the second value:                     25
+
+The sum is:     30
+The product is: 125
+
+Input the first value (enter -999 to exit): -12
+Input the second value:                     100
+
+The sum is:     88
+The product is: -1200
+
+Input the first value (enter -999 to exit): -999
+
+
+Thank you for using this program.

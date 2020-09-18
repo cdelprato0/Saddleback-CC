@@ -1,0 +1,52 @@
+<RCC>
+    <qresource prefix="/assets">
+	<file>assets/TeamLogos/Angel_Stadium_of_Anaheim.png</file>
+	<file>assets/TeamLogos/AT_T_Park.png</file>
+	<file>assets/TeamLogos/Busch_Stadium.png</file>
+	<file>assets/TeamLogos/Chase_Field.png</file>
+	<file>assets/TeamLogos/Citi_Field.png</file>
+	<file>assets/TeamLogos/Citizens_Bank_Park.png</file>
+	<file>assets/TeamLogos/Comerica_Park.png</file>
+	<file>assets/TeamLogos/Coors_Field.png</file>
+	<file>assets/TeamLogos/Dodger_Stadium.png</file>
+	<file>assets/TeamLogos/Fenway_Park.png</file>
+	<file>assets/TeamLogos/Globe_Life_Park_in_Arlington.png</file>
+	<file>assets/TeamLogos/Great_American_Ballpark.png</file>
+	<file>assets/TeamLogos/Guaranteed_Rate_Field.png</file>
+	<file>assets/TeamLogos/Kauffman_Stadium.png</file>
+	<file>assets/TeamLogos/Las_Vegas_Stadium.png</file>
+	<file>assets/TeamLogos/Marlins_Park.png</file>
+	<file>assets/TeamLogos/Miller_Park.png</file>
+	<file>assets/TeamLogos/Minute_Maid_Park.png</file>
+	<file>assets/TeamLogos/Nationals_Park.png</file>
+	<file>assets/TeamLogos/Oakland_Coliseum.png</file>
+	<file>assets/TeamLogos/Oriole_Park_at_Camden_Yards.png</file>
+	<file>assets/TeamLogos/Petco_Park.png</file>
+	<file>assets/TeamLogos/PNC_Park.png</file>
+	<file>assets/TeamLogos/Progressive_Field.png</file>
+	<file>assets/TeamLogos/Rogers_Centre.png</file>
+	<file>assets/TeamLogos/Safeco_Field.png</file>
+	<file>assets/TeamLogos/Sun_Trust_Park.png</file>
+	<file>assets/TeamLogos/Target_Field.png</file>
+	<file>assets/TeamLogos/Tropicana_Field.png</file>
+	<file>assets/TeamLogos/Wrigley_Field.png</file>
+	<file>assets/TeamLogos/Yankee_Stadium.png</file>
+
+	<file>assets/back.png</file>
+	<file>assets/baseball.png</file>
+	<file>assets/cart2.png</file>
+	<file>assets/cursor.png</file>
+	<file>assets/document.png</file>
+	<file>assets/fish_chips.ttf</file>
+	<file>assets/leftArrow2.png</file>
+	<file>assets/logo.png</file>
+	<file>assets/mainlogo.png</file>
+	<file>assets/map2.png</file>
+	<file>assets/rightArrow2.png</file>
+	<file>assets/smallermainlogo.png</file>
+	<file>assets/stadium2.png</file>
+	<file>assets/suitcase2.png</file>
+    </qresource>
+</RCC>
+
+

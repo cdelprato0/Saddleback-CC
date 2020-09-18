@@ -1,0 +1,79 @@
+********************************************************
+* PROGRAMMED BY : Isaac Torchia and BBC
+* CLASS         CS1A
+* SECTION       : MW: 9:30 - 1120
+* LAB #15       : Buddy's Average Age sheep Calculator
+***************************************************
+
+Test # 1:
+Welcome to Buddy's Average Sheep Age Calculator!
+
+	Enter in the sheep ages, input -1 to exit 
+	Sheep Age: 8
+	Sheep Age: 12
+
+*** Invalid sheep age - please input a value less than or equal to 9!
+
+	Sheep Age: 9
+	Sheep Age: 0
+	Sheep Age: 2
+	Sheep Age: 5
+	Sheep Age: 6
+	Sheep Age: -1
+
+	On average your sheep are 5.0 years old!
+	In general your sheep are MIDDLE AGED!
+
+
+
+Test # 2:
+Welcome to Buddy's Average Sheep Age Calculator!
+
+	Enter in the sheep ages, input -1 to exit 
+	Sheep Age: 2
+	Sheep Age: 5
+	Sheep Age: 1
+	Sheep Age: 10
+
+*** Invalid sheep age - please input a value less than or equal to 9!
+
+	Sheep Age: 4
+	Sheep Age: 2
+	Sheep Age: 3
+	Sheep Age: 0
+	Sheep Age: 7
+	Sheep Age: -9
+
+	On average your sheep are 3.0 years old!
+	In general your sheep are BABIES!
+
+
+
+Test # 3:
+Welcome to Buddy's Average Sheep Age Calculator!
+
+	Enter in the sheep ages, input -1 to exit 
+	Sheep Age: 10
+
+*** Invalid sheep age - please input a value less than or equal to 9!
+
+	Sheep Age: 9
+	Sheep Age: 8
+	Sheep Age: 6
+	Sheep Age: 9
+	Sheep Age: 7
+	Sheep Age: 2
+	Sheep Age: 12
+
+*** Invalid sheep age - please input a value less than or equal to 9!
+
+	Sheep Age: 9
+	Sheep Age: -5
+
+	On average your sheep are 7.0 years old!
+	In general your sheep are Aging - time to breed!!
+
+
+
+Thank you for using Buddy's Average Sheep Age Calculator!
+Have a great day!! :)

@@ -1,0 +1,86 @@
+**************************************************************************
+* PROGRAMMED BY : Chaz Del Prato                                         *
+* ASSIGNMENT #3 : Queues & Deques                                        *
+* CLASS         : CS1D                                                   *
+* SECTION       : MW 3:30p                                               *
+--------------------------------------------------------------------------
+* Description   :                                                        *
+*        *
+**************************************************************************
+
+
+Huffman Code for each letter
+----------------------------
+  11
+a 0011
+b 0100000
+c 000010
+d 00100
+e 100
+f 010001
+g 001010
+h 0111
+i 00000
+k 000011110
+l 01101
+m 0100001
+n 1011
+o 0101
+p 0000110
+q 000011111
+r 1010
+s 01100
+t 0001
+u 010011
+v 010010
+w 001011
+y 00001110
+
+Huffman Code Tree
+-----------------------------------------------------------
+                     1420                                  
+          592                    828                       
+      321   ' '        358                   470           
+   156  'e'     166           192        216      254      
+ 'n''r'       86 'h'        99  'o'    114 'a'  128 't'    
+            'l''s'      54     45     56 'd'   60 'i'      
+                      27 'f' 'u''v' 'w''g'    29 'c'       
+                    'm''b'                   14 'p'        
+                                            4  'y'         
+                                          'q''k'           
+-----------------------------------------------------------
+
+
+Decoding Huffman Code
+---------------------
+four score and seven years ago our fathers brought forth on this continent a new nation conceived in liberty and dedicated to the proposition that all men are created equal now we are engaged in a great civil war testing whether that nation or any nation so conceived and so dedicated can long endure we are met on a great battlefield of that war we have come to dedicate a portion of that field as a final resting place for those who here gave their lives that that nation might live it is altogether fitting and proper that we should do this but in a larger sense we cannot dedicate  we cannot consecrate  we cannot hallow  this ground the brave men living and dead who struggled here have consecrated it far above our poor power to add or detract the world will little note nor long remember what we say here but it can never forget what they did here it is for us the living rather to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced it is rather for us to be here dedicated to the great task remaining before us that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion that we here highly resolve that these dead shall not have died in vain that this nation under god shall have a new birth of freedom  and that government of the people by the people for the people shall not perish from the earth
+
+Compression Ratio and Frequency Chart
+-------------------------------------
+|  Letter  |  Frequency  |
+|------------------------|
+|   ' '    |    271      |
+|    a     |    102      |
+|    b     |    14       |
+|    c     |    31       |
+|    d     |    58       |
+|    e     |    165      |
+|    f     |    27       |
+|    g     |    28       |
+|    h     |    80       |
+|    i     |    68       |
+|    k     |    3        |
+|    l     |    42       |
+|    m     |    13       |
+|    n     |    77       |
+|    o     |    93       |
+|    p     |    15       |
+|    q     |    1        |
+|    r     |    79       |
+|    s     |    44       |
+|    t     |    126      |
+|    u     |    21       |
+|    v     |    24       |
+|    w     |    28       |
+|    y     |    10       |
+--------------------------

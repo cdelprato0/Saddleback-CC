@@ -1,0 +1,37 @@
+// This file is for use with www.nand2tetris.org
+
+// and the book "The Elements of Computing Systems"
+
+// by Nisan and Schocken, MIT Press.
+
+// Create this file in your nand2tetris projects/02 folder with
+
+// the name Sign16.hdl
+
+// i.e. File name: projects/02/Sign16.hdl
+
+
+
+/**
+* 
+	Sign16:
+* 
+	out = in[15]
+
+*/
+
+
+
+CHIP Sign16 {
+    
+	IN in[16];
+    
+	OUT out;
+    
+    
+  PARTS:
+  
+	Not( in = in[15], out = output );
+	Not( in = output, out = out );      
+
+}

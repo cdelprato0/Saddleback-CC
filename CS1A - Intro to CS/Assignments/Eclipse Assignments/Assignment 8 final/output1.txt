@@ -1,0 +1,46 @@
+********************************************************
+* PROGRAMMED BY : BBC
+* CLASS         : CS1A
+* SECTION       : MW: 9:30AM
+* ASSIGNMENT #8 : Loops & Boolean Expressions
+******************************************************
+
+TEST RUN #1
+
+
+Please enter the candidates's information (enter 'X' to exit).
+Gender:  m
+Height:  80
+Weight:  130
+
+
+This candidate has been ACCEPTED!
+
+
+
+Please enter the candidates's information (enter 'X' to exit).
+Gender:  m
+Height:  65
+Weight:  250
+
+
+This candidate has been ACCEPTED!
+
+
+
+Please enter the candidates's information (enter 'X' to exit).
+Gender:  f
+Height:  62
+Weight:  109
+
+
+This candidate has been rejected based on the WEIGHT requirement.
+
+
+
+Please enter the candidates's information (enter 'X' to exit).
+Gender:  x
+
+
+2 candidate(s) accepted!
+That's 67%!

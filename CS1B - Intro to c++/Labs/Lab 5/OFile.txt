@@ -1,0 +1,10 @@
+INDEX     NAME      AGE
+-----     ----      ---
+0         Jimmy     31
+1         Amanda    23
+2         Sam       9
+3         Luis      31
+4         Swaggy P  3
+5         Ferrari   63
+6         Clayton   19
+7         Chaz      19

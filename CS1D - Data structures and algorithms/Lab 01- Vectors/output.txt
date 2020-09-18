@@ -1,0 +1,38 @@
+Anna Kolev and Chaz Del Prato
+
+Vectors 
+This program uses a random number generator to generate 20 three 
+digit integers. It will then perform the following operations: 
+
+ 	- Sort the random numbers
+	- Store the sorted random numbers in a vector
+	- Reverse the digits of the of the random numbers
+	- Store the reversed digits in another vector
+	- Sum the digits of the random numbers
+ 	- Store the sums in another vector
+	- Print all three vectors
+
+The randomized vector is:           687, 126, 994, 797, 469, 663, 611, 182, 850, 193, 400, 694, 520, 310, 106, 237, 781, 710, 196, 749
+The sorted vector is:               106, 126, 182, 193, 196, 237, 310, 400, 469, 520, 611, 663, 687, 694, 710, 749, 781, 797, 850, 994
+The vector with digits reversed is: 601, 621, 281, 391, 691, 732, 013, 004, 964, 025, 116, 366, 786, 496, 017, 947, 187, 797, 058, 499
+
+The sum of the digits of 106 is 7
+The sum of the digits of 126 is 9
+The sum of the digits of 182 is 11
+The sum of the digits of 193 is 13
+The sum of the digits of 196 is 16
+The sum of the digits of 237 is 12
+The sum of the digits of 310 is 4
+The sum of the digits of 400 is 4
+The sum of the digits of 469 is 19
+The sum of the digits of 520 is 7
+The sum of the digits of 611 is 8
+The sum of the digits of 663 is 15
+The sum of the digits of 687 is 21
+The sum of the digits of 694 is 19
+The sum of the digits of 710 is 8
+The sum of the digits of 749 is 20
+The sum of the digits of 781 is 16
+The sum of the digits of 797 is 23
+The sum of the digits of 850 is 13
+The sum of the digits of 994 is 22

@@ -1,0 +1,283 @@
+**************************************************
+* PROGRAMMED BY : BBC & RHADER
+* CLASS         : CS1B
+* SECTION       : MW 8:30a-12:20p
+* LAB #12       : Intro to OOP
+**************************************************
+
+1 - Initialize Animals
+0 - Exit
+Enter selection: 2
+
+**** The number 2 is an invalid entry     ****
+**** Please input a number between 0 and 1 ****
+
+1 - Initialize Animals
+0 - Exit
+Enter selection: a
+
+**** Please input a number between 0 and 1 ****
+
+1 - Initialize Animals
+0 - Exit
+Enter selection: 1
+
+Initializing Fluffy, Maa, & Babe...
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 5
+
+**** The number 5 is an invalid entry     ****
+**** Please input a number between 0 and 4 ****
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 4
+
+ANIMAL     NAME           AGE    VALUE
+---------- -------------- --- -----------
+Sheep      Fluffy           1    15000.00
+Sheep      Maa              3    16520.35
+Pig        Babe             2    10240.67
+
+
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 2
+
+CHANGE AGE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: 4
+
+**** The number 4 is an invalid entry     ****
+**** Please input a number between 1 and 3 ****
+
+CHANGE AGE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: a
+
+**** Please input a number between 1 and 3  ****
+
+CHANGE AGE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: 1
+
+NEW AGE: 2
+
+Changing Fluffy's age to 2 ...
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 2
+
+CHANGE AGE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: 2
+
+NEW AGE: 4
+
+Changing Maa's age to 4 ...
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 2
+
+CHANGE AGE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: 3
+
+NEW AGE: 11
+
+**** The number 11 is an invalid entry     ****
+**** Please input a number between 0 and 10 ****
+
+NEW AGE: 3
+
+Changing Babe's age to 3 ...
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 4
+
+ANIMAL     NAME           AGE    VALUE
+---------- -------------- --- -----------
+Sheep      Fluffy           2    15000.00
+Sheep      Maa              4    16520.35
+Pig        Babe             3    10240.67
+
+
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 3
+
+CHANGE VALUE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: 4
+
+**** The number 4 is an invalid entry     ****
+**** Please input a number between 1 and 3 ****
+
+CHANGE VALUE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: 1
+
+NEW VALUE: 154154.51
+
+Changing Fluffy's age to 154154.52 ...
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 
+3
+
+CHANGE VALUE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: 2
+
+NEW VALUE: 651651.61
+
+**** The number 651652 is an invalid entry     ****
+**** Please input a number between 0 and 400000 ****
+
+NEW VALUE: 165165.61
+
+Changing Maa's age to 165165.61 ...
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 3
+
+CHANGE VALUE:
+1 - Fluffy
+2 - Maa
+3 - Babe
+Select the animal you'd like to change: 3
+
+NEW VALUE: 123123.12
+
+Changing Babe's age to 123123.12 ...
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 4
+
+ANIMAL     NAME           AGE    VALUE
+---------- -------------- --- -----------
+Sheep      Fluffy           2    154154.52
+Sheep      Maa              4    165165.61
+Pig        Babe             3    123123.12
+
+
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 1
+
+Are you sure you want to reinitialize (Y/N)? x
+**** X is an invalid entry ****
+**** Please input Y or N   ****
+
+Are you sure you want to reinitialize (Y/N)? n
+Animals have not been re-initialized!
+
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 4
+
+ANIMAL     NAME           AGE    VALUE
+---------- -------------- --- -----------
+Sheep      Fluffy           2    154154.52
+Sheep      Maa              4    165165.61
+Pig        Babe             3    123123.12
+
+
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 1
+
+Are you sure you want to reinitialize (Y/N)? Y
+Initializing Fluffy, Maa, & Babe...
+
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 4
+
+ANIMAL     NAME           AGE    VALUE
+---------- -------------- --- -----------
+Sheep      Fluffy           1    15000.00
+Sheep      Maa              3    16520.35
+Pig        Babe             2    10240.67
+
+
+
+1 - Initialize Animals
+2 - Change Age
+3 - Change Value
+4 - Display
+0 - Exit
+Enter selection: 0
+

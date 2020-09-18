@@ -1,0 +1,68 @@
+*************************************************************************
+* PROGRAMMED BY  : Chaz Del Prato                                       *
+* ASSIGNMENT #12 : Dijkstra's and MST                                   *
+* CLASS          : CS1D                                                 *
+* SECTION        : MW 3:00p                                             *
+-------------------------------------------------------------------------
+* Description   :                                                       *
+*   This prgram will show the use of Dijkstra's Algorithm and the MST   *
+* of the graph. The fisrt part of the program will show Dijkstra's and  *
+* will show the the shortest distances to each of the cities starting at*
+* Kansas City. After it will show the MST Minimum Spanning Tree with the*
+* identity edges and finally will show the total distance of the MST.   *
+*************************************************************************
+
+**********************
+* DIJKSTRA Algorithm *
+**********************
+Los Angeles (Distance from Kansas City is 1614)
+
+San Francisco (Distance from Kansas City is 1866)
+
+Seattle (Distance from Kansas City is 1930)
+
+Denver (Distance from Kansas City is 599)
+
+Chicago (Distance from Kansas City is 533)
+
+Kansas City (Distance from Kansas City is 0)
+
+Dallas (Distance from Kansas City is 496)
+
+Houston (Distance from Kansas City is 735)
+
+Miami (Distance from Kansas City is 1525)
+
+Atlanta (Distance from Kansas City is 864)
+
+New York (Distance from Kansas City is 1260)
+
+Boston (Distance from Kansas City is 1474)
+
+
+*************************
+* Minimum Spanning Tree *
+*************************
+Los Angeles - San Francisco  Weight: 381
+
+San Francisco - Seattle  Weight: 807
+
+Los Angeles - Denver  Weight: 1015
+
+Kansas City - Chicago  Weight: 533
+
+Denver - Kansas City  Weight: 599
+
+Kansas City - Dallas  Weight: 496
+
+Dallas - Houston  Weight: 239
+
+Atlanta - Miami  Weight: 661
+
+Dallas - Atlanta  Weight: 781
+
+Chicago - New York  Weight: 787
+
+New York - Boston  Weight: 214
+
+Total Distance: 6513

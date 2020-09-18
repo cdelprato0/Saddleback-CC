@@ -1,0 +1,13 @@
+****Singleton Pattern****
+
+Outputting the Queue: First Job, Second Job, Third Job, Fourth Job, 
+
+Outputting the Queue: Second Job, Third Job, Fourth Job, 
+
+Outputting the Queue: Third Job, Fourth Job, 
+
+Outputting the Queue: Fourth Job, 
+
+Outputting the Queue: 
+
+***Cannot remove from empty queue***

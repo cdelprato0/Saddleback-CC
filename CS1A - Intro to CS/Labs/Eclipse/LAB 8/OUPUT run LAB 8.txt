@@ -1,0 +1,6 @@
+**********************************************
+* PROGRAMMED BY : Jaik Taylor
+* CLASS         : CS1A
+* SECTION       : MW: 9:30a - 1:40
+* LAB #8        : Eclipse Tutorial
+********************************************

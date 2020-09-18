@@ -1,0 +1,47 @@
+********************************************************
+* PROGRAMMED BY : Isaac Torchia & BBC
+* CLASS         : CS1A
+* SECTION       : MW: 9:30AM
+* LAB#17        : Repetition - Aunt Ellen's Egg Ranch
+******************************************************
+
+Test #1:
+Welcome to Aunt Ellen's eggs to dozens converter!
+
+    Enter the number of eggs gathered: 43
+    You have 3 dozen 7 eggs.
+
+    Enter the number of eggs gathered: 31
+    You have 2 dozen 7 eggs.
+
+    Enter the number of eggs gathered: -1
+    
+TOTALS: 
+    On average 37.0 eggs have been gathered.
+    A total of 6 dozen and 2 eggs have been gathered!
+
+
+Test #2:
+Welcome to Aunt Ellen's eggs to dozens converter!
+
+    Enter the number of eggs gathered: 24
+    You have 2 dozen eggs.
+
+    Enter the number of eggs gathered: 8
+    You have 8 eggs.
+
+    Enter the number of eggs gathered: 14
+    You have 1 dozen 2 eggs.
+
+    Enter the number of eggs gathered: -999
+    
+TOTALS: 
+    On average 15.3 eggs have been gathered.
+    A total of 3 dozen and 10 eggs have been gathered!
+
+
+Test #3:
+Welcome to Aunt Ellen's eggs to dozens converter!
+
+    Enter the number of eggs gathered: -5
+    

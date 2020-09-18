@@ -1,0 +1,20 @@
+{
+    "Stadium Name" : "Las Vegas Stadium",
+    "Team Name" : "Las Vegas Gamblers",
+    "Street Address" : "123 Las Vegas Blvd",
+    "City" : "Las Vegas",
+    "State" : "Nevada",
+    "Zip Code" : 89101,
+    "Phone Number" : "(702) 962-4000",
+    "Date Opened" : 2017,
+    "Seating Capacity" : 54321,
+    "Surface" : "Grass",
+    "Typology" : "Modern",
+    "League" : "American League",
+
+    "Destinations" : [
+        {"Oakland Coliseum" : 325},
+        {"Dodger Stadium" : 300},
+        {"Chase Field" : 250}
+    ]
+}

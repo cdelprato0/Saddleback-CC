@@ -1,0 +1,32 @@
+***********************************************************
+* PROGRAMMED BY : BBC
+* Student ID    : 382108
+* Class         : CS1B --> Mon/Wed 8:30am
+* LAB #6        : Enumerated Types
+***********************************************************
+
+What day is today? Monday
+Today is MONDAY!
+
+What day is today? Tuesday
+Today is TUESDAY!
+
+What day is today? Wednesday
+Today is WEDNESDAY!
+
+What day is today? Thursday
+Today is THURSDAY!
+
+What day is today? Friday
+Today is FRIDAY!
+
+What day is today? Saturday
+Today is SATURDAY!
+
+What day is today? Sunday
+Today is SUNDAY!
+
+What day is today? No Day
+**** Invalid day input! ****
+
+Today is INVALID!

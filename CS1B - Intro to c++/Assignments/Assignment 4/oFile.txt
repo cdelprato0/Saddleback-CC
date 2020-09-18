@@ -1,0 +1,301 @@
+********************************************************
+* PROGRAMMED BY : BBC
+* Student ID    : 382108
+* Class         : CS1B --> Mon/Wed 8:30am
+* ASSIGNMENT #4 : MovieList
+******************************************************
+
+***************************************************************************
+MOVIE #: 1        Title:  Antwone Fisher
+---------------------------------------------------------------------------
+Year: 2002        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Denzel Washington         Genre 1: Biography
+Supporting Actor: Derek Luke                Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+Antwone Fisher, a young navy man, is forced to see a psychiatrist after a 
+violent outburst against a fellow crewman. During the course of treatment a 
+painful past is revealed and a new hope begins.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 2        Title:  Bagger Vance, The Legend of
+---------------------------------------------------------------------------
+Year: 2000        Rating: 6
+---------------------------------------------------------------------------
+Leading Actor:    Will Smith                Genre 1: Drama
+Supporting Actor: Matt Damon                Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+A down-and-out golfer attempts to recover his game and his life with help 
+from a mystical caddy
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 3        Title:  Cinderella Man
+---------------------------------------------------------------------------
+Year: 2005        Rating: 8
+---------------------------------------------------------------------------
+Leading Actor:    Russell Crowe             Genre 1: Biography
+Supporting Actor: Renee Zellweger           Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+The story of James Braddock, a supposedly washed up boxer who came back to 
+become a champion and an inspiration in the 1930s.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 4        Title:  Five People You Meet in Heaven, The
+---------------------------------------------------------------------------
+Year: 2004        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Jon Voight                Genre 1: Drama
+Supporting Actor: Ellen Burstyn             Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+On his 83rd birthday, Eddie (Voight), a war vet and a maintenance worker at 
+the Ruby Pier amusement park, dies while trying to save a girl who is 
+sitting under a falling ride. When he awakens in the afterlife, he 
+encounters five people with ties to his corporeal existence who help him 
+understand the meaning of his life.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 5        Title:  Good Night, Good Luck
+---------------------------------------------------------------------------
+Year: 2005        Rating: 8
+---------------------------------------------------------------------------
+Leading Actor:    David Strathairn          Genre 1: Biography
+Supporting Actor: George Clooney            Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+In the early 1950's, the threat of Communism created an air of paranoia in 
+the United States and exploiting those fears was Senator Joseph McCarthy of 
+Wisconsin. However, CBS reporter Edward R. Murrow and his producer Fred W. 
+Friendly decided to take a stand and challenge McCarthy and expose him for 
+the fear monger he was. However, their actions took a great personal toll 
+on both men, but they stood by their convictions and helped to bring down 
+one of the most controversial senators in American history.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 6        Title:  Invictus
+---------------------------------------------------------------------------
+Year: 2009        Rating: 8
+---------------------------------------------------------------------------
+Leading Actor:    Morgan Freeman            Genre 1: Biography
+Supporting Actor: Matt Damon                Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+Nelson Mandela, in his first term as the South African President, initiates 
+a unique venture to unite the apartheid-torn land: enlist the national 
+rugby team on a mission to win the 1995 Rugby World Cup.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 7        Title:  Miss Petigrew Lives for a Day
+---------------------------------------------------------------------------
+Year: 2008        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Frances McDomand          Genre 1: Comedy
+Supporting Actor: Amy Adams                 Genre 2: Romance
+---------------------------------------------------------------------------
+PLOT:
+Guinevere Pettigrew, a middle-aged London governess, finds herself unfairly 
+dismissed from her job. An attempt to gain new employment catapults her 
+into the glamorous world and dizzying social whirl of an American actress 
+and singer, Delysia Lafosse.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 8        Title:  Pay it Forward
+---------------------------------------------------------------------------
+Year: 2000        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Kevin Spacey              Genre 1: Drama
+Supporting Actor: Helen Hunt                Genre 2: Romance
+---------------------------------------------------------------------------
+PLOT:
+Like some other kids, 12-year-old Trevor McKinney believed in the goodness 
+of human nature. Like many other kids, he was determined to change the 
+world for the better. Unlike most other kids, he succeeded.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 9        Title:  Pianist, The
+---------------------------------------------------------------------------
+Year: 2003        Rating: 9
+---------------------------------------------------------------------------
+Leading Actor:    Adrien Brody              Genre 1: Biography
+Supporting Actor: Thomas Kreschmann         Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+A Polish Jewish musician struggles to survive the destruction of the Warsaw 
+ghetto of World War II.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 10        Title:  Pirates of the Caribbean 1: The Curse of the ...
+---------------------------------------------------------------------------
+Year: 2003        Rating: 8
+---------------------------------------------------------------------------
+Leading Actor:    Johnny Depp               Genre 1: Action
+Supporting Actor: Orlando Bloom             Genre 2: Action
+---------------------------------------------------------------------------
+PLOT:
+This swash-buckling tale follows the quest of Captain Jack Sparrow, a savvy 
+pirate, and Will Turner, a resourceful blacksmith, as they search for 
+Elizabeth Swann. Elizabeth, the daughter of the governor and the love of 
+Will's life, has been kidnapped by the feared Captain Barbossa. Little do 
+they know, but the fierce and clever Barbossa has been cursed. He, along 
+with his large crew, is under an ancient curse, doomed for eternity to 
+neither live, nor die. That is, unless a blood sacrifice is made. Full of 
+edge-of-the-seat action and swashbuckling adventures, this is a movie you 
+won't want to miss!
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 11        Title:  Pursuit of Happyness
+---------------------------------------------------------------------------
+Year: 2008        Rating: 8
+---------------------------------------------------------------------------
+Leading Actor:    Will Smith                Genre 1: Biography
+Supporting Actor: Jaden Smith               Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+A struggling salesman takes custody of his son as he's poised to begin a 
+life-changing professional endeavor. 
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 12        Title:  Rent
+---------------------------------------------------------------------------
+Year: 2005        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Anthony Rapp              Genre 1: Musical
+Supporting Actor: Adam Pascal               Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+This is the film version of the Pulitzer and Tony Award winning musical 
+about Bohemians in the East Village of New York City struggling with life, 
+love and AIDS, and the impacts they have on America.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 13        Title:  Secondhand Lions
+---------------------------------------------------------------------------
+Year: 2003        Rating: 8
+---------------------------------------------------------------------------
+Leading Actor:    Haley Joel Osmet          Genre 1: Comedy
+Supporting Actor: Robert Duvall             Genre 2: Comedy
+---------------------------------------------------------------------------
+PLOT:
+A coming-of-age story about a shy, young boy sent by his irresponsible 
+mother to spend the summer with his wealthy, eccentric uncles in Texas.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 14        Title:  Shackelton
+---------------------------------------------------------------------------
+Year: 2002        Rating: 8
+---------------------------------------------------------------------------
+Leading Actor:    Kenneth Branagh           Genre 1: Biography
+Supporting Actor: John Grillo               Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+The true story of Shackleton's 1914 Endurance expedition to the the South 
+Pole and his epic struggle to lead his 28 man crew to safety after his ship 
+was crushed in the pack ice.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 15        Title:  Shawshank Redemption, The
+---------------------------------------------------------------------------
+Year: 1994        Rating: 9
+---------------------------------------------------------------------------
+Leading Actor:    Tim Robbins               Genre 1: Drama
+Supporting Actor: Morgan Freeman            Genre 2: Crime
+---------------------------------------------------------------------------
+PLOT:
+Two imprisoned men bond over a number of years, finding solace and eventual 
+redemption through acts of common decency.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 16        Title:  Thelma and Louise
+---------------------------------------------------------------------------
+Year: 1991        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Susan Sarandon            Genre 1: Action
+Supporting Actor: Geena Davis               Genre 2: Action
+---------------------------------------------------------------------------
+PLOT:
+Whilst on a short weekend getaway, Louise shoots a man who had tried to 
+rape Thelma. Due to the incriminating circumstances, they make a run for it 
+but are soon followed closely by the authorities including a local 
+policeman who is sympathetic to their plight. The federal authorities, 
+however, have less compassion and thus a cross country chase ensues for the 
+two fugitives. Along the way, both women rediscover the strength of their 
+friendship and surprising aspects of their personalities and self-strengths 
+in the trying times.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 17        Title:  Unfinished Life, An
+---------------------------------------------------------------------------
+Year: 2005        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Robert Redford            Genre 1: Drama
+Supporting Actor: Jennifer Lopez            Genre 2: Drama
+---------------------------------------------------------------------------
+PLOT:
+A down on her luck woman, desperate to provide care for her daughter, moves 
+in with her father in-law from whom she is estranged. Through time, they 
+learn to forgive each other and heal old wounds.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 18        Title:  Whip It
+---------------------------------------------------------------------------
+Year: 2009        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Ellen Page                Genre 1: Drama
+Supporting Actor: Marcia Gay Harden         Genre 2: Sport
+---------------------------------------------------------------------------
+PLOT:
+In Bodeen, Texas, an indie-rock loving misfit finds a way of dealing with 
+her small-town misery after she discovers a roller derby league in nearby 
+Austin.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 19        Title:  X-Men
+---------------------------------------------------------------------------
+Year: 2000        Rating: 7
+---------------------------------------------------------------------------
+Leading Actor:    Hugh Jackman              Genre 1: Action
+Supporting Actor: Patrick Stewart           Genre 2: Action
+---------------------------------------------------------------------------
+PLOT:
+All over the planet, unusual children are born with an added twist to their 
+genetic code. This X-factor allows the children to perform extraordinary 
+feats - flight, telekinetics, laser beams from the eyes and more. One Dr. 
+Charles Xavier gathers the children to a place where he can train them to 
+use their powers for themselves and the forces of good he dubs these 
+children his X-men and hijinks ensue.
+***************************************************************************
+
+***************************************************************************
+MOVIE #: 20        Title:  Yankee Doodle Dandee
+---------------------------------------------------------------------------
+Year: 1942        Rating: 8
+---------------------------------------------------------------------------
+Leading Actor:    James Cagney              Genre 1: Musical
+Supporting Actor: Joan Leslie               Genre 2: Biography
+---------------------------------------------------------------------------
+PLOT:
+This film depicts the life of the renowned musical composer, playwright, 
+actor, dancer and singer George M. Cohan.
+***************************************************************************
+

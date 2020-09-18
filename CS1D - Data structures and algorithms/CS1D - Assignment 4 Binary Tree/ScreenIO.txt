@@ -1,0 +1,88 @@
+**************************************************************************
+* PROGRAMMED BY : Chaz Del Prato                                         *
+* ASSIGNMENT #4 : Binary Search Tree                                     *
+* CLASS         : CS1D                                                   *
+* SECTION       : MW 3:00p                                               *
+--------------------------------------------------------------------------
+* Description   :                                                        *
+*  The output of this program will display the adding of nodes to the    *
+*  tree and will show different traversals that the tree can perform and *
+*  will be able to output the tree to the console. It will display adding*
+*  the nodes to the tree. It will then output the Breath order traversal *
+*  and after that it will display the Pre-order traversal. After that it *
+*  will show the Inorder traversal and then will finally output the post *
+*  order traversal.                                                      *
+*  The output of the binary tree is not the best but hopefully can get   *
+*  the picture accross.                                                  *
+**************************************************************************
+
+Adding root node ... 88
+Adding other node ... 12
+Adding other node ... 24
+Adding other node ... 49
+Adding other node ... 7
+Adding other node ... 25
+Adding other node ... 55
+Adding other node ... 18
+Adding other node ... 19
+Adding other node ... 13
+Adding other node ... 109
+Adding other node ... 18
+Adding other node ... 44
+Adding other node ... 1001
+
+Breath Order Traversal...
+88 12 109 7 24 1001 18 49 13 19 25 55 18 44 
+
+Pre-order traversal...
+88 12 7 24 18 13 18 19 49 25 44 55 109 1001 
+
+In-order traversal...
+7
+12
+13
+18
+18
+19
+24
+25
+44
+49
+55
+88
+109
+1001
+
+
+Post-order traversal...
+7
+18
+13
+19
+18
+44
+25
+55
+49
+24
+12
+1001
+109
+88
+
+Displaying the Binary Search Tree...
+
+        7
+    12
+                13
+                    18
+            18
+                19
+        24
+                25
+                    44
+            49
+                55
+88
+    109
+        1001

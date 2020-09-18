@@ -1,0 +1,38 @@
+***********************************
+* PROGRAMMED BY : Lucas & BBC
+* CLASS         : CS1A
+* SECTION       : MW: 9:30AM
+* LAB#21        : Intro to Functions
+***********************************
+
+Enter the first integer:  6
+Enter the second integer: 3
+
+The SUM is:          9
+The PRODUCT is:     18
+The LARGEST is:      6
+The AVERAGE is:    4.5
+
+
+
+Enter the first integer:  -6
+Enter the second integer: 10
+
+The SUM is:          4
+The PRODUCT is:    -60
+The LARGEST is:     10
+The AVERAGE is:      2
+
+
+
+Enter the first integer:  100
+Enter the second integer: 50
+
+The SUM is:        150
+The PRODUCT is:   5000
+The LARGEST is:    100
+The AVERAGE is:     75
+
+
+
+Enter the first integer:  -999

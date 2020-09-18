@@ -1,0 +1,71 @@
+********************************************************
+* PROGRAMMED BY : BBC
+* Student ID    : 382108
+* Class         : CS1A --> Mon/Wed 9:30am
+* ASSIGNMENT #9 : Functions
+******************************************************
+
+Please Enter your Account Number: 1234
+Please Enter the Sales Date.
+Enter Month: 2
+Enter Day: 21
+Enter Year: 2008
+Please Enter the County Code: o
+Please Enter the Sales Amount: 235.75
+Please Enter the Weight: 28
+
+ACCOUNT NUMBER                           COUNTY
+	1234                            Orange County
+
+DATE OF SALE: 2/21/2008
+
+
+SALE AMOUNT:       $  235.75
+DISCOUNT:          $   11.79
+SALES TAX:         $   17.36
+SHIPPING:          $    5.30
+TOTAL DUE:         $  246.62
+
+
+Please Enter your Account Number: 4325
+Please Enter the Sales Date.
+Enter Month: 6
+Enter Day: 15
+Enter Year: 2008
+Please Enter the County Code: S
+Please Enter the Sales Amount: 157.50
+Please Enter the Weight: 15
+
+ACCOUNT NUMBER                           COUNTY
+	4325                                San Diego
+
+DATE OF SALE: 6/15/2008
+
+
+SALE AMOUNT:       $  157.50
+DISCOUNT:          $   15.75
+SALES TAX:         $   11.69
+SHIPPING:          $    5.00
+TOTAL DUE:         $  158.44
+
+
+Please Enter your Account Number: 6754
+Please Enter the Sales Date.
+Enter Month: 12
+Enter Day: 23
+Enter Year: 2008
+Please Enter the County Code: L
+Please Enter the Sales Amount: 450.00
+Please Enter the Weight: 75
+
+ACCOUNT NUMBER                           COUNTY
+	6754                               Los Angles
+
+DATE OF SALE: 12/23/2008
+
+
+SALE AMOUNT:       $  450.00
+DISCOUNT:          $   67.50
+SALES TAX:         $   30.60
+SHIPPING:          $    6.75
+TOTAL DUE:         $  419.85

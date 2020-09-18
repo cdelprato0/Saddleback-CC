@@ -1,0 +1,123 @@
+************************************************************
+*    PROGRAMMED BY : FSC & BBC
+*    CLASS         : CS1B
+*    SECTION       : MW: 8:30am-12:20pm
+*    LAB #3        : Supplement: Coin Flip
+************************************************************
+
+Welcome to coin toss! Get 3 heads in a row to win!
+
+What is your name?         Ed Peck
+What is your gender?(M/F)  m
+
+Try to get 3 heads in a row. Good luck Mr. Ed Peck!
+
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+
+It took you 19 tosses to get 3 heads in a row.
+On average you flipped heads 52% of the time
+
+
+Welcome to coin toss! Get 3 heads in a row to win!
+
+What is your name?         Sandy Cheeks
+What is your gender?(M/F)  F
+
+Try to get 3 heads in a row. Good luck Ms. Sandy Cheeks!
+
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+
+It took you 16 tosses to get 3 heads in a row.
+On average you flipped heads 43% of the time
+
+
+Welcome to coin toss! Get 3 heads in a row to win!
+
+What is your name?         Bob The Builder
+What is your gender?(M/F)  M
+
+Try to get 3 heads in a row. Good luck Mr. Bob The Builder!
+
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+TAIL
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+Press <enter> to flip
+HEAD
+
+It took you 6 tosses to get 3 heads in a row.
+On average you flipped heads 66% of the time

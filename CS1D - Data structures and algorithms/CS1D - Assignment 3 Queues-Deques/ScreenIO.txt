@@ -1,0 +1,306 @@
+**************************************************************************
+* PROGRAMMED BY : Chaz Del Prato                                         *
+* ASSIGNMENT #3 : Queues & Deques                                        *
+* CLASS         : CS1D                                                   *
+* SECTION       : MW 3:00p                                               *
+--------------------------------------------------------------------------
+* Description   :                                                        *
+*  PART ONE -                                                            *
+*  The Output of this program will display the testing of using a wrapper*
+*  class. The Queue class is the wrapper for the Deque class. The first  *
+*  part of the output will check to see if the Queue is empty or not.    *
+*  After that then it will add the first two elements to the queue and   *
+*  will output to the console the contents of the elements. Then it will *
+*  return the size of the Queue. It will show the head of the queue by   *
+*  the Peek method. The program will dequeue one element off the queue   *
+*  and will output what is getting removed. It will test the isEmpty     *
+*  method again and output so. After that it will add the last two       *
+*  elements to the queue. Finally it will display all of the elements of *
+*  the linked list.                                                      *
+*  PART TWO -                                                            *
+*  The output of the second part of the assignment will be displaying how*
+*  an extendable array is used in a circular fashion. The user will be   *
+*  prompt with how big of a capacity the user wants to make the array.   *
+*  Then the program will provide a menu with options to add, delete, and *
+*  display the size and capacity and also the contents inside the array. *
+*  The output will read in the first string and then will display. After *
+*  it will add another string and show that the capacity has been filled *
+*  and will output so. Then it will add a couple of more string and then *
+*  it will perform a delete from the front and output. After deleting    *
+*  the program will add another string to the array and output.          *
+**************************************************************************
+
+**********
+*PART ONE*
+**********
+
+<<<<isEMPTY TEST>>>>
+Is the Queue empty?
+Yes! The Queue is empty!
+
+
+<<<<ENQUEUE TEST>>>>
+Entering "A man, a plan, a canal, Panama" into the Queue!
+
+Entering "Was it a car or a cat I saw?" into the Queue!
+
+
+<<<<SIZE TEST>>>>
+The size of the Queue is: 2
+
+
+<<<<FRONT(PEEK) TEST>>>>
+The front of the Queue is: "A man, a plan, a canal, Panama"
+
+
+<<<<DEQUEUE TEST>>>>
+Removing "A man, a plan, a canal, Panama" from the Queue!
+
+
+<<<<isEMPTY TEST>>>>
+Is the Queue empty?
+The Queue is not empty!
+
+
+<<<<ENQUEUE TEST>>>>
+Entering "Sit on a potato pan, Otis" into the Queue!
+
+Entering "No lemon, no melon" into the Queue!
+
+
+Displaying contents of the Queue 
+-------------------------------- 
+"Was it a car or a cat I saw?"
+"Sit on a potato pan, Otis"
+"No lemon, no melon"
+
+**********
+*PART TWO*
+**********
+
+Please enter the beginning Capacity of the Extendable Array: 
+1
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+2
+The Extendable Array is EMPTY!
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+3
+The Extendable Array is EMPTY!
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+4
+The Extendable Array is EMPTY!
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+1
+What string would you like to add? One
+
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+4
+DISPLAYING the Extendable Array...
+One
+
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+1
+What string would you like to add? Two
+The Capacity of the Extendable Array has reached its MAX...
+Now the Extendable Array will have DOUBLED the Capacity!
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+3
+The size of the Extendable Array is: 2
+The capacity of the Extendable Array is: 2
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+4
+DISPLAYING the Extendable Array...
+One
+Two
+
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+1
+What string would you like to add? Three
+The Capacity of the Extendable Array has reached its MAX...
+Now the Extendable Array will have DOUBLED the Capacity!
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+3
+The size of the Extendable Array is: 3
+The capacity of the Extendable Array is: 4
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+4
+DISPLAYING the Extendable Array...
+One
+Two
+Three
+
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+2
+REMOVING an element from the Extendable Array...
+
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+3
+The size of the Extendable Array is: 2
+The capacity of the Extendable Array is: 4
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+4
+DISPLAYING the Extendable Array...
+Two
+Three
+
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+1
+What string would you like to add? Four
+
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+3
+The size of the Extendable Array is: 3
+The capacity of the Extendable Array is: 4
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+4
+DISPLAYING the Extendable Array...
+Two
+Three
+Four
+
+
+Please select from the following options: 
+----------------------------------------- 
+1 - Insert into the Back of the Extendable Array. 
+2 - Delete from the Front of the Extendable Array. 
+3 - Get the Size and Capacity of the Extendable Array. 
+4 - Display the Extendable Array. 
+-1 - To EXIT the program. 
+
+-1

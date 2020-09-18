@@ -1,0 +1,7 @@
+13:48:14 **** Incremental Build of configuration Debug for project Lab 15 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 15.exe" main.o 
+
+13:48:16 Build Finished (took 1s.841ms)
+

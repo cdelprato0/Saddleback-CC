@@ -1,0 +1,122 @@
+*************************************************************************
+* PROGRAMMED BY : Chaz Del Prato                                        *
+* ASSIGNMENT #8 : Skip Lists                                            *
+* CLASS         : CS1D                                                  *
+* SECTION       : MW 3:00p                                              *
+-------------------------------------------------------------------------
+* Description   :                                                       *
+*  This program will insert all the keys and names of cities into the   *
+*  Skip List. Once the items have been added, then it will output the   *
+*  Skip list with the key, value and the level the nodes are on. Then it*
+*  will demonstrate erasing nodes from the skip list. It will call the  *
+*  erase function then it will output the skip list after the deletion. *
+*  After that it will display the find function. The find function will *
+*  determine if the node exists in the skip list and will output so. At *
+*  the end it will output the current size of the skip list. A          *
+*  dictionary was used to hold the values of the skip list.             *
+*************************************************************************
+
+*****   INSERTING   *****
+
+{
+Value: La Jolla, Key: 11, Level: 6 | 
+Value: Orange, Key: 17, Level: 5 | Value: Del Mar, Key: 18, Level: 2 | 
+Value: Laguna Niguel, Key: 18, Level: 2 | Value: Brea, Key: 19, Level: 2 | 
+Value: Aliso Viejo, Key: 22, Level: 2 | Value: San Clemente, Key: 22, Level: 2 | 
+Value: Dana Point, Key: 29, Level: 2 | Value: Los Angeles, Key: 31, Level: 2 | 
+Value: San Diego, Key: 32, Level: 2 | Value: Tustin, Key: 35, Level: 2 | 
+Value: San Clemente, Key: 41, Level: 2 | Value: Riverside, Key: 41, Level: 5 | 
+Value: Mission Viejo, Key: 41, Level: 5 | Value: Vista, Key: 42, Level: 3 | 
+Value: Irvine, Key: 44, Level: 3 | Value: San Diego, Key: 49, Level: 4 | 
+Value: Laguna Beach, Key: 49, Level: 2 | Value: Anaheim, Key: 49, Level: 2 | 
+Value: Lake Forest, Key: 58, Level: 3 | Value: Santa Ana, Key: 60, Level: 2 | 
+Value: Laguna Hills, Key: 62, Level: 2 | Value: Palms Springs, Key: 72, Level: 3 | 
+Value: El Segundo, Key: 88, Level: 3 | Value: San Juan, Key: 99, Level: 2 | 
+Value: Oceanside, Key: 103, Level: 2 | Value: NIL, Key: 2147483647, Level: 1
+}
+
+
+*****   REMOVING KEY 41   *****
+{
+Value: La Jolla, Key: 11, Level: 6 | 
+Value: Orange, Key: 17, Level: 5 | Value: Del Mar, Key: 18, Level: 2 | 
+Value: Laguna Niguel, Key: 18, Level: 2 | Value: Brea, Key: 19, Level: 2 | 
+Value: Aliso Viejo, Key: 22, Level: 2 | Value: San Clemente, Key: 22, Level: 2 | 
+Value: Dana Point, Key: 29, Level: 2 | Value: Los Angeles, Key: 31, Level: 2 | 
+Value: San Diego, Key: 32, Level: 2 | Value: Tustin, Key: 35, Level: 2 | 
+Value: Riverside, Key: 41, Level: 2 | Value: Mission Viejo, Key: 41, Level: 5 | 
+Value: Vista, Key: 42, Level: 3 | Value: Irvine, Key: 44, Level: 3 | 
+Value: San Diego, Key: 49, Level: 4 | Value: Laguna Beach, Key: 49, Level: 2 | 
+Value: Anaheim, Key: 49, Level: 2 | Value: Lake Forest, Key: 58, Level: 3 | 
+Value: Santa Ana, Key: 60, Level: 2 | Value: Laguna Hills, Key: 62, Level: 2 | 
+Value: Palms Springs, Key: 72, Level: 3 | Value: El Segundo, Key: 88, Level: 3 | 
+Value: San Juan, Key: 99, Level: 2 | Value: Oceanside, Key: 103, Level: 2 | 
+Value: NIL, Key: 2147483647, Level: 1}
+
+
+*****   REMOVING KEY 58   *****
+{
+Value: La Jolla, Key: 11, Level: 6 | 
+Value: Orange, Key: 17, Level: 5 | Value: Del Mar, Key: 18, Level: 2 | 
+Value: Laguna Niguel, Key: 18, Level: 2 | Value: Brea, Key: 19, Level: 2 | 
+Value: Aliso Viejo, Key: 22, Level: 2 | Value: San Clemente, Key: 22, Level: 2 | 
+Value: Dana Point, Key: 29, Level: 2 | Value: Los Angeles, Key: 31, Level: 2 | 
+Value: San Diego, Key: 32, Level: 2 | Value: Tustin, Key: 35, Level: 2 | 
+Value: Riverside, Key: 41, Level: 2 | Value: Mission Viejo, Key: 41, Level: 5 | 
+Value: Vista, Key: 42, Level: 3 | Value: Irvine, Key: 44, Level: 3 | 
+Value: San Diego, Key: 49, Level: 4 | Value: Laguna Beach, Key: 49, Level: 2 | 
+Value: Anaheim, Key: 49, Level: 2 | Value: Santa Ana, Key: 60, Level: 3 | 
+Value: Laguna Hills, Key: 62, Level: 2 | Value: Palms Springs, Key: 72, Level: 3 | 
+Value: El Segundo, Key: 88, Level: 3 | Value: San Juan, Key: 99, Level: 2 | 
+Value: Oceanside, Key: 103, Level: 2 | Value: NIL, Key: 2147483647, Level: 1
+}
+
+
+*****   REMOVING KEY 73   *****
+*****   KEY NOT FOUND   *****
+
+{
+Value: La Jolla, Key: 11, Level: 6 | 
+Value: Orange, Key: 17, Level: 5 | Value: Del Mar, Key: 18, Level: 2 | 
+Value: Laguna Niguel, Key: 18, Level: 2 | Value: Brea, Key: 19, Level: 2 | 
+Value: Aliso Viejo, Key: 22, Level: 2 | Value: San Clemente, Key: 22, Level: 2 | 
+Value: Dana Point, Key: 29, Level: 2 | Value: Los Angeles, Key: 31, Level: 2 | 
+Value: San Diego, Key: 32, Level: 2 | Value: Tustin, Key: 35, Level: 2 | 
+Value: Riverside, Key: 41, Level: 2 | Value: Mission Viejo, Key: 41, Level: 5 | 
+Value: Vista, Key: 42, Level: 3 | Value: Irvine, Key: 44, Level: 3 | 
+Value: San Diego, Key: 49, Level: 4 | Value: Laguna Beach, Key: 49, Level: 2 | 
+Value: Anaheim, Key: 49, Level: 2 | Value: Santa Ana, Key: 60, Level: 3 | 
+Value: Laguna Hills, Key: 62, Level: 2 | Value: Palms Springs, Key: 72, Level: 3 | 
+Value: El Segundo, Key: 88, Level: 3 | Value: San Juan, Key: 99, Level: 2 | 
+Value: Oceanside, Key: 103, Level: 2 | Value: NIL, Key: 2147483647, Level: 1
+}
+
+
+*****   REMOVING KEY 41   *****
+{
+Value: La Jolla, Key: 11, Level: 5 | 
+Value: Orange, Key: 17, Level: 5 | Value: Del Mar, Key: 18, Level: 2 | 
+Value: Laguna Niguel, Key: 18, Level: 2 | Value: Brea, Key: 19, Level: 2 | 
+Value: Aliso Viejo, Key: 22, Level: 2 | Value: San Clemente, Key: 22, Level: 2 | 
+Value: Dana Point, Key: 29, Level: 2 | Value: Los Angeles, Key: 31, Level: 2 | 
+Value: San Diego, Key: 32, Level: 2 | Value: Tustin, Key: 35, Level: 2 | 
+Value: Mission Viejo, Key: 41, Level: 2 | Value: Vista, Key: 42, Level: 3 | 
+Value: Irvine, Key: 44, Level: 3 | Value: San Diego, Key: 49, Level: 4 | 
+Value: Laguna Beach, Key: 49, Level: 2 | Value: Anaheim, Key: 49, Level: 2 | 
+Value: Santa Ana, Key: 60, Level: 3 | Value: Laguna Hills, Key: 62, Level: 2 | 
+Value: Palms Springs, Key: 72, Level: 3 | Value: El Segundo, Key: 88, Level: 3 | 
+Value: San Juan, Key: 99, Level: 2 | Value: Oceanside, Key: 103, Level: 2 | 
+Value: NIL, Key: 2147483647, Level: 1}
+
+
+*****   FINDING KEY 100   *****
+*****   Node NOT found!   *****
+
+
+*****   FINDING KEY 99   *****
+*****   Node found!   *****
+Value: San Juan
+
+
+*****   THE SIZE IS   *****
+24

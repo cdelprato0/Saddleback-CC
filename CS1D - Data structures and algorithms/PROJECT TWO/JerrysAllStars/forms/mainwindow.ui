@@ -1,0 +1,3725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>730</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>730</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Jerry's All-Star Trip Planner</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777192</height>
+    </size>
+   </property>
+   <widget class="QStackedWidget" name="pages">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>730</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>730</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>730</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#pages {
+background-color:qlineargradient(spread:pad, x1:0.408, y1:0.0284091, x2:0.194, y2:1, stop:0 rgba(171, 174, 179, 255), stop:1 rgba(255, 255, 255, 255))
+
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>7</number>
+    </property>
+    <widget class="QWidget" name="WelcomePage">
+     <property name="minimumSize">
+      <size>
+       <width>950</width>
+       <height>625</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>950</width>
+       <height>625</height>
+      </size>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>661</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QPushButton" name="button_CustomPlanPage">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>641</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_CustomPlanPage {
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_CustomPlanPage:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_CustomPlanPage:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Custom Stadium Trip</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../assets.qrc">
+         <normaloff>:/assets/assets/map2.png</normaloff>:/assets/assets/map2.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="button_InformationPage">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>641</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_InformationPage{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_InformationPage:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_InformationPage:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>View Database Information</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../assets.qrc">
+         <normaloff>:/assets/assets/stadium2.png</normaloff>:/assets/assets/stadium2.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="button_PlanPage">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>641</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_PlanPage {
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_PlanPage:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_PlanPage:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Example Trip Options</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../assets.qrc">
+         <normaloff>:/assets/assets/map2.png</normaloff>:/assets/assets/map2.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>20</y>
+        <width>331</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_welcomelogo">
+       <property name="geometry">
+        <rect>
+         <x>7</x>
+         <y>5</y>
+         <width>321</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../assets.qrc">:/assets/assets/smallermainlogo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>311</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_welcome">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>251</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:30pt; font-weight:1000;color:white;&quot;&gt;Welcome!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;color:white;&quot;&gt;Please select an option:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PlanPage">
+     <widget class="QPushButton" name="button_comericaPark">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>440</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>FISH&amp;CHIPS</family>
+        <pointsize>17</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_comericaPark{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_comericaPark:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_comericaPark:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Choose Plan</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_everyStadium">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>50</y>
+        <width>361</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView#tableView_everyStadium{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+     </widget>
+     <widget class="QFrame" name="frame_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>311</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_comericaPark">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>251</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../assets.qrc">:/assets/assets/TeamLogos/Comerica_Park.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="button_planBack">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../assets.qrc">
+        <normaloff>:/assets/assets/back.png</normaloff>:/assets/assets/back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_information">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>440</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>FISH&amp;CHIPS</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot; font-size:12pt;color:black;&quot;&gt;You will be able to purchase&lt;br&gt; souvenirs on your trip&lt;/p&gt;&lt;/body&gt;&lt;/head&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>311</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_planExplanation">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>281</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;left&quot;&gt;&lt;span style=&quot; font-size:15pt;color:rgb(16, 37, 118);&quot;&gt;To the right is every stadium&lt;br&gt;available to visit. By selecting&lt;br&gt;this plan, you will visit every&lt;br&gt;stadium starting from&lt;br&gt; Comerica Park.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CustomPlanPage">
+     <widget class="QPushButton" name="button_customBack">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../assets.qrc">
+        <normaloff>:/assets/assets/back.png</normaloff>:/assets/assets/back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_15">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>10</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_startCustomTrip">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>10</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:600;&quot;&gt;Custom Trip Planner&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>701</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_instructions_onCustom">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>701</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Select stadiums you would like to visit from below. To start trip, click 'Confirm'.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="listWidget_stadiumsToVisit_onCustom">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>90</y>
+         <width>511</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget#listWidget_stadiumsToVisit_onCustom{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::MultiSelection</enum>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_selectStart_onCustom">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>10</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_selectStart_onCustom">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>14</y>
+         <width>331</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Please select a stadium to start from:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_confirm_onCustom">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>360</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_confirm_onCustom{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_confirm_onCustom:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_confirm_onCustom:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Confirm</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_error_onCustom">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>370</y>
+         <width>401</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Please select at least one other stadium to visit!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PurchaseSouvenirsPage">
+     <widget class="QPushButton" name="pushButton_cancel_onPurchase">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>FISH&amp;CHIPS</family>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_cancel_onPurchase{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_cancel_onPurchase:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_cancel_onPurchase:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Cancel Trip</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_17">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>311</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_purchaseSouvenirs">
+       <property name="geometry">
+        <rect>
+         <x>29</x>
+         <y>20</y>
+         <width>281</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:600;&quot;&gt;Purchase Souvenirs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>691</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_success_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>191</x>
+         <y>322</y>
+         <width>281</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Items added to cart!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_currentStadium_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Current stadium:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_next_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>342</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_next_onPurchase{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_next_onPurchase:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_next_onPurchase:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Next Stadium</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_confirm_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>256</x>
+         <y>274</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_confirm_onPurchase{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_confirm_onPurchase:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_confirm_onPurchase:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Confirm</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_finish_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>341</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_finish_onPurchase{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_finish_onPurchase:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_finish_onPurchase:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Finish Trip</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>360</y>
+         <width>411</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar:horizontal {
+border: 1px solid gray;
+border-radius: 3px;
+background: white;
+padding: 1px;
+text-align: right;
+margin-right: 10ex;
+}
+
+QProgressBar::chunk:horizontal {
+background: #6fa5fc;
+width: 10px;
+}</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="format">
+        <string>%v/%m</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_currentStadium_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_souvenirs_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>90</y>
+         <width>511</width>
+         <height>176</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget#tableWidget_souvenirs_onPurchase{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="showDropIndicator" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="dragDropOverwriteMode">
+        <bool>false</bool>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::NoSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>50</number>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Souvenir Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Price</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Quantity</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QLabel" name="label_error_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>195</x>
+         <y>327</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;No items selected!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_instructions_onPurchase">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>641</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Select souvenirs from below, then the quanitity you would like to purchase.</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ViewPurchasesAndPlanPage">
+     <widget class="QFrame" name="frame_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>291</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_stadiumArt">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>10</y>
+         <width>191</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../assets.qrc">:/assets/assets/TeamLogos/Angel_Stadium_of_Anaheim.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="button_moveRight">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>70</y>
+         <width>41</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_moveRight:pressed{
+background: transparent;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../assets.qrc">
+         <normaloff>:/assets/assets/rightArrow2.png</normaloff>:/assets/assets/rightArrow2.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="button_moveLeft">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>41</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_moveLeft:pressed{
+		background: transparent;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/assets/assets/leftArrow2.png</normalon>
+        </iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QListWidget" name="listWidget_AllStadiums">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget#listWidget_AllStadiums{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_summary">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>20</y>
+        <width>381</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="history">
+       <attribute name="title">
+        <string>History</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_history">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>351</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget#listWidget_history{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="dijkstrasInformation">
+       <attribute name="title">
+        <string>Dijkstras</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_dijkstrasInformation">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>351</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget#listWidget_dijkstrasInformation{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="MSTInformation">
+       <attribute name="title">
+        <string>Minimum Spanning Tree</string>
+       </attribute>
+       <widget class="QListWidget" name="listWidget_MST">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>351</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget#listWidget_MST{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_visitedStadiums">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>27</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>FISH&amp;CHIPS</family>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Visited Stadiums</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_restartPlan">
+      <property name="geometry">
+       <rect>
+        <x>592</x>
+        <y>457</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>FISH&amp;CHIPS</family>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_restartPlan{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_restartPlan:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_restartPlan:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Restart Plan</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ViewInformationPage">
+     <widget class="QTabWidget" name="tabWidget_displayStadiums">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>711</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_AllInformation">
+       <attribute name="title">
+        <string>All Info</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allInformation">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allInformation{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_selectTeam">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>380</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_allStadiums">
+       <attribute name="title">
+        <string>Stadiums</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allStadiums">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allStadiums{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_AllTeams">
+       <attribute name="title">
+        <string>Teams</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allTeams">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allTeams{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_both">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>371</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_both{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_both:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_both:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Teams and Stadiums</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_teams">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>370</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_teams{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_teams:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_teams:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Just Teams</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_AllGrass">
+       <attribute name="title">
+        <string>Surfaces</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allGrass">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allGrass{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_grass">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_grass{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_grass:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_grass:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Grass</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_other">
+        <property name="geometry">
+         <rect>
+          <x>104</x>
+          <y>370</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_other{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_other:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_other:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Other</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_allSurfaces">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>370</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_allSurfaces{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_allSurfaces:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_allSurfaces:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>All</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_totalGrass">
+        <property name="geometry">
+         <rect>
+          <x>316</x>
+          <y>380</y>
+          <width>181</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Number of stadiums with grass:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_totalGrass">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>380</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_AllOpenedDates">
+       <attribute name="title">
+        <string>Open Dates</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allOpenedDates">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allOpenedDates{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_AllCapacity">
+       <attribute name="title">
+        <string>Stadium Capacities</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allCapacity">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allCapacity{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_totalCapacity">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>390</y>
+          <width>161</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Total Capacity for all Stadiums:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_totalCapacity">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>390</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Typology">
+       <attribute name="title">
+        <string>Typology</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allTypology">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allTypology{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_specificTypology">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>410</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Specific Typology: </string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_specificTypology">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_allTypology">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>370</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_allTypology{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_allTypology:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_allTypology:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>All</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Leagues">
+       <attribute name="title">
+        <string>Leagues</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allLeagues">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allLeagues{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_AmericanLeague">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>377</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_AmericanLeague{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_AmericanLeague:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_AmericanLeague:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>American</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_NationalLeague">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>377</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_NationalLeague{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_NationalLeague:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_NationalLeague:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>National</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_allLeague">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>377</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_allLeague{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_allLeague:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_allLeague:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>All</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_AllSouvenirs">
+       <attribute name="title">
+        <string>Souvenir List</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_allSouvenirs">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>681</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_allSouvenirs{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_allSouvenirs">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>377</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#button_allSouvenirs{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_allSouvenirs:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_allSouvenirs:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>All Souvenirs</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_specificTeam">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>377</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_specificTeam">
+        <property name="geometry">
+         <rect>
+          <x>183</x>
+          <y>379</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>FISH&amp;CHIPS</family>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Specific Team:</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="button_viewInformationBack">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../assets.qrc">
+        <normaloff>:/assets/assets/back.png</normaloff>:/assets/assets/back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="AdminWelcomePage">
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>361</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QPushButton" name="button_souvenirManagement">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>331</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_souvenirManagement{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_souvenirManagement:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_SouvenirManagement:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Souvenir Management</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../assets.qrc">
+         <normaloff>:/assets/assets/baseball.png</normaloff>:/assets/assets/baseball.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>29</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="button_viewTables">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>192</y>
+         <width>331</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_viewTables{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_viewTables:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_viewTables:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>View Database Tables</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../assets.qrc">
+         <normaloff>:/assets/assets/document.png</normaloff>:/assets/assets/document.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="button_loadFile">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>128</y>
+         <width>331</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_loadFile{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_loadFile:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_loadFile:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Load From File</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../assets.qrc">
+         <normaloff>:/assets/assets/document.png</normaloff>:/assets/assets/document.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="button_stadiumManagement">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>69</y>
+         <width>331</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_stadiumManagement{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_stadiumManagement:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_stadiumManagement:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Stadium Management</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../assets.qrc">
+         <normaloff>:/assets/assets/stadium2.png</normaloff>:/assets/assets/stadium2.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_fileLoaded">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>220</y>
+        <width>291</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>FISH&amp;CHIPS</family>
+        <pointsize>17</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_fileLoaded{
+	color:rgb(16, 37, 118);
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_logOut">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>440</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>FISH&amp;CHIPS</family>
+        <pointsize>17</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#button_logOut{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#button_logOut:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#button_logOut:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Log Out</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>20</y>
+        <width>291</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_logoAdmin">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>291</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../assets.qrc">:/assets/assets/smallermainlogo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>361</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_welcomeAdmin">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>331</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:30pt; font-weight:1000;color:white;&quot;&gt;Welcome Admin!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;color:white;&quot;&gt;This is the Admin Page. &lt;br&gt;Options for admin are below.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="AdminSouvenirManagementPage">
+     <widget class="QTableView" name="tableView_adminSouv">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>331</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView#tableView_adminSouv{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+     </widget>
+     <widget class="QLabel" name="label_SMSelectTeam">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>FISH&amp;CHIPS</family>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Select Team:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_adminSouvTeam">
+      <property name="geometry">
+       <rect>
+        <x>137</x>
+        <y>64</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_souvenirManagementback">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../assets.qrc">
+        <normaloff>:/assets/assets/back.png</normaloff>:/assets/assets/back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_10">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>60</y>
+        <width>371</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_SMWelcom">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>19</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Souvenir Management</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>-3</y>
+         <width>101</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../assets.qrc">:/assets/assets/logo.png</pixmap>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_11">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>180</y>
+        <width>371</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_AddError">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>211</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;The NEW Souvenir Already EXISTS! &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_adminSouvName">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>271</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Type Here or Click on Table</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_SMEnterPrice">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>20</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Price</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_EditSov">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_EditSov{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_EditSov:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_EditSov:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Confirm Edit</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_DeleteSouv">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>160</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_DeleteSouv{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_DeleteSouv:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_DeleteSouve:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_SMEnterSouv">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>281</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>New or Existing Souvenir</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_souvPrice">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>50</y>
+         <width>71</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_AddSouv">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>110</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_AddSouv{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_AddSouv:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_AddSouve:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_AddInitialSouvenirs">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>240</y>
+         <width>351</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_AddInitialSouvenirs{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_AddInitialSouvenirs:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_AddInitialSouvenirs:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Add Initial Souvenirs</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="AdminStadiumManagementPage">
+     <widget class="QTableView" name="tableView_adminStad">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>158</y>
+        <width>711</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView#tableView_adminStad{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::DoubleClicked</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_stadiumManagementback">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../assets.qrc">
+        <normaloff>:/assets/assets/back.png</normaloff>:/assets/assets/back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_12">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>341</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>0</y>
+         <width>61</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../assets.qrc">:/assets/assets/logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_StMPWelcome">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>261</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Stadium Management Page</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>711</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_stadDelete">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>10</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_stadDelete{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_stadDelete:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_stadDelete:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_StMPEnterName">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>71</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Stadium</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_stadAdd">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>10</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pushButton_stadAdd{
+    background-color: rgb(16, 37, 118);
+	color: white;
+    border-width: 2px;
+}
+QPushButton#pushButton_stadAdd:hover{
+	 background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(195, 224, 238, 255));
+	 border-width: 2px;
+	 color: black;
+}
+QPushButton#pushButton_stadAdd:pressed {
+    background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(197, 237, 255, 255), stop:1 rgba(107, 206, 255, 255));
+	border-width: 2px;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Add New</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_adminStad">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Click on Stadium to Delete</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="LoadFilePage">
+     <widget class="QPushButton" name="button_viewTablesBack">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../assets.qrc">
+        <normaloff>:/assets/assets/back.png</normaloff>:/assets/assets/back.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>691</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_stadiumsTable">
+       <attribute name="title">
+        <string>Stadiums Table</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_stadiumsTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>661</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_stadiumsTable{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_souvenirsTable">
+       <attribute name="title">
+        <string>Souvenirs Table</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_souvenirsTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>661</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_souvenirsTable{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_distancesTable">
+       <attribute name="title">
+        <string>Distances Table</string>
+       </attribute>
+       <widget class="QTableView" name="tableView_distancesTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>661</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView#tableView_distancesTable{
+background-color: rgb(230, 230, 230);
+border: transparent;
+gridline-color: white;
+color: rgb(16, 37, 118);
+}
+QHeaderView::section {
+background-color:  rgb(230, 230, 230); 
+color: rgb(16, 37, 118);
+font-family: Calibri;
+font-size: 13pt;
+height: 30px;
+}
+QTableCornerButton{
+background-color: transparent;
+color: transparent;
+}</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_14">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>10</y>
+        <width>311</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>249</x>
+         <y>0</y>
+         <width>61</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../assets.qrc">:/assets/assets/logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_StMPWelcome_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>FISH&amp;CHIPS</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Database Information</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>730</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAdmin_Login">
+    <property name="title">
+     <string>Admin Login</string>
+    </property>
+    <addaction name="actiongo"/>
+   </widget>
+   <addaction name="menuAdmin_Login"/>
+  </widget>
+  <action name="actiongo">
+   <property name="text">
+    <string>Go</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../assets.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>button_viewInformationBack</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>go_to_previous_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_viewTablesBack</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>go_to_previous_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_planBack</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>go_to_previous_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_stadiumManagementback</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>go_to_previous_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_souvenirManagementback</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>go_to_previous_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_customBack</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>go_to_previous_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>go_to_previous_page()</slot>
+ </slots>
+</ui>

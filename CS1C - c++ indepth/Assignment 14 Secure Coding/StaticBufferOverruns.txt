@@ -1,0 +1,11 @@
+****BAD EXAMPLE****
+
+Enter a name: 
+0123456789
+0123456789
+
+****GOOD EXAMPLE****
+
+Enter a name: 
+0123456789abcdefg
+0123456789

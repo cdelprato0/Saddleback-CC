@@ -1,0 +1,51 @@
+**************************************************************************
+* PROGRAMMED BY : Chaz Del Prato                                         *
+* ASSIGNMENT #7 : Double Hashing                                         *
+* CLASS         : CS1D                                                   *
+* SECTION       : MW 3:00p                                               *
+--------------------------------------------------------------------------
+* Description   :                                                        *
+*  This program will be able to read in a whole bunch of unique keys and *
+*  string values of cities and perform a double hashing algorithm. The   *
+*  program will first assign all the nodes a key and value and then will *
+*  initialize the hash table. All the member will be added to the hash   *
+*  table while a couple will be deleted in the process. Once those       *
+*  operations are done, it will output the entire hash table. If the spot*
+*  has {Delete} then that means that spot on the hash table has been     *
+*  deleted. If the spot has a value of zero and just {} then it was never*
+*  assigned a double hash value. The hash table is 31 spots. I used an   *
+*  ARRAY for my data structure. When the same key value is entered, the  *
+*  value at that key will be changed.                                    *
+**************************************************************************
+
+At spot #0: 31 Los Angeles
+At spot #1: 32 San Diego
+At spot #2: 0 {}
+At spot #3: 29 Dana Point
+At spot #4: 35 Tustin
+At spot #5: 0 {}
+At spot #6: 99 San Juan
+At spot #7: 42 Vista
+At spot #8: 0 {}
+At spot #9: 88 El Segundo
+At spot #10: 72 Palms Springs
+At spot #11: 11 La Jolla
+At spot #12: 62 Laguna Hills
+At spot #13: 44 Irvine
+At spot #14: 0 {}
+At spot #15: 0 {}
+At spot #16: 0 {}
+At spot #17: 17 Orange
+At spot #18: 18 Del Mar
+At spot #19: 19 Brea
+At spot #20: 49 San Diego
+At spot #21: 0 {}
+At spot #22: 22 Aliso Viejo
+At spot #23: 0 {}
+At spot #24: 0 {}
+At spot #25: 0 {}
+At spot #26: 103 Oceanside
+At spot #27: 0 {Deleted}
+At spot #28: 0 {}
+At spot #29: 60 Santa Ana
+At spot #30: 41 San Clemente

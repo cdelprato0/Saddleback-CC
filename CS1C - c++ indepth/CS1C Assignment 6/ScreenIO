@@ -1,0 +1,26 @@
+...RECTANGLE...
+Please enter the Length of the Rectangle: 6
+Please enter the Width of the Rectangle: 88
+
+Calculating the Perimeter...
+----------------------------
+The Perimeter is: 188
+
+Calculating the Area...
+-----------------------
+The Area is: 528
+
+
+...TRIANGLE...
+Please enter One side of the Triangle: 4
+Please enter One side of the Triangle: 8
+Please enter One side of the Triangle: 6
+
+Calculating the Perimeter...
+----------------------------
+The Perimeter is: 18
+
+Calculating the Area...
+-----------------------
+The Area is: 11.619
+

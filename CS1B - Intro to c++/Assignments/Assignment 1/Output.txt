@@ -1,0 +1,111 @@
+***********************************************************
+* PROGRAMMED BY : BBC
+* Student ID    : 382108
+* Class         : CS1B --> Mon/Wed 8:30am
+* ASSIGNMENT #1 : Functions
+***********************************************************
+
+***********************************************************
+*                  WELCOME TO HIGH ROLLER                 *
+*---------------------------------------------------------*
+* This is a two-player game that allows each player to    *
+* roll a die. The player with the highest roll wins.      *
+*---------------------------------------------------------*
+* Each player will first be prompted to enter their name. *
+* Then each player will roll in turn (the first name      *
+* entered will go first).                                 *
+***********************************************************
+First player, please enter your name : Jimmy Neutron
+Second player, please enter your name: Bob the Builder
+
+Would you like to play High Roller (y/n)? Y
+
+Jimmy Neutron's turn
+Press <enter> to roll...
+
+Jimmy Neutron rolls:
+-----------
++         +
++  O   O  +
++    O    +
++  O   O  +
++         +
+-----------
+
+Bob the Builder's turn
+Press <enter> to roll...
+
+Bob the Builder rolls:
+-----------
++         +
++  O      +
++         +
++       O +
++         +
+-----------
+
+Jimmy Neutron is the WINNER!!!
+
+Would you like to play High Roller (y/n)? x
+** INVALID INPUT - Please enter 'Y' or 'N' **
+
+Would you like to play High Roller (y/n)? y
+
+Jimmy Neutron's turn
+Press <enter> to roll...
+
+Jimmy Neutron rolls:
+-----------
++         +
++  O   O  +
++    O    +
++  O   O  +
++         +
+-----------
+
+Bob the Builder's turn
+Press <enter> to roll...
+
+Bob the Builder rolls:
+-----------
++  O   O  +
++         +
++  O   O  +
++         +
++  O   O  +
+-----------
+
+Bob the Builder is the WINNER!!!
+
+Would you like to play High Roller (y/n)? Y
+
+Jimmy Neutron's turn
+Press <enter> to roll...
+
+Jimmy Neutron rolls:
+-----------
++         +
++  O      +
++         +
++       O +
++         +
+-----------
+
+Bob the Builder's turn
+Press <enter> to roll...
+
+Bob the Builder rolls:
+-----------
++         +
++  O      +
++         +
++       O +
++         +
+-----------
+
+Jimmy Neutron & Bob the Builder have tied!
+
+Would you like to play High Roller (y/n)? N
+
+
+Thank you for playing :-)

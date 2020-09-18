@@ -1,0 +1,33 @@
+********************************************************
+* PROGRAMMED BY : BBC
+* CLASS         : CS1A
+* SECTION       : MW: 9:30AM
+* ASSIGNMENT #5 : Input & Output - New Salary
+******************************************************
+
+What is your name?           Jean Cyr
+What is your current salary? 80000
+What is your pay increase?   .05
+
+Jean Cyr's SALARY INFORMATION
+New Salary     Monthly Salary     Retroactive Pay
+  84000.00            7000.00             2000.00
+
+
+What is your name?           Abe Lincoln
+What is your current salary? 5000
+What is your pay increase?   .07
+
+Abe Lincoln's SALARY INFORMATION
+New Salary     Monthly Salary     Retroactive Pay
+   5350.00             445.83              175.00
+
+
+What is your name?           Joe Jackson
+What is your current salary? 125125
+What is your pay increase?   .25
+
+Joe Jackson's SALARY INFORMATION
+New Salary     Monthly Salary     Retroactive Pay
+ 156406.25           13033.85            15640.63
+

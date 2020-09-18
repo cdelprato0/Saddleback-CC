@@ -1,0 +1,246 @@
+**************************************************
+* PROGRAMMED BY : BBC & Druox 2.0
+* CLASS         : CS1B
+* SECTION       : MW 8:30a-12:20p
+* LAB #15       : Arrays & Linked Lists of Sheep
+**************************************************
+
+*************************************
+* WELCOME TO THE SHEEP LIST MANAGER *
+*************************************
+
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 1
+
+Sheep Name: Fluffy
+Sheep Age:  1
+
+The sheep..
+Sheep Name: Fluffy
+Sheep Age:  1
+Has been added!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 2
+
+NAME           AGE
+-------------- ---
+Fluffy          1
+
+Is at the front of the list.
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 1
+
+Sheep Name: Maa
+Sheep Age:  3
+
+The sheep..
+Sheep Name: Maa
+Sheep Age:  3
+Has been added!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 4
+
+There are 2 sheep in the list!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 5
+
+NAME           AGE
+-------------- ---
+Fluffy          1
+Maa             3
+
+There are 2 sheep in the list!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 1
+
+Sheep Name: Baa Baa
+Sheep Age:  2
+
+The sheep..
+Sheep Name: Baa Baa
+Sheep Age:  2
+Has been added!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 5
+
+NAME           AGE
+-------------- ---
+Fluffy          1
+Maa             3
+Baa Baa         2
+
+There are 3 sheep in the list!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 4
+
+There are 3 sheep in the list!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 3
+
+Who are you looking for? Baa Baa
+
+NAME           AGE
+-------------- ---
+Baa Baa         2
+
+Has been found.
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 6
+
+The list has been cleared!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 6
+
+The list is empty!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 5
+
+The list is empty!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 4
+
+The list is empty!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 3
+
+There are no sheep to be found!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 2
+
+Nobody is in front - the list is empty!
+
+SHEEP LIST MANAGER
+1 - Add Sheep
+2 - Output 1st Sheep
+3 - Find Sheep
+4 - List Size
+5 - Output List
+6 - Clear List
+0 - Exit
+Enter a command: 7
+
+**** The number 7 is an invalid entry     ****
+**** Please input a number between 0 and 6 ****
+
+Enter a command: 0
+

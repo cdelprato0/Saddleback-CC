@@ -1,0 +1,213 @@
+13:42:58 **** Incremental Build of configuration Debug for project Lab17 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Lab17.exe main.o 
+Info: Nothing to build for Lab17
+13:46:23 **** Incremental Build of configuration Debug for project Lab17 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Lab17.exe main.o 
+Info: Nothing to build for Lab17
+13:48:57 **** Incremental Build of configuration Debug for project Lab17 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Lab17.exe main.o 
+Info: Nothing to build for Lab17
+Info: Nothing to build for Assignment 5
+12:25:57 **** Rebuild of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.2/../../../libmingw32.a(main.o)(.text+0x106):main.c: undefined reference to `WinMain@16'
+collect2: ld returned 1 exit status
+Info: Nothing to build for Lab17
+Info: Nothing to build for Assignment 5
+12:39:07 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:29: error: `setw' undeclared (first use this function)
+..\main.cpp:29: error: (Each undeclared identifier is reported only once for each function it appears in.)
+Info: Nothing to build for Lab17
+Info: Nothing to build for Assignment 5
+12:39:50 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+Info: Nothing to build for Lab17
+12:40:27 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+12:40:47 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+Info: Nothing to build for Lab 21
+12:41:50 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+Info: Nothing to build for Lab 21
+12:42:08 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+12:46:14 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:64: warning: the address of `int AddTwoInts(int, int)', will always evaluate as `true'
+g++ -o "Lab 21.exe" main.o 
+12:53:32 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:68: warning: the address of `int AddTwoInts(int, int)', will always evaluate as `true'
+..\main.cpp:69: warning: the address of `int MultiplyTwoInts(int, int)', will always evaluate as `true'
+..\main.cpp:70: warning: the address of `int FindLargest(int, int)', will always evaluate as `true'
+..\main.cpp:71: warning: the address of `float AverageTwoInts(int)', will always evaluate as `true'
+g++ -o "Lab 21.exe" main.o 
+12:55:23 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:71: error: `sum' undeclared (first use this function)
+..\main.cpp:71: error: (Each undeclared identifier is reported only once for each function it appears in.)
+13:00:14 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:73: warning: passing `float' for converting 1 of `float AverageTwoInts(int)'
+..\main.cpp: In function `float AverageTwoInts(float, float)':
+..\main.cpp:112: error: `sum' cannot be used as a function
+13:02:07 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:73: warning: passing `float' for converting 1 of `float AverageTwoInts(int)'
+g++ -o "Lab 21.exe" main.o 
+main.o(.text+0x5f7): In function `main':
+E:/CS1A/Labs/Eclipse/Lab 21/Debug/../main.cpp:73: undefined reference to `AverageTwoInts(int)'
+collect2: ld returned 1 exit status
+13:02:33 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:15: error: too many arguments to function `float AverageTwoInts(int)'
+..\main.cpp:73: error: at this point in file
+..\main.cpp:55: warning: unused variable 'sum'
+13:02:54 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:15: error: too many arguments to function `float AverageTwoInts(int)'
+..\main.cpp:73: error: at this point in file
+13:03:23 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:15: error: too many arguments to function `float AverageTwoInts(int)'
+..\main.cpp:73: error: at this point in file
+13:03:59 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+Info: Nothing to build for Lab 21
+13:05:19 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+Info: Nothing to build for Lab 21
+13:07:52 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+Info: Nothing to build for Lab 21
+13:10:27 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+13:20:36 **** Incremental Build of configuration Debug for project Lab 21 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "Lab 21.exe" main.o 
+Info: Nothing to build for Lab 21
+13:07:18 **** Rebuild of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.cpp" 
+..\functions.cpp:1: error: expected constructor, destructor, or type conversion before '<' token
+..\functions.cpp:1: error: expected `,' or `;' before '<' token
+In file included from C:/MinGW/bin/../lib/gcc/mingw32/3.4.2/../../../../include/c++/3.4.2/string:45,
+                 from ..\functions.cpp:2:
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.2/../../../../include/c++/3.4.2/mingw32/bits/c++config.h:61: error: expected namespace-name before ';' token
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.2/../../../../include/c++/3.4.2/mingw32/bits/c++config.h:61: error: `<type error>' is not a namespace
+13:07:29 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:1: error: expected constructor, destructor, or type conversion before '<' token
+..\main.cpp:1: error: expected `,' or `;' before '<' token
+In file included from C:/MinGW/bin/../lib/gcc/mingw32/3.4.2/../../../../include/c++/3.4.2/string:45,
+                 from ..\main.cpp:2:
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.2/../../../../include/c++/3.4.2/mingw32/bits/c++config.h:61: error: expected namespace-name before ';' token
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.2/../../../../include/c++/3.4.2/mingw32/bits/c++config.h:61: error: `<type error>' is not a namespace
+..\main.cpp: In function `int main()':
+..\main.cpp:54: error: `cout' undeclared (first use this function)
+..\main.cpp:54: error: (Each undeclared identifier is reported only once for each function it appears in.)
+..\main.cpp:55: error: `cin' undeclared (first use this function)
+..\main.cpp:56: error: `endl' undeclared (first use this function)
+13:07:37 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:14: error: `isPalindrome' undeclared (first use this function)
+..\main.cpp:14: error: (Each undeclared identifier is reported only once for each function it appears in.)
+13:07:48 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:14: error: `isPalindrome' undeclared (first use this function)
+..\main.cpp:14: error: (Each undeclared identifier is reported only once for each function it appears in.)
+13:08:54 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Lab23.exe main.o functions.o 
+Info: Nothing to build for Lab23
+13:28:24 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.cpp" 
+..\functions.cpp: In function `bool isPalindrome(std::string)':
+..\functions.cpp:18: error: break statement not within loop or switch
+13:28:32 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.cpp" 
+..\functions.cpp: In function `bool isPalindrome(std::string)':
+..\functions.cpp:18: error: break statement not within loop or switch
+13:28:48 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.cpp" 
+g++ -o Lab23.exe main.o functions.o 
+Info: Nothing to build for Lab23
+Info: Nothing to build for Lab23
+13:31:19 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Lab23.exe main.o functions.o 
+13:32:59 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.cpp" 
+g++ -o Lab23.exe main.o functions.o 
+Info: Nothing to build for Lab23
+13:35:05 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.cpp" 
+..\functions.cpp: In function `bool isPalindrome(std::string)':
+..\functions.cpp:33: error: `b' undeclared (first use this function)
+..\functions.cpp:33: error: (Each undeclared identifier is reported only once for each function it appears in.)
+..\functions.cpp:38: error: break statement not within loop or switch
+13:36:14 **** Incremental Build of configuration Debug for project Lab23 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.cpp" 
+g++ -o Lab23.exe main.o functions.o 
+Info: Nothing to build for Lab23

@@ -1,0 +1,11 @@
+**************************************************
+* PROGRAMMED BY : BBC & Professor X
+* CLASS         : CS1B
+* SECTION       : MW 8:30a-12:20p
+* LAB #16       : Intro to Recursion
+**************************************************
+
+The GCD for 74 & 32 = 2
+The GCD for 99 & 30 = 3
+The GCD for 48 & 18 = 6
+The GCD for 12 & 0 = 0

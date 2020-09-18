@@ -1,0 +1,24 @@
+What input file would you like to use?  InFile.txt
+What output file would you like to use? OFile.txt
+
+Who do you want to search for (enter done to exit): Steve Woolston
+Found.
+
+Who do you want to search for (enter done to exit): Jacques Rousseau
+Jacques Rousseau was not found.
+
+Who do you want to search for (enter done to exit): Chris Carroll
+Found.
+
+Who do you want to search for (enter done to exit): Pete McBride
+Found.
+
+Who do you want to search for (enter done to exit): Jean Rousseau
+Found.
+
+Who do you want to search for (enter done to exit): Florence Cyr
+Florence Cyr was not found.
+
+Who do you want to search for (enter done to exit): done
+
+Thank you for using my program.

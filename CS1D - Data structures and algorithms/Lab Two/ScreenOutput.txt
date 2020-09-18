@@ -1,0 +1,23 @@
+************************************************************************
+* PROGRAMMED BY : Eric Le & Chaz Del Prato                             *
+* LAB # 2       : Recursion                                            *
+* CLASS         : CS1D                                                 *
+* SECTION       : MW 3:00p                                             *
+------------------------------------------------------------------------
+* Description   :                                                      *
+*  The Output of this function will show that the strings that         *
+*  have been enter are a palindrome or not. It will output the         *
+*  untouched word in quotes and will go through the process of         *
+*  determining if the string is a palindrome or is not a plaindrome.   *
+************************************************************************
+
+"radar" is a palindrome!
+"CS1D" is not a palindrome!
+"Racecar" is a palindrome!
+"Saddleback" is not a palindrome!
+"dad" is a palindrome!
+"mom" is a palindrome!
+"A man a plan a canal Panama" is a palindrome!
+"The rain in Spain" is not a palindrome!
+"No lemon, no melon" is a palindrome!
+"Was it a cat I saw?" is a palindrome!

@@ -1,0 +1,113 @@
+Welcome to the Random Number Generator!
+
+Please choose from the following menu:
+1 - SUM of the random digits.
+2 - TRIPLE the random digits.
+3 - REVERSE the random digits.
+4 - STORE and SORT random numbers into an output FILE.
+5 - READ IN from an input file and PRINT to console.
+0 - EXIT the program.
+Enter your command: 1
+
+Your Random Number is: 819
+
+The sum of the three digits is: 18
+
+
+Please choose from the following menu:
+1 - SUM of the random digits.
+2 - TRIPLE the random digits.
+3 - REVERSE the random digits.
+4 - STORE and SORT random numbers into an output FILE.
+5 - READ IN from an input file and PRINT to console.
+0 - EXIT the program.
+Enter your command: 2
+
+Tripling the Random Number gives you: 2457
+
+
+Please choose from the following menu:
+1 - SUM of the random digits.
+2 - TRIPLE the random digits.
+3 - REVERSE the random digits.
+4 - STORE and SORT random numbers into an output FILE.
+5 - READ IN from an input file and PRINT to console.
+0 - EXIT the program.
+Enter your command: 3
+
+The new order of the three digits is :918
+
+
+Please choose from the following menu:
+1 - SUM of the random digits.
+2 - TRIPLE the random digits.
+3 - REVERSE the random digits.
+4 - STORE and SORT random numbers into an output FILE.
+5 - READ IN from an input file and PRINT to console.
+0 - EXIT the program.
+Enter your command: 4
+
+How many numbers would you like to store? 10
+
+Outputting to the designated Output File...
+
+Output File Complete!
+
+
+Please choose from the following menu:
+1 - SUM of the random digits.
+2 - TRIPLE the random digits.
+3 - REVERSE the random digits.
+4 - STORE and SORT random numbers into an output FILE.
+5 - READ IN from an input file and PRINT to console.
+0 - EXIT the program.
+Enter your command: 5
+
+Reading values from the Input File... 
+234
+543
+678
+456
+213
+890
+677
+999
+222
+479
+Reading and Output Complete.
+
+
+Please choose from the following menu:
+1 - SUM of the random digits.
+2 - TRIPLE the random digits.
+3 - REVERSE the random digits.
+4 - STORE and SORT random numbers into an output FILE.
+5 - READ IN from an input file and PRINT to console.
+0 - EXIT the program.
+Enter your command: 6
+
+**** The number 6 is an invalid entry     ****
+**** Please input a number between 0 and 5 ****
+
+
+Please choose from the following menu:
+1 - SUM of the random digits.
+2 - TRIPLE the random digits.
+3 - REVERSE the random digits.
+4 - STORE and SORT random numbers into an output FILE.
+5 - READ IN from an input file and PRINT to console.
+0 - EXIT the program.
+Enter your command: a
+
+**** Please input a number between 0 and 5 ****
+
+
+Please choose from the following menu:
+1 - SUM of the random digits.
+2 - TRIPLE the random digits.
+3 - REVERSE the random digits.
+4 - STORE and SORT random numbers into an output FILE.
+5 - READ IN from an input file and PRINT to console.
+0 - EXIT the program.
+Enter your command: 0
+

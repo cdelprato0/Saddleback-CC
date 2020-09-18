@@ -1,0 +1,109 @@
+********************************************************
+* PROGRAMMED BY : Chaz Del Prato
+* Student ID    : 382108
+* Class         : CS1C --> Mon/Wed 2:00pm
+* ASSIGNMENT #5 : Dynamic Arrays
+********************************************************
+
+Please enter the Inventory...
+Enter the Name of the Equipment: Nike basketball shoes
+Enter the Price: 145.99
+Enter the Quantity: 22
+
+Enter the Name of the Equipment: Under Armour T-shirt
+Enter the Price: 29.99
+Enter the Quantity: 33
+
+Enter the Name of the Equipment: Brooks running shoes
+Enter the Price: 111.44
+Enter the Quantity: 11
+
+Enter the Name of the Equipment: Asics running shoes
+Enter the Price: 165.88
+Enter the Quantity: 20
+
+Enter the Name of the Equipment: Nike shorts
+Enter the Price: 45.77
+Enter the Quantity: 77
+
+
+Inventory list...
+Equipment Name: Nike basketball shoes
+Equipment Cost: 145.99
+Equipment Quantity: 22
+
+Equipment Name: Under Armour T-shirt
+Equipment Cost: 29.99
+Equipment Quantity: 33
+
+Equipment Name: Brooks running shoes
+Equipment Cost: 111.44
+Equipment Quantity: 11
+
+Equipment Name: Asics running shoes
+Equipment Cost: 165.88
+Equipment Quantity: 20
+
+Equipment Name: Nike shorts
+Equipment Cost: 45.77
+Equipment Quantity: 77
+
+
+Please enter the items sold to Mark...
+Enter the Name of the Item: Nike basketball shoes
+Enter the cost of the Item: 145.99
+Enter the Quantity sold: 2
+
+Enter the Name of the Item: Under Armour T-shirt
+Enter the cost of the Item: 29.99
+Enter the Quantity sold: 3
+
+Enter the Name of the Item: Nike shorts
+Enter the cost of the Item: 45.77
+Enter the Quantity sold: 4
+
+Enter the Name of the Item: Brooks running shoes
+Enter the cost of the Item: 111.44
+Enter the Quantity sold: 1
+
+
+Printing Receipt...
+Item # 1
+2 of Nike basketball shoes @ $145.99 each.
+Sub Total: $291.98
+
+Item # 2
+3 of Under Armour T-shirt @ $29.99 each.
+Sub Total: $381.95
+
+Item # 3
+4 of Nike shorts @ $45.77 each.
+Sub Total: $565.03
+
+Item # 4
+1 of Brooks running shoes @ $111.44 each.
+Sub Total: $676.47
+
+Grand Total: $732.28
+
+Inventory after sales...
+Equipment Name: Nike basketball shoes
+Equipment Cost: 145.99
+Equipment Quantity: 20
+
+Equipment Name: Under Armour T-shirt
+Equipment Cost: 29.99
+Equipment Quantity: 30
+
+Equipment Name: Brooks running shoes
+Equipment Cost: 111.44
+Equipment Quantity: 10
+
+Equipment Name: Asics running shoes
+Equipment Cost: 165.88
+Equipment Quantity: 20
+
+Equipment Name: Nike shorts
+Equipment Cost: 45.77
+Equipment Quantity: 73
+

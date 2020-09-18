@@ -1,0 +1,23 @@
+********************************************************
+* PROGRAMMED BY : BBC, Mamba, gunz, Crepe Hustler
+* Student ID    : 382108
+* Class         : CS1A --> Mon/Wed 9:30am
+* LAB #15       :Party Planner
+******************************************************
+
+What is your friend's name?   Bob
+How old is your friend?       22
+Do they like chocolate (Y/N)? y
+Do they like nuts (Y/N)?      n
+
+You should serve Bob M & M's and beer.
+
+
+
+What is your friend's name?   Larry
+How old is your friend?       10
+Do they like chocolate (Y/N)? n
+
+You should serve Larry Skittles and soda.
+
+

@@ -1,0 +1,327 @@
+**************************************************
+* PROGRAMMED BY : BBC & Myrmidon
+* CLASS         : CS1B
+* SECTION       : MW 8:30a-12:20p
+* LAB #10       : Implementing a Queue
+**************************************************
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 1
+
+Who would you like to add?
+Enter name:   George Boole
+Enter gender: M
+Enter Age:    32
+
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 1
+
+Who would you like to add?
+Enter name:   Ada Lovelace
+Enter gender: F
+Enter Age:    21
+
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 1
+
+Who would you like to add?
+Enter name:   Grace Hopper
+Enter gender: F
+Enter Age:    44
+
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 4
+
+The first person in the queue is:
+Name:   George Boole
+Gender: M
+Age:    32
+
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 5
+
+There is one person on the queue.
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 2
+
+DEQUEUEING
+Name:   George Boole
+Gender: M
+Age:    32
+
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 5
+
+Nobody is on the queue!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 3
+
+Yes, the QUEUE is empty.
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 4
+
+Nobody in FRONT, the queue is empty!!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 2
+
+Can't DEQUEUE from an empty stack!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 5
+
+Nobody is on the queue!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 4
+
+Nobody in FRONT, the queue is empty!!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 3
+
+Yes, the QUEUE is empty.
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 2
+
+Can't DEQUEUE from an empty stack!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 5
+
+Nobody is on the queue!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 4
+
+Nobody in FRONT, the queue is empty!!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 3
+
+Yes, the QUEUE is empty.
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 2
+
+Can't DEQUEUE from an empty stack!
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 1
+
+Who would you like to add?
+Enter name:   Alan Turing
+Enter gender: M
+Enter Age:    25
+
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 1
+
+Who would you like to add?
+Enter name:   Blaise Pascal
+Enter gender: M
+Enter Age:    19
+
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 1
+
+Who would you like to add?
+Enter name:   Dog Bert
+Enter gender: M
+Enter Age:    3
+
+
+
+STACK MENU:
+1 - ENQUEUE (Add a person)
+2 - DEQUEUE (Remove a person)
+3 - ISEMPTY (Is the queue empty?)
+4 - FRONT   (Who is in front?)
+5 - SIZE    (How many people are there?)
+6 - Clear the Queue
+0 - Exit
+Enter a command: 6
+
+CLEARING...
+Name:   Blaise Pascal
+Name:   Alan Turing
+Name:   Grace Hopper
+Name:   Ada Lovelace

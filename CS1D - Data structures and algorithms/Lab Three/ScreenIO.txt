@@ -1,0 +1,50 @@
+************************************************************************
+* PROGRAMMED BY : Chase Deric & Chaz Del Prato                         *
+* LAB # 3       : Prefix Average                                       *
+* CLASS         : CS1D                                                 *
+* SECTION       : MW 3:00p                                             *
+------------------------------------------------------------------------
+* Description   :                                                      *
+*  The output of this program will display a prompt for the user to    *
+*  enter the size of the array. The program will output the first 5    *
+*  random numbers of the array and then will output the 5 first values *
+*  of the prefix averages of the top array. Then it will output the    *
+*  time it took to complete the process in nanoseconds. The second     *
+*  prefix average will be displayed with the number in the array and   *
+*  then the current prefix average. The program will then output the   *
+*  time it took in nanoseconds.                                        *
+************************************************************************
+
+PREFIX AVERAGE #1
+-----------------
+
+Please enter the size of the input: 1000
+
+The first 5 numbers that are saved in the array are: 
+42  468  335  501  170  
+
+The PreFix Average of the first 5 numbers are: 
+42.00  255.00  281.67  336.50  303.20  
+
+It took 1429.278 Nanoseconds!
+
+
+PREFIX AVERAGE #2
+-----------------
+
+Number 1 is: 667
+Current Average is: 667.00
+
+Number 2 is: 528
+Current Average is: 597.50
+
+Number 3 is: 679
+Current Average is: 624.67
+
+Number 4 is: 864
+Current Average is: 684.50
+
+Number 5 is: 421
+Current Average is: 631.80
+
+It took 13.89 Nanoseconds!

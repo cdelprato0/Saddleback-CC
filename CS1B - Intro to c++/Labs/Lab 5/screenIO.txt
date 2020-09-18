@@ -1,0 +1,38 @@
+******************************************
+* Programmed by : Bacon Pancakes & BBC   *
+* Student ID    : 951436 & 382108        *
+* Class         : CS1B - MW 8:30a-12:20a *
+* Lab #5        : Array Train            *
+******************************************
+
+Ferrari is the oldest with an age of 63.
+
+What age would you like to search for? (Enter 0 to exit) 31
+This age appears in 2 instances.
+
+What age would you like to search for? (Enter 0 to exit) 9
+This age appears in 1 instances.
+
+What age would you like to search for? (Enter 0 to exit) 66
+Age was not found.
+
+What age would you like to search for? (Enter 0 to exit) 0
+
+
+Who would you like to search for? (Enter "done" to exit) Jimmy
+Found.
+Jimmy 31
+
+Who would you like to search for? (Enter "done" to exit) Chaz
+Found.
+Chaz 19
+
+Who would you like to search for? (Enter "done" to exit) Hank
+Hank was not found.
+
+Who would you like to search for? (Enter "done" to exit) done
+
+The sum of all ages is 198
+
+
+Thank you for using my program. Have a nice life.

@@ -1,0 +1,108 @@
+**************************************************************************
+* PROGRAMMED BY : Chaz Del Prato                                         *
+* ASSIGNMENT #5 : Priority Queues                                        *
+* CLASS         : CS1D                                                   *
+* SECTION       : MW 3:00p                                               *
+--------------------------------------------------------------------------
+* Description   :                                                        *
+*  This program will start with outputting PART ONE of the assignment    *
+*  which is using the UN-SORTED list to complete the emergency room      *
+*  Scenario. The output will start with the patient that has been waiting*
+*  the longest since before 12(noon). Then it will output the remaining  *
+*  in the order they have waited. There will be two life threatening     *
+*  Emergencies that will happen throughout the output and will state when*
+*  they are occurring. After the emergencies, the remaining time will be *
+*  fulfilled to the patient that was left and then will carry on through *
+*  the priority queue. After the first implementation of the UN-SORTED   *
+*  list, now it will go into the STL priority queue. It will be reusing  *
+*  Most of the output but will be using the STL to complete the          *
+*  operations.                                                           *
+**************************************************************************
+
+
+*********************************
+*           PART ONE            *
+*USING IMPLMENTED UN-SORTED LIST*
+*********************************
+
+The patient, Frank Feelingbad has be been waiting 7 hours!!
+They will now be admitted at 12:00
+Frank Feelingbad has been released at 12:20
+
+The patient, Irene Ill has be been waiting 6 hours!!
+They will now be admitted at 12:20
+
+*******LIFE THREATENING EMERGENCY*******
+Admitting Bob Bleeding at 12:22
+Bob Bleeding has been released at 12:42
+
+Irene Ill has been released at 1:00
+
+The patient, Alice Ailment has be been waiting 5 hours!!
+They will now be admitted at 1:00
+Alice Ailment has been released at 1:20
+
+The patient, Cathy Coughing has be been waiting 4 hours!!
+They will now be admitted at 1:20
+Cathy Coughing has been released at 1:40
+
+The patient, Sam Sneezing has be been waiting 2.5 hours!!
+They will now be admitted at 1:40
+
+*******LIFE THREATENING EMERGENCY*******
+Admitting Sid Sickly at 1:45
+Sid Sickly has been released at 2:05
+
+Sam Sneezing has been released at 2:20
+
+The patient, Paula Pan has be been waiting 2 hours!!
+They will now be admitted at 2:20
+Paula Pain has been released at 2:40
+
+The patient, Tom Temperature has be been waiting 1 hour!!
+They will now be admitted at 2:40
+Tom Temperture has been released at 3:00
+
+
+**************************
+*        PART TWO        *
+*USING STL PRIORITY QUEUE*
+**************************
+The patient, Frank Feelingbad has be been waiting 7 hours!!
+They will now be admitted at 12:00
+Frank Feelingbad has been released at 12:20
+
+The patient, Irene Ill has be been waiting 6 hours!!
+They will now be admitted at 12:20
+
+*******LIFE THREATENING EMERGENCY*******
+Admitting Bob Bleeding at 12:22
+Bob Bleeding has been released at 12:42
+
+Irene Ill has been released at 1:00
+
+The patient, Alice Ailment has be been waiting 5 hours!!
+They will now be admitted at 1:00
+Alice Ailment has been released at 1:20
+
+The patient, Cathy Coughing has be been waiting 4 hours!!
+They will now be admitted at 1:20
+Cathy Coughing has been released at 1:40
+
+The patient, Sam Sneezing has be been waiting 2.5 hours!!
+They will now be admitted at 1:40
+
+*******LIFE THREATENING EMERGENCY*******
+Admitting Sid Sickly at 1:45
+Sid Sickly has been released at 2:05
+
+Sam Sneezing has been released at 2:20
+
+The patient, Paula Pan has be been waiting 2 hours!!
+They will now be admitted at 2:20
+Paula Pain has been released at 2:40
+
+The patient, Tom Temperature has be been waiting 1 hour!!
+They will now be admitted at 2:40
+Tom Temperture has been released at 3:00
+

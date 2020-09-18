@@ -1,0 +1,18 @@
+Enter the first integer: 32
+Enter the second integer: 41
+
+
+32 + 41 = 73
+The average is: 36.50
+
+
+
+Enter the first integer: 24
+Enter the second integer: 1258
+
+
+24 + 1258 = 1282
+The average is: 641.00
+
+
+

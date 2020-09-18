@@ -1,0 +1,137 @@
+****************************************
+* PROGRAMMED BY : ZBRA & BBC
+* CLASS         : CS1A
+* SECTION       : MW: 9:30AM
+* LAB#16        : Flo's Party Planner
+****************************************
+
+Welcome Florence! Please input your guests' names, ages, and preferences!
+
+Guest #1:
+What is your friends's name?  Pat Macy
+How old is your friend?       12
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      Y
+
+You should serve Pat Macy Peanut M & M's and soda.
+
+
+Guest #2:
+What is your friends's name?  Dixie Sheldon
+How old is your friend?       18
+Do they like chocolate (Y/N)? N
+
+You should serve Dixie Sheldon Skittles and soda.
+
+
+Guest #3:
+What is your friends's name?  Al Johnson
+How old is your friend?       20
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      N
+
+You should serve Al Johnson M & M's and soda.
+
+
+Guest #4:
+What is your friends's name?  Nadia Ahmed
+How old is your friend?       26
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      Y
+
+You should serve Nadia Ahmed Peanut M & M's and wine.
+
+
+Guest #5:
+What is your friends's name?  Daniel Jin
+How old is your friend?       32
+Do they like chocolate (Y/N)? N
+
+You should serve Daniel Jin Skittles and wine.
+
+
+Guest #6:
+What is your friends's name?  Anne Graves
+How old is your friend?       77
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      N
+
+You should serve Anne Graves M & M's and wine.
+
+
+Guest #7:
+What is your friends's name?  Jennifer Kim
+How old is your friend?       4
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      N
+
+You should serve Jennifer Kim M & M's and juice.
+
+
+Guest #8:
+What is your friends's name?  Stella Star
+How old is your friend?       5
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      Y
+
+You should serve Stella Star Peanut M & M's and juice.
+
+
+Guest #9:
+What is your friends's name?  Nery Chapeton-Lamas
+How old is your friend?       2
+Do they like chocolate (Y/N)? N
+
+You should serve Nery Chapeton-Lamas Skittles and juice.
+
+
+Guest #10:
+What is your friends's name?  Grace Germano
+How old is your friend?       6
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      N
+
+You should serve Grace Germano M & M's and soda.
+
+
+Guest #11:
+What is your friends's name?  Shannon Alfaro
+How old is your friend?       21
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      Y
+
+You should serve Shannon Alfaro Peanut M & M's and wine.
+
+
+Guest #12:
+What is your friends's name?  Michele Rousseau
+How old is your friend?       21
+Do they like chocolate (Y/N)? Y
+Do they like nuts (Y/N)?      N
+
+You should serve Michele Rousseau M & M's and wine.
+
+
+
+There are:
+3 servings of Skittles
+5 servings of M & M's
+4 servings of Peanut M & M's
+
+12 servings of soda
+9  servings of juice
+15 servings of wine
+
+
+Florence needs to purchase:
+BAGS     SNACK
+----     -----
+1        Skittles
+2        M & M's
+1        Peanut M & M's
+
+CASES    BEVERAGE
+-----    --------
+2        Juice
+2        Soda
+3        Wine

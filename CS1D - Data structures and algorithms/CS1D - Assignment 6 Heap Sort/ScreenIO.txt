@@ -1,0 +1,129 @@
+**************************************************************************
+* PROGRAMMED BY : Chaz Del Prato                                         *
+* ASSIGNMENT #6 : Heap Sort                                              *
+* CLASS         : CS1D                                                   *
+* SECTION       : MW 3:00p                                               *
+--------------------------------------------------------------------------
+* Description   :                                                        *
+*  This program will be able to output an array that has performed a Heap*
+*  sort. The Program will take in a key integer and a string value and   *
+*  will output the items that are being added. The program will perform  *
+*  the heap sort and the output will run through the steps the heap sort *
+*  takes in order to complete the sort. The sort will find the highest   *
+*  key and will output what it is. Then it will output the lower value it*
+*  is going to swap with. After the keys swap, the program will remove   *
+*  the highest key and store it in the last index of the array. Then the *
+*  program will output what low value is saved at the root and will      *
+*  repeat until there is the lowest key left. The program will output the*
+*  sorted array at the end of the program.                               *
+**************************************************************************
+
+Adding to the Heap
+------------------
+33 Rams
+22 Vikings
+88 Lions
+44 Dolphins
+123 Pariots
+44 Bengals
+69 Packers
+24 Broncos
+13 Bears
+49 Chargers
+
+We are at the MAX --> 123 Pariots
+
+We are SWAPPING --> 22 Vikings and --> 123 Pariots
+
+The NEW root is --> 22 Vikings
+
+We are DELETING --> 123 Pariots
+
+
+We are at the MAX VALUE --> 88 Lions
+
+We are SWAPPING --> 13 Bears and --> 88 Lions
+
+The NEW root is --> 13 Bears
+
+We are DELETING --> 88 Lions
+
+
+We are at the MAX VALUE --> 69 Packers
+
+We are SWAPPING --> 24 Broncos and --> 69 Packers
+
+The NEW root is --> 24 Broncos
+
+We are DELETING --> 69 Packers
+
+
+We are at the MAX VALUE --> 49 Chargers
+
+We are SWAPPING --> 22 Vikings and --> 49 Chargers
+
+The NEW root is --> 22 Vikings
+
+We are DELETING --> 49 Chargers
+
+
+We are at the MAX VALUE --> 44 Dolphins
+
+We are SWAPPING --> 13 Bears and --> 44 Dolphins
+
+The NEW root is --> 13 Bears
+
+We are DELETING --> 44 Dolphins
+
+
+We are at the MAX VALUE --> 44 Bengals
+
+We are SWAPPING --> 22 Vikings and --> 44 Bengals
+
+The NEW root is --> 22 Vikings
+
+We are DELETING --> 44 Bengals
+
+
+We are at the MAX VALUE --> 33 Rams
+
+We are SWAPPING --> 22 Vikings and --> 33 Rams
+
+The NEW root is --> 22 Vikings
+
+We are DELETING --> 33 Rams
+
+
+We are at the MAX VALUE --> 24 Broncos
+
+We are SWAPPING --> 13 Bears and --> 24 Broncos
+
+The NEW root is --> 13 Bears
+
+We are DELETING --> 24 Broncos
+
+
+We are at the MAX VALUE --> 22 Vikings
+
+We are SWAPPING --> 13 Bears and --> 22 Vikings
+
+The NEW root is --> 13 Bears
+
+We are DELETING --> 22 Vikings
+
+
+We are at the MAX VALUE --> 13 Bears
+
+The RESULT of the HEAP SORT is:
+-------------------------------
+13 Bears
+22 Vikings
+24 Broncos
+33 Rams
+44 Bengals
+44 Dolphins
+49 Chargers
+69 Packers
+88 Lions
+123 Pariots
+

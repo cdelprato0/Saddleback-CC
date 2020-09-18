@@ -1,0 +1,51 @@
+******************************************
+* Programmed by : Cabbage & BBC          *
+* Student ID    : 386273 & 382108        *
+* Class         : CS1B - MW 8:30a-12:20a *
+* Lab #7        : Binary Search          *
+******************************************
+
+Index #0: 4
+Index #1: 1
+Index #2: 7
+Index #3: 12
+Index #4: 8
+Index #5: 13
+Index #6: 9
+Index #7: 21
+
+Enter an integer to search for: 9
+The integer 9 was found in index #6
+
+Enter an integer to search for: 6
+6 was not found!
+
+Enter an integer to search for: 21
+The integer 21 was found in index #7
+
+Enter an integer to search for: 4
+The integer 4 was found in index #0
+
+
+Performing Insertion Sort!
+
+Index #0: 1
+Index #1: 4
+Index #2: 7
+Index #3: 8
+Index #4: 9
+Index #5: 12
+Index #6: 13
+Index #7: 21
+
+Enter an integer to search for: 12
+The integer 12 was found in index #5
+
+Enter an integer to search for: 21
+The integer 21 was found in index #7
+
+Enter an integer to search for: 2
+2 was not found!
+
+Enter an integer to search for: 1
+The integer 1 was found in index #0

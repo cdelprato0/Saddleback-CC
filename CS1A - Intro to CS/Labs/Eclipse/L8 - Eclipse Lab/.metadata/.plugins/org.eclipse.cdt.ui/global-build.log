@@ -1,0 +1,21 @@
+12:48:08 **** Rebuild of configuration Debug for project L8 - Eclipse Lab ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:56: error: `PROGRAMMER' undeclared (first use this function)
+..\main.cpp:56: error: (Each undeclared identifier is reported only once for each function it appears in.)
+..\main.cpp:59: error: `Lab_NUM' undeclared (first use this function)
+..\main.cpp:45: warning: unused variable 'PRGRAMMER'
+..\main.cpp:48: warning: unused variable 'LAB_NUM'
+12:51:30 **** Incremental Build of configuration Debug for project L8 - Eclipse Lab ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function `int main()':
+..\main.cpp:56: error: `PROGRAMMER' undeclared (first use this function)
+..\main.cpp:56: error: (Each undeclared identifier is reported only once for each function it appears in.)
+..\main.cpp:45: warning: unused variable 'PRGRAMMER'
+12:51:46 **** Incremental Build of configuration Debug for project L8 - Eclipse Lab ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o "L8 - Eclipse Lab.exe" main.o 
+Info: Nothing to build for L8 - Eclipse Lab
